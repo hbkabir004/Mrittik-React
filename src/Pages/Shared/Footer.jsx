@@ -61,7 +61,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="totop">
-                    <a>UP</a>
+                    <a href="#">UP</a>
                 </div>
 
                 <ul className="grid_lines d-none d-md-flex justify-content-between">
