@@ -35,21 +35,21 @@ const Footer = () => {
                             <div className="footer_elements d-flex align-items-center justify-content-end">
                                 <div className="footer_elements_inner">
                                     <div className="footer_logo">
-                                        <a href="index.html" className="light_logo"><img src="assets/img/logo-light.svg" alt="logo" /></a>
+                                        <a href="index.html" className="light_logo"><img src="images/logo-light.svg" alt="logo" /></a>
                                     </div>
                                     <div className="footer_social">
                                         <ul className="social_list">
-                                            <li className="facebook"><a href="#"><i className="bi bi-facebook"></i></a></li>
-                                            <li className="twitter"><a href="#"><i className="bi bi-twitter"></i></a></li>
-                                            <li className="instagram"><a href="#"><i className="bi bi-instagram"></i></a></li>
-                                            <li className="youbetube"><a href="#"><i className="bi bi-youtube"></i></a></li>
+                                            <li className="facebook"><a><i className="bi bi-facebook"></i></a></li>
+                                            <li className="twitter"><a><i className="bi bi-twitter"></i></a></li>
+                                            <li className="instagram"><a><i className="bi bi-instagram"></i></a></li>
+                                            <li className="youbetube"><a><i className="bi bi-youtube"></i></a></li>
                                         </ul>
                                     </div>
                                     <div className="terms_condition">
                                         <ul>
-                                            <li><a href="#">Terms</a></li>
-                                            <li><a href="#">Condition</a></li>
-                                            <li><a href="#">Policy</a></li>
+                                            <li><a>Terms</a></li>
+                                            <li><a>Condition</a></li>
+                                            <li><a>Policy</a></li>
                                         </ul>
                                     </div>
                                     <div className="copyright">
@@ -61,7 +61,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="totop">
-                    <a href="#">UP</a>
+                    <a>UP</a>
                 </div>
 
                 <ul className="grid_lines d-none d-md-flex justify-content-between">
