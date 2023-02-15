@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
-import AsideInfo from '../../components/AsideInfo';
+import AsideInfo from './AsideInfo';
 
 const Header = () => {
     useEffect(() => {

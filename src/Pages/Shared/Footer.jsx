@@ -1,6 +1,13 @@
-import React from 'react';
-
+import $ from 'jquery';
+import React, { useEffect } from 'react';
 const Footer = () => {
+    useEffect(() => {
+        // Totop Button
+        $('.totop a').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    }, []);
     return (
         <footer className="footer bg-dark-200 box_padding">
             <div className="footer_inner bg-black">
