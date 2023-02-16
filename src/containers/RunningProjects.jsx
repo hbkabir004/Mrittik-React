@@ -1,10 +1,21 @@
 import Aos from 'aos';
-import React from 'react';
+import $ from 'jquery';
+import React, { useEffect } from 'react';
 import RunningProjectItem from '../components/RunningProjectItem';
 import SectionGridLines from '../components/SectionGridLines';
 
 const RunningProjects = () => {
     Aos.init();
+
+    useEffect(() => {
+        // Alternate Hover/Active
+        $('.left_part .grid-item, .right_part .grid-item').hover(function () {
+            $('.right_part .grid-item').removeClass('active');
+        },
+            function () {
+                $('.right_part .grid-item + .grid-item').addClass('active');
+            });
+    }, []);
     return (
         <section className="running_projects">
             <SectionGridLines></SectionGridLines>
