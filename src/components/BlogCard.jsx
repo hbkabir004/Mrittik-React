@@ -8,7 +8,7 @@ const BlogCard = () => {
                 <div className="blog_content">
                     <h2 className="post-count">01</h2>
                     <div className="meta">
-                        <time className="text-olive" datetime="2022-10-20">OCTOBER 20, 2022</time>
+                        <time className="text-olive" dateTime="2022-10-20">OCTOBER 20, 2022</time>
                     </div>
                     <h5><a href="blog-details.html" className="text-white">Recent trends in designing space interiors 2019</a></h5>
                     <p>Lorem ipsum dolor sit amet consecteur adipiscing elitsed do eiusmod tempor incididunt labo dolore magnaaliqua. Ut eni ad minim veniam dolor sit amet consecteur.....</p>

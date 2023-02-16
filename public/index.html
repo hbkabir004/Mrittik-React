@@ -43,6 +43,7 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="./css/cursor-effect.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -57,6 +58,14 @@
   </head>
   <body class="bg-white">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+     <!-- Color Mode Switcher -->
+		<div id="mode_switcher" class="d-none">
+			<span><i class="bi bi-moon-fill"></i></span>	
+		</div>        
+
+    <!-- Cursor Effect -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+    
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -69,7 +78,7 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/custom.js"></script>
+    <script src="./js/cursor-effect.js"></script>
+
   </body>
 </html>

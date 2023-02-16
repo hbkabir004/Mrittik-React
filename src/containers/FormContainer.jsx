@@ -6,9 +6,9 @@ import SectionGridLines from '../components/SectionGridLines';
 
 const FormContainer = () => {
     return (
-        <section class="contact_us bg-dark-200">
-            <div class="container">
-                <div class="row justify-content-between">
+        <section className="contact_us bg-dark-200">
+            <div className="container">
+                <div className="row justify-content-between">
                     <FormText></FormText>
                     <Form></Form>
                 </div>
