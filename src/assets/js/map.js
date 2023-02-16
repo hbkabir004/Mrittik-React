@@ -5,7 +5,7 @@ $(document).ready(function(){
 	 	//Google Map
 		var mapProp= {
 		    center:new google.maps.LatLng(51.508742,-0.120850),
-		    zoom:8,
+		    zoom: 14,
 		    styles: [
           {
               "featureType": "all",

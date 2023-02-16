@@ -21,6 +21,16 @@ Description: Mrittik is a Modern Architecture Theme
 	}
 	
 	jQuery(document).ready(function () {
+
+        // Preloader
+        setTimeout(function() {
+            $('#preloader').addClass('hide');
+        }, 2000);
+
+        $( "#preloader" ).append('<div class="hide-loader">Hide Preloader</div>');
+        $('.hide-loader').click(function(e){
+            $(this).parent().addClass('hide');
+        });
     
         // Menu 5 plugin 
         ma5menu({
