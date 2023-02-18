@@ -4,6 +4,7 @@ import CommingSoon from "../Pages/CommingSoon";
 import ErrorPage from "../Pages/ErrorPage";
 import Home01 from "../Pages/Home-01";
 import Signin from "../Pages/Signin";
+import Team from "../Pages/Team";
 
 export const routes = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/comingsoon',
                 element: <CommingSoon></CommingSoon>
+            },
+            {
+                path: '/team',
+                element: <Team></Team>
             },
             {
                 path: '*',

@@ -1,10 +1,10 @@
 import React from 'react';
-import PageHeder from '../components/PageHeder';
+import PageBanner02 from '../containers/PageBanner-02';
 
 const Signin = () => {
     return (
         <>
-            <PageHeder title='Login'></PageHeder>
+            <PageBanner02 title="Login" page="Shop" activePage='Login' href="/shop-1"></PageBanner02>
 
             <main className="wrapper">
                 <section className="login-page ">
