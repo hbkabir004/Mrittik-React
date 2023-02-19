@@ -44,62 +44,62 @@ const Header = () => {
 
                         <div className="mainnav d-none d-lg-block">
                             <ul className="main_menu">
-                                <li className="menu-item menu-item-has-children active"><a src="/">Home</a>
+                                <li className="menu-item menu-item-has-children active"><a href="/">Home</a>
                                     <ul className="sub-menu">
-                                        <li className="menu-item active"><a src="/">Home One</a></li>
-                                        <li className="menu-item"><a src="/home-2">Home Two</a></li>
-                                        <li className="menu-item"><a src="/home-3">Home Three</a></li>
-                                        <li className="menu-item"><a src="/home-4">Home Four</a></li>
-                                        <li className="menu-item"><a src="/home-5">Home Five</a></li>
-                                        <li className="menu-item"><a src="/home-6">Home Six</a></li>
-                                        <li className="menu-item"><a src="/home-7">Home Seven</a></li>
+                                        <li className="menu-item active"><a href="/">Home One</a></li>
+                                        <li className="menu-item"><a href="/home-2">Home Two</a></li>
+                                        <li className="menu-item"><a href="/home-3">Home Three</a></li>
+                                        <li className="menu-item"><a href="/home-4">Home Four</a></li>
+                                        <li className="menu-item"><a href="/home-5">Home Five</a></li>
+                                        <li className="menu-item"><a href="/home-6">Home Six</a></li>
+                                        <li className="menu-item"><a href="/home-7">Home Seven</a></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item menu-item-has-children"><a src="/">Gallery</a>
+                                <li className="menu-item menu-item-has-children"><a href="/">Gallery</a>
                                     <ul className="sub-menu">
-                                        <li className="menu-item"><a src="/project-1">Projects One</a></li>
-                                        <li className="menu-item"><a src="/project-2">Projects Two</a></li>
-                                        <li className="menu-item"><a src="/project-3">Peojects Three</a></li>
-                                        <li className="menu-item"><a src="/project-details">Peoject Details</a></li>
-                                        <li className="menu-item"><a src="/project-details-2">Peoject Details Two</a></li>
+                                        <li className="menu-item"><a href="/project-1">Projects One</a></li>
+                                        <li className="menu-item"><a href="/project-2">Projects Two</a></li>
+                                        <li className="menu-item"><a href="/project-3">Peojects Three</a></li>
+                                        <li className="menu-item"><a href="/project-details">Peoject Details</a></li>
+                                        <li className="menu-item"><a href="/project-details-2">Peoject Details Two</a></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item menu-item-has-children"><a src="/">Pages</a>
+                                <li className="menu-item menu-item-has-children"><a href="/">Pages</a>
                                     <ul className="sub-menu">
-                                        <li className="menu-item"><a src="/about">About Us</a></li>
-                                        <li className="menu-item menu-item-has-children"><a src="/">Team</a>
+                                        <li className="menu-item"><a href="/about">About Us</a></li>
+                                        <li className="menu-item menu-item-has-children"><a href="/">Team</a>
                                             <ul className="sub-menu">
-                                                <li className="menu-item"><a src="/team">Our Team</a></li>
-                                                <li className="menu-item"><a src="/team-details">Team Details</a></li>
+                                                <li className="menu-item"><a href="/team">Our Team</a></li>
+                                                <li className="menu-item"><a href="/team-details">Team Details</a></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item menu-item-has-children"><a src="/">Services</a>
+                                        <li className="menu-item menu-item-has-children"><a href="/">Services</a>
                                             <ul className="sub-menu">
-                                                <li className="menu-item"><a src="/service-1">Service One</a></li>
-                                                <li className="menu-item"><a src="/service-2">Service Two</a></li>
-                                                <li className="menu-item"><a src="/service-details">Service Details</a></li>
+                                                <li className="menu-item"><a href="/service-1">Service One</a></li>
+                                                <li className="menu-item"><a href="/service-2">Service Two</a></li>
+                                                <li className="menu-item"><a href="/service-details">Service Details</a></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item menu-item-has-children"><a src="/">Shop</a>
+                                        <li className="menu-item menu-item-has-children"><a href="/">Shop</a>
                                             <ul className="sub-menu">
-                                                <li className="menu-item"><a src="/shop-1">Shop One</a></li>
-                                                <li className="menu-item"><a src="/shop-2">Shop Two</a></li>
-                                                <li className="menu-item"><a src="/shop-3">Shop Three</a></li>
-                                                <li className="menu-item"><a src="/shop-product">Product Details</a></li>
-                                                <li className="menu-item"><a src="/shop-cart">Shop Cart</a></li>
-                                                <li className="menu-item"><a src="/shop-checkout">Checkout</a></li>
-                                                <li className="menu-item"><a src="/login">Login</a></li>
+                                                <li className="menu-item"><a href="/shop-1">Shop One</a></li>
+                                                <li className="menu-item"><a href="/shop-2">Shop Two</a></li>
+                                                <li className="menu-item"><a href="/shop-3">Shop Three</a></li>
+                                                <li className="menu-item"><a href="/shop-product">Product Details</a></li>
+                                                <li className="menu-item"><a href="/shop-cart">Shop Cart</a></li>
+                                                <li className="menu-item"><a href="/shop-checkout">Checkout</a></li>
+                                                <li className="menu-item"><a href="/login">Login</a></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item"><a src="/404">404 Page</a></li>
-                                        <li className="menu-item"><a src="/coming-soon">Coming Soon</a></li>
+                                        <li className="menu-item"><a href="/404">404 Page</a></li>
+                                        <li className="menu-item"><a href="/coming-soon">Coming Soon</a></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item"><a src="/contact">Contacts</a></li>
-                                <li className="menu-item menu-item-has-children"><a src="/">Blog</a>
+                                <li className="menu-item"><a href="/contact">Contacts</a></li>
+                                <li className="menu-item menu-item-has-children"><a href="/">Blog</a>
                                     <ul className="sub-menu">
-                                        <li className="menu-item"><a src="/blog">Blog</a></li>
-                                        <li className="menu-item"><a src="/blog-details">Blog Details</a></li>
+                                        <li className="menu-item"><a href="/blog">Blog</a></li>
+                                        <li className="menu-item"><a href="/blog-details">Blog Details</a></li>
                                     </ul>
                                 </li>
                             </ul>

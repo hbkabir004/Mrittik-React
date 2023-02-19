@@ -22,27 +22,27 @@ export const routes = createBrowserRouter([
                 element: <Home01/>,
             },
             {
-                path: '/home-02',
+                path: '/home-2',
                 element: <Home02/>,
             },
             {
-                path: '/home-03',
+                path: '/home-3',
                 element: <Home03/>,
             },
             {
-                path: '/home-04',
+                path: '/home-4',
                 element: <Home04/>,
             },
             {
-                path: '/home-05',
+                path: '/home-5',
                 element: <Home05/>,
             },
             {
-                path: '/home-06',
+                path: '/home-6',
                 element: <Home06/>,
             },
             {
-                path: '/home-07',
+                path: '/home-7',
                 element: <Home07/>,
             },
             {
