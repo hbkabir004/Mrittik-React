@@ -12,15 +12,15 @@ import Testimonials from '../containers/Testimonials';
 const Home01 = () => {
     return (
         <div className="wrapper">
-            <Sliders></Sliders>
-            <Services></Services>
-            <AboutContainer></AboutContainer>
-            <FunFacts></FunFacts>
-            <RunningProjects></RunningProjects>
-            <ProjectGallery></ProjectGallery>
-            <Testimonials></Testimonials>
-            <Blogs></Blogs>
-            <FormContainer></FormContainer>
+            <Sliders />
+            <Services />
+            <AboutContainer />
+            <FunFacts />
+            <RunningProjects />
+            <ProjectGallery />
+            <Testimonials />
+            <Blogs />
+            <FormContainer />
         </div>
     );
 };

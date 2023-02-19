@@ -3,7 +3,7 @@ import React from 'react';
 const SliderCard04 = (props) => {
     return (
         <div class="swiper-slide">
-            <div className="slider">
+            <div className="slider" style={{ backgroundImage: `url(${props.bgImg02})` }}>
                 <div class="container">
                     <div class="slide_content">
                         <div class="slide_content_wrapper mb-0 h-auto">
