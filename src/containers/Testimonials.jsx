@@ -50,13 +50,13 @@ const Testimonials = () => {
         });
     }, []);
     return (
-        <section class="testimonial box_padding pb-0">
+        <section className="testimonial box_padding pb-0">
             <SectionGridLines></SectionGridLines>
-            <div class="has_line_lg"></div>
-            <div class="testimonial_inner bg-black">
+            <div className="has_line_lg"></div>
+            <div className="testimonial_inner bg-black">
                 {/* <!-- Swiper Testimonial --> */}
-                <div class="swiper swiper_testimonial">
-                    <div class="swiper-wrapper">
+                <div className="swiper swiper_testimonial">
+                    <div className="swiper-wrapper">
                         <TestimonialSlide></TestimonialSlide>
                         <TestimonialSlide></TestimonialSlide>
                         <TestimonialSlide></TestimonialSlide>
@@ -67,7 +67,7 @@ const Testimonials = () => {
                         <TestimonialSlide></TestimonialSlide>
                         <TestimonialSlide></TestimonialSlide>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div className="swiper-pagination"></div>
                 </div>
             </div>
         </section>

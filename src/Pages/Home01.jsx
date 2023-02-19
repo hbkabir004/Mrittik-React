@@ -3,6 +3,7 @@ import AboutContainer from '../containers/AboutContainer';
 import Blogs from '../containers/Blogs';
 import FormContainer from '../containers/FormContainer';
 import FunFacts from '../containers/FunFacts';
+import ProjectGallery from '../containers/ProjectGallery';
 import RunningProjects from '../containers/RunningProjects';
 import Services from '../containers/Services';
 import Sliders from '../containers/Sliders';
@@ -16,6 +17,7 @@ const Home01 = () => {
             <AboutContainer></AboutContainer>
             <FunFacts></FunFacts>
             <RunningProjects></RunningProjects>
+            <ProjectGallery></ProjectGallery>
             <Testimonials></Testimonials>
             <Blogs></Blogs>
             <FormContainer></FormContainer>

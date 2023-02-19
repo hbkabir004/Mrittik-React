@@ -9,6 +9,39 @@ const Video = () => {
             $(".ytube_video").addClass("play");
             $("#ytvideo")[0].src += "?autoplay=1";
         });
+
+        /*================================ Video Popup ==============================*/
+        $('[data-fancybox="video"]').fancybox({
+            arrows: true,
+            animationEffect: [
+                //"false",            - disable
+                //"fade",
+                //"slide",
+                //"circular",
+                //"tube",
+                //"zoom-in-out",
+                "rotate"
+            ],
+            transitionEffect: [
+                //"false",            - disable
+                //"fade",
+                //"slide",
+                "circular",
+                //"tube",
+                //"zoom-in-out",
+                //"rotate"
+            ],
+            buttons: [
+                "zoom",
+                //"share",
+                //"slideShow",
+                "fullScreen",
+                //"download",
+                //"thumbs",
+                "close"
+            ],
+            infobar: false,
+        });
     }, []);
     return (
         <div className="video-block" data-aos="zoom-in" data-aos-duration="500">

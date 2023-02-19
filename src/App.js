@@ -1,6 +1,5 @@
 import { RouterProvider } from 'react-router-dom';
-import './App.css';
-import './assets/css/cursor-effect.css';
+// import './App.css';
 import './assets/css/style.css';
 import './assets/css/swiper-bundle.min.css';
 import Loader from './Pages/Shared/Loader';
