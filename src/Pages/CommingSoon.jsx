@@ -54,7 +54,7 @@ const CommingSoon = () => {
                                     </form>
 
                                     <div className="btn_group">
-                                        <a href="about.html" className="btn black">About Us</a>
+                                        <a href="/about" className="btn black">About Us</a>
                                     </div>
                                 </div>
                             </div>

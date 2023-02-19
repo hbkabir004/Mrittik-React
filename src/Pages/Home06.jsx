@@ -1,9 +1,14 @@
 import React from 'react';
+import ClientsContainer03 from '../containers/ClientsContainer03';
+import Projects03 from '../containers/Projects03';
+import Sliders06 from '../containers/Sliders06';
 
 const Home06 = () => {
     return (
-        <div>
-
+        <div className="wrapper">
+            <Sliders06 />
+            <Projects03 />
+            <ClientsContainer03 />
         </div>
     );
 };

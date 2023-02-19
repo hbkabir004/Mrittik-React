@@ -12,7 +12,7 @@ const Projects04 = () => {
 
                 <ProjectList />
 
-                <div className="details_link"><a href="project-details.html"><span className="link_text">View Details</span> <span className="link_icon"><span className="line"></span> <span className="circle"></span><span className="dot"></span></span></a></div>
+                <div className="details_link"><a href="/project-details"><span className="link_text">View Details</span> <span className="link_icon"><span className="line"></span> <span className="circle"></span><span className="dot"></span></span></a></div>
             </div>
         </section>
     );

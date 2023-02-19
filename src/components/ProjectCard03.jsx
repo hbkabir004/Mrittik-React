@@ -6,7 +6,7 @@ const ProjectCard03 = (props) => {
             <img className="item_image" src={props.img} alt="" />
             <div className="works-info">
                 <div className="label-text">
-                    <h5><a href="project-details.html">{props.details}</a></h5>
+                    <h5><a href="/project-details">{props.details}</a></h5>
                     <h6><a href="#">Club House</a></h6>
                 </div>
             </div>

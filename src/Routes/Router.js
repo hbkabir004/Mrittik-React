@@ -8,6 +8,7 @@ import Home03 from "../Pages/Home03";
 import Home04 from "../Pages/Home04";
 import Home05 from "../Pages/Home05";
 import Home06 from "../Pages/Home06";
+import Home07 from "../Pages/Home07";
 import Signin from "../Pages/Signin";
 import Team from "../Pages/Team";
 
@@ -39,6 +40,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/home-06',
                 element: <Home06/>,
+            },
+            {
+                path: '/home-07',
+                element: <Home07/>,
             },
             {
                 path: '/signin',

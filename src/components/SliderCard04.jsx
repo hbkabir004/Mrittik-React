@@ -8,7 +8,7 @@ const SliderCard04 = (props) => {
                     <div class="slide_content">
                         <div class="slide_content_wrapper mb-0 h-auto">
                             <div class="slide_content_inner">
-                                <h4><a href="project-details.html" class="text-white text-uppercase">{props.title}</a></h4>
+                                <h4><a href="/project-details" class="text-white text-uppercase">{props.title}</a></h4>
                                 <div class="details_link">
                                     <a href="/about">
                                         <span class="link_text">Mrittik Architecture Details - </span>
