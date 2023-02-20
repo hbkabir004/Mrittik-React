@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
+import Blog from "../Pages/Blog";
 import CommingSoon from "../Pages/CommingSoon";
+import Contact from "../Pages/Contact";
 import ErrorPage from "../Pages/ErrorPage";
 import Home01 from "../Pages/Home01";
 import Home02 from "../Pages/Home02";
@@ -56,6 +58,14 @@ export const routes = createBrowserRouter([
             {
                 path: '/team',
                 element: <Team/>,
+            },
+            {
+                path: '/contact',
+                element: <Contact/>,
+            },
+            {
+                path: '/blog',
+                element: <Blog/>,
             },
             {
                 path: '*',

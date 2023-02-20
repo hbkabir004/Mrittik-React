@@ -10,7 +10,9 @@ const FormContainer = () => {
             <div className="container">
                 <div className="row justify-content-between">
                     <FormText></FormText>
-                    <Form></Form>
+                    <div className="col-lg-6">
+                        <Form></Form>
+                    </div>
                 </div>
                 <ClientsLogo></ClientsLogo>
             </div>
