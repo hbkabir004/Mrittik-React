@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Blog from "../Pages/Blog";
+import BlogDetails from "../Pages/BlogDetails";
 import CommingSoon from "../Pages/CommingSoon";
 import Contact from "../Pages/Contact";
 import ErrorPage from "../Pages/ErrorPage";
@@ -66,6 +67,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog/>,
+            },
+            {
+                path: '/blog-details',
+                element: <BlogDetails/>,
             },
             {
                 path: '*',
