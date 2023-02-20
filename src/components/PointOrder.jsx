@@ -1,11 +1,11 @@
 import React from 'react';
 
-const PointOrder = () => {
+const PointOrder = (props) => {
     return (
         <ul className="point_order">
-            <li>The talent at Mrittik runs wide and deep. Across many markets, geographies & typologies.</li>
-            <li>Our team members are some of the finest professionals in the industry.</li>
-            <li>Organized to deliver the most specialized service possible and enriched by the depth.</li>
+            <li>{props.li1}</li>
+            <li>{props.li2}</li>
+            <li>{props.li3}</li>
         </ul>
     );
 };

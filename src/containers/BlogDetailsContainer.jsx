@@ -31,7 +31,7 @@ const BlogDetailsContainer = () => {
                                         </h6>
                                         <Paragraph text='We design with people in mind and use every expertise at our disposal.Our practice connects communities and is committed to the stewardship of place, people, and the environment.' />
 
-                                        <PointOrder />
+                                        <PointOrder li1='The talent at Mrittik runs wide and deep. Across many markets, geographies & typologies.' li2='Our team members are some of the finest professionals in the industry.' li3='Organized to deliver the most specialized service possible and enriched by the depth.' />
 
                                         <Paragraph text='Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture, space planning and programming. Our portfolio of completed work includes highly acclaimed and award-winning projects for clients around the country.' />
 
