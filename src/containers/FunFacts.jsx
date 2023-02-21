@@ -24,7 +24,7 @@ const FunFacts = (props) => {
         });
     }, []);
     return (
-        <section className="funfacts bg_1" id="funfacts">
+        <section className={props.className} id="funfacts">
             <div className="container">
                 <div className="row">
                     <div className="col">

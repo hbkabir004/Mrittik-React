@@ -15,7 +15,7 @@ const Home01 = () => {
             <Sliders />
             <Services />
             <AboutContainer />
-            <FunFacts />
+            <FunFacts className='funfacts bg_1' />
             <RunningProjects />
             <ProjectGallery />
             <Testimonials />
