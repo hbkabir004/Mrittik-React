@@ -6,6 +6,7 @@ import Paragraph from '../components/Paragraph';
 import PointOrder from '../components/PointOrder';
 import PostFooter from '../components/PostFooter';
 import SideBar from '../components/SideBar';
+import WidgetTitle from '../components/WidgetTitle';
 
 const BlogDetailsContainer = () => {
     return (
@@ -25,10 +26,8 @@ const BlogDetailsContainer = () => {
                                     <div className="fulltext">
                                         <BlockGallery className='block-gallery mb-0' img='images/blog/details/1.jpg' />
 
-                                        <h6 className="widget-title">
-                                            Project Concept
-                                            <span className="title-line"></span>
-                                        </h6>
+                                        <WidgetTitle title='Project Features' />
+
                                         <Paragraph text='We design with people in mind and use every expertise at our disposal.Our practice connects communities and is committed to the stewardship of place, people, and the environment.' />
 
                                         <PointOrder li1='The talent at Mrittik runs wide and deep. Across many markets, geographies & typologies.' li2='Our team members are some of the finest professionals in the industry.' li3='Organized to deliver the most specialized service possible and enriched by the depth.' />

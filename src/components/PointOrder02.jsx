@@ -2,10 +2,12 @@ import React from 'react';
 
 const PointOrder02 = (props) => {
     return (
-        <ul className="point_order">
-            {/* <li>{props.li1} <span>{props.span1}</span></li>
-            <li>{props.li2} <span>{props.span1}</span></li>
-            <li>{props.li3} <span>{props.span2}</span></li> */}
+        <ul>
+            <li><a href={props.href}>{props.li1}</a></li>
+            <li className="active"><a href={props.href}>{props.li2}</a></li>
+            <li><a href={props.href}>{props.li3}</a></li>
+            <li><a href={props.href}>{props.li4}</a></li>
+            <li><a href={props.href}>{props.li5}</a></li>
         </ul>
     );
 };

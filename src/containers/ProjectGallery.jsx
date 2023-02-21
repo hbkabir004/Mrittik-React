@@ -173,45 +173,45 @@ const ProjectGallery = () => {
                 <div className="grid gutter-20 clearfix">
                     <div className="grid-sizer"></div>
                     <div className="grid-item residences width-100">
-                        <ProjectCard img="images/portfolio/packery/1.jpg" details="California young menz club"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/1.jpg" details="California young menz club" />
                     </div>
                     <div className="grid-item interiors width-50">
-                        <ProjectCard img="images/portfolio/packery/2.jpg" details="Sunlight in the Room"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/2.jpg" details="Sunlight in the Room" />
 
                     </div>
                     <div className="grid-item residences width-50">
-                        <ProjectCard img="images/portfolio/packery/3.jpg" details="Find your own self invintage lake house"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/3.jpg" details="Find your own self invintage lake house" />
 
                     </div>
                     <div className="grid-item landscape exterior width-100">
-                        <ProjectCard img="images/portfolio/packery/4.jpg" details="Well decor house in Sydney"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/4.jpg" details="Well decor house in Sydney" />
 
                     </div>
                     <div className="grid-item landscape width-50">
-                        <ProjectCard img="images/portfolio/packery/5.jpg" details="Huge large area Bedroom"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/5.jpg" details="Huge large area Bedroom" />
 
                     </div>
                     <div className="grid-item interiors width-50">
-                        <ProjectCard img="images/portfolio/packery/6.jpg" details="Clean water in the swiming pool"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/6.jpg" details="Clean water in the swiming pool" />
 
                     </div>
                     <div className="grid-item interiors width-100">
-                        <ProjectCard img="images/portfolio/packery/7.jpg" details="California young menz club"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/7.jpg" details="California young menz club" />
 
                     </div>
                     <div className="grid-item exterior width-100">
-                        <ProjectCard img="images/portfolio/packery/8.jpg" details="Newyork golf club house"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/8.jpg" details="Newyork golf club house" />
                     </div>
                     <div className="grid-item interiors width-50">
-                        <ProjectCard img="images/portfolio/packery/2.jpg" details="California young menz club"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/2.jpg" details="California young menz club" />
 
                     </div>
                     <div className="grid-item residences width-50">
-                        <ProjectCard img="images/portfolio/packery/3.jpg" details="California young menz club"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/3.jpg" details="California young menz club" />
 
                     </div>
                     <div className="grid-item landscape exterior width-100">
-                        <ProjectCard img="images/portfolio/packery/4.jpg" details="California young menz club"></ProjectCard>
+                        <ProjectCard img="images/portfolio/packery/4.jpg" details="California young menz club" />
 
                     </div>
                 </div>

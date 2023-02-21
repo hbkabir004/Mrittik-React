@@ -13,6 +13,9 @@ import Home04 from "../Pages/Home04";
 import Home05 from "../Pages/Home05";
 import Home06 from "../Pages/Home06";
 import Home07 from "../Pages/Home07";
+import Service01 from "../Pages/Service01";
+import Service02 from "../Pages/Service02";
+import ServiceDetails from "../Pages/ServiceDetails";
 import Signin from "../Pages/Signin";
 import Team from "../Pages/Team";
 import TeamDetails from "../Pages/TeamDetails";
@@ -49,6 +52,18 @@ export const routes = createBrowserRouter([
             {
                 path: '/home-7',
                 element: <Home07/>,
+            },
+            {
+                path: '/service-1',
+                element: <Service01/>,
+            },
+            {
+                path: '/service-2',
+                element: <Service02/>,
+            },
+            {
+                path: '/service-details',
+                element: <ServiceDetails/>,
             },
             {
                 path: '/signin',
