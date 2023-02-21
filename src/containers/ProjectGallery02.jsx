@@ -1,14 +1,9 @@
 import Isotope from 'isotope-layout';
 import React, { useEffect, useState } from 'react';
-import LoadmoreBtn from '../components/LoadmoreBtn';
-import PageHeder from '../components/PageHeder';
-import Paragraph from '../components/Paragraph';
-import ProjectCard from '../components/ProjectCard';
-import SectionGridLines from '../components/SectionGridLines';
-import SectionHeader from '../components/SectionHeader';
+import ProjectCard03 from '../components/ProjectCard03';
+import ProjectCard3_2 from '../components/ProjectCard03_2';
 
-
-const ProjectGallery = (props) => {
+const ProjectGallery02 = (props) => {
     const [filterKey, setFilterKey] = useState('*')
 
     useEffect(() => {
@@ -136,26 +131,9 @@ const ProjectGallery = (props) => {
 
     const handleFilterKeyChange = key => () => setFilterKey(key)
 
-
     return (
-        <section className="projects packery">
-            <SectionGridLines></SectionGridLines>
-            <div className="large_font">
-                <SectionHeader title="Gallery"></SectionHeader>
-            </div>
+        <section className="projects masonry bg-transparent effect-tilt">
             <div className="container">
-                <div className="section-header text-center has_line">
-                    <PageHeder title="Project Gallery"></PageHeder>
-                    <div className="section-desc row align-items-center justify-content-center">
-                        <div className="col-lg-6 text-end">
-                            <Paragraph text="We will continue to grow and evolve Mrittik for the betterment of our clients and our people. Vision includes the continual expansion."></Paragraph>
-                        </div>
-                        <div className="col-lg-6 text-start">
-                            <Paragraph text="We will continue to grow and evolve Mrittik for the betterment of our clients and our people. Vision includes the continual expansion."></Paragraph>
-                        </div>
-                    </div>
-                </div>
-
                 <div className="portfolio-filters-content">
                     <div className="filters-button-group">
                         <button className="button is-checked" onClick={handleFilterKeyChange('*')}>All <sup className="filter-count"></sup></button>
@@ -165,55 +143,60 @@ const ProjectGallery = (props) => {
                         <button className="button" onClick={handleFilterKeyChange('landscape')}>Landscape <sup className="filter-count"></sup></button>
                     </div>
                 </div>
-                <div className="grid gutter-20 clearfix">
+
+                <div className="grid grid-2 gutter-90 clearfix">
                     <div className="grid-sizer"></div>
-                    {/* <div className="grid-item residences width-100">
-                        <ProjectCard img="images/portfolio/packery/1.jpg" details="California young menz club" />
-                    </div> */}
-                    <div className="grid-item interiors width-50">
-                        <ProjectCard img="images/portfolio/packery/2.jpg" details="Sunlight in the Room" />
+                    <div className="grid-item residences">
+                        <ProjectCard03 img='images/portfolio/1.jpg' />
+                    </div>
+                    <div className="grid-item interiors">
+                        <ProjectCard3_2 img='images/portfolio/2.jpg' />
+                    </div>
+                    <div className="grid-item residences">
+                        <ProjectCard3_2 img='images/portfolio/3.jpg' />
+                    </div>
+                    <div className="grid-item landscape exterior">
+                        <ProjectCard3_2 img='images/portfolio/4.jpg' />
 
                     </div>
-                    <div className="grid-item residences width-50">
-                        <ProjectCard img="images/portfolio/packery/3.jpg" details="Find your own self invintage lake house" />
+                    <div className="grid-item landscape">
+                        <ProjectCard3_2 img='images/portfolio/5.jpg' />
 
                     </div>
-                    {/* <div className="grid-item landscape exterior width-100">
-                        <ProjectCard img="images/portfolio/packery/4.jpg" details="Well decor house in Sydney" />
-
-                    </div> */}
-                    <div className="grid-item landscape width-50">
-                        <ProjectCard img="images/portfolio/packery/5.jpg" details="Huge large area Bedroom" />
+                    <div className="grid-item interiors">
+                        <ProjectCard3_2 img='images/portfolio/6.jpg' />
 
                     </div>
-                    <div className="grid-item interiors width-50">
-                        <ProjectCard img="images/portfolio/packery/6.jpg" details="Clean water in the swiming pool" />
+                    <div className="grid-item interiors">
+                        <ProjectCard3_2 img='images/portfolio/7.jpg' />
 
                     </div>
-                    {/* <div className="grid-item interiors width-100">
-                        <ProjectCard img="images/portfolio/packery/7.jpg" details="California young menz club" />
-
-                    </div> */}
-                    {/* <div className="grid-item exterior width-100">
-                        <ProjectCard img="images/portfolio/packery/8.jpg" details="Newyork golf club house" />
-                    </div> */}
-                    <div className="grid-item interiors width-50">
-                        <ProjectCard img="images/portfolio/packery/2.jpg" details="California young menz club" />
+                    <div className="grid-item residences">
+                        <ProjectCard3_2 img='images/portfolio/8.jpg' />
+                    </div>
+                    <div className="grid-item exterior">
+                        <ProjectCard3_2 img='images/portfolio/1.jpg' />
 
                     </div>
-                    <div className="grid-item residences width-50">
-                        <ProjectCard img="images/portfolio/packery/3.jpg" details="California young menz club" />
+                    <div className="grid-item interiors">
+                        <ProjectCard3_2 img='images/portfolio/2.jpg' />
 
                     </div>
-                    {/* <div className="grid-item landscape exterior width-100">
-                        <ProjectCard img="images/portfolio/packery/4.jpg" details="California young menz club" />
+                    <div className="grid-item residences">
+                        <ProjectCard3_2 img='images/portfolio/2.jpg' />
 
-                    </div> */}
+                    </div>
+                    <div className="grid-item landscape exterior">
+                        <ProjectCard3_2 img='images/portfolio/3.jpg' />
+
+                    </div>
                 </div>
-                <LoadmoreBtn text={props.text} className={props.className} />
+                <div className="btn_group w-100 text-center">
+                    <button id="load-more" className="btn gray">Load More</button>
+                </div>
             </div>
         </section>
     );
 };
 
-export default ProjectGallery;
+export default ProjectGallery02;

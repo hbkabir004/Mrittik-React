@@ -13,6 +13,11 @@ import Home04 from "../Pages/Home04";
 import Home05 from "../Pages/Home05";
 import Home06 from "../Pages/Home06";
 import Home07 from "../Pages/Home07";
+import Project01 from "../Pages/Project01";
+import Project02 from "../Pages/Project02";
+import Project03 from "../Pages/Project03";
+import ProjectDetails from "../Pages/ProjectDetails";
+import ProjectDetails02 from "../Pages/ProjectDetails02";
 import Service01 from "../Pages/Service01";
 import Service02 from "../Pages/Service02";
 import ServiceDetails from "../Pages/ServiceDetails";
@@ -52,6 +57,26 @@ export const routes = createBrowserRouter([
             {
                 path: '/home-7',
                 element: <Home07/>,
+            },
+            {
+                path: '/project-1',
+                element: <Project01/>,
+            },
+            {
+                path: '/project-2',
+                element: <Project02/>,
+            },
+            {
+                path: '/project-3',
+                element: <Project03/>,
+            },
+            {
+                path: '/project-details',
+                element: <ProjectDetails/>,
+            },
+            {
+                path: '/project-details-2',
+                element: <ProjectDetails02/>,
             },
             {
                 path: '/service-1',

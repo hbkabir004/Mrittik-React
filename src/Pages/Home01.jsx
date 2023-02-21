@@ -17,7 +17,7 @@ const Home01 = () => {
             <AboutContainer />
             <FunFacts className='funfacts bg_1' />
             <RunningProjects />
-            <ProjectGallery />
+            <ProjectGallery text='Discover All Projects' className='btn olive w-100' />
             <Testimonials />
             <Blogs />
             <FormContainer />
