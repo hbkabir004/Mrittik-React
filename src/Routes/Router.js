@@ -14,6 +14,7 @@ import Home06 from "../Pages/Home06";
 import Home07 from "../Pages/Home07";
 import Signin from "../Pages/Signin";
 import Team from "../Pages/Team";
+import TeamDetails from "../Pages/TeamDetails";
 
 export const routes = createBrowserRouter([
     {
@@ -59,6 +60,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/team',
                 element: <Team/>,
+            },
+            {
+                path: '/team-details',
+                element: <TeamDetails/>,
             },
             {
                 path: '/contact',

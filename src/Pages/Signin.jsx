@@ -1,5 +1,5 @@
 import React from 'react';
-import PageBanner02 from '../containers/PageBanner-02';
+import PageBanner02 from '../containers/PageBanner02';
 
 const Signin = () => {
     return (

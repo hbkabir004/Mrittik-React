@@ -1,4 +1,8 @@
 import React from 'react';
+import SocialMedia from '../components/SocialMedia';
+import TeamProjectCard from '../components/TeamProjectCard';
+import WidgetTitle from '../components/WidgetTitle';
+import Bio from './Bio';
 import EducationalQualification from './EducationalQualification';
 
 const TeamDetailsContainer = () => {
@@ -18,16 +22,9 @@ const TeamDetailsContainer = () => {
                             <div className="team-member-information">
                                 <h5 className="name text-white">Benjamin Brook</h5>
                                 <h6 className="designation text-uppercase text-olive">Architect</h6>
-                                <div className="bio">At vero eos et accusamus et iusto odio digni is simos ducimus qui blanditiis praesentium volu ptatum dele niti atque corryi upti quos. dolores et quas molestias. At vero eos et accusamus et iusto.</div>
-                                <div className="social-media">
-                                    <ul>
-                                        <li><a href="#"><i className="bi bi-facebook"></i></a></li>
-                                        <li><a href="#"><i className="bi bi-twitter"></i></a></li>
-                                        <li><a href="#"><i className="bi bi-instagram"></i></a></li>
-                                        <li><a href="#"><i className="bi bi-youtube"></i></a></li>
-                                        <li><a href="#"><i className="bi bi-pinterest"></i></a></li>
-                                    </ul>
-                                </div>
+                                <Bio className='bio' text='At vero eos et accusamus et iusto odio digni is simos ducimus qui blanditiis praesentium volu ptatum dele niti atque corryi upti quos. dolores et quas molestias. At vero eos et accusamus et iusto.' />
+
+                                <SocialMedia />
 
                                 <EducationalQualification title='Education & Qualification' li1='Graduation In Architecture From' li2='Diploma In Landscape Design From' span1='YALE University' li3='Diploma In Landscape Design From' span2='JNU' />
 
@@ -42,57 +39,18 @@ const TeamDetailsContainer = () => {
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="project">
-                                    <h6 className="widget-title text-white mb-3">
-                                        Latest Projects
-                                        <span className="title-line"></span>
-                                    </h6>
-                                    <div className="text text-white">At vero eos et accusamus et iusto odio digni
-                                        is simos ducimus qui blanditiis praesentium
-                                        volu ptatum dele niti atque corryi upti quos.
-                                        dolores et quas molestias. At vero eos et
-                                        accusamus et iusto.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-6">
-                                <div className="project">
-                                    <a href="/project-details">
-                                        <img src="images/portfolio/latest/1.jpg" alt="img" />
-                                    </a>
-                                </div>
-                            </div>
+                                    <WidgetTitle title='Latest Projects' className='widget-title text-white mb-3' />
 
-                            <div className="col-lg-4 col-md-6 col-sm-6">
-                                <div className="project">
-                                    <a href="/project-details">
-                                        <img src="images/portfolio/latest/2.jpg" alt="img" />
-                                    </a>
-                                </div>
-                            </div>
+                                    <Bio className='text text-white' text='At vero eos et accusamus et iusto odio digni is simos ducimus qui blanditiis praesentium volu ptatum dele niti atque corryi upti quos. dolores et quas molestias. At vero eos et accusamus et iusto.' />
 
-                            <div className="col-lg-4 col-md-6 col-sm-6">
-                                <div className="project">
-                                    <a href="/project-details">
-                                        <img src="images/portfolio/latest/3.jpg" alt="img" />
-                                    </a>
                                 </div>
                             </div>
+                            <TeamProjectCard img='images/portfolio/latest/1.jpg' />
+                            <TeamProjectCard img='images/portfolio/latest/2.jpg' />
+                            <TeamProjectCard img='images/portfolio/latest/3.jpg' />
+                            <TeamProjectCard img='images/portfolio/latest/4.jpg' />
+                            <TeamProjectCard img='images/portfolio/latest/5.jpg' />
 
-                            <div className="col-lg-4 col-md-6 col-sm-6">
-                                <div className="project">
-                                    <a href="/project-details">
-                                        <img src="images/portfolio/latest/4.jpg" alt="img" />
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 col-sm-6">
-                                <div className="project">
-                                    <a href="/project-details">
-                                        <img src="images/portfolio/latest/5.jpg" alt="img" />
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
