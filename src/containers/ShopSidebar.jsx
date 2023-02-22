@@ -1,10 +1,25 @@
 import React, { useState } from 'react';
+import '../assets/plugins/price_range/script';
 import CategoryItem from '../components/CategoryItem';
 import WidgetTitle from '../components/WidgetTitle';
 import WidgetSearch from './WidgetSearch';
-
 const ShopSidebar = () => {
     const [categories, setCategories] = useState([]);
+    // useEffect(() => {
+    //     $("#slider-range").slider({
+    //         range: true,
+    //         min: 10,
+    //         max: 1500,
+    //         values: [100, 500],
+    //         slide: function (event, ui) {
+    //             $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+    //         }
+    //     });
+
+    //     $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+    //         " - $" + $("#slider-range").slider("values", 1));
+
+    // }, []);
 
     return (
         <div className="shop_sidebar">
@@ -41,7 +56,7 @@ const ShopSidebar = () => {
                 <div className="sidebar_price_filter">
                     <div id="slider-range" className="range-bar"></div>
                     <div className="range-value d-flex justify-content-end">
-                        <span>Price:</span> <input type="text" id="amount" readonly />
+                        <span>Price:</span> <input type="text" id="amount" readOnly />
                     </div>
                 </div>
             </div>

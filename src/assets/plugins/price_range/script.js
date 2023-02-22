@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(function() {
 	$( "#slider-range" ).slider({
 		range: true,

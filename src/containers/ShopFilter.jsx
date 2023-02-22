@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import '../assets/plugins/select2/css/select2.min.css';
+// import '../assets/plugins/select2/js/select2.js';
 
 const ShopFilter = () => {
+    useEffect(() => {
+        // Select 2
+        // $('.basic_select').select2({});
+
+    }, []);
     return (
         <div className="shop_filtering_method d-flex align-items-center flex-wrap">
             <div className="view_type_wrapper d-flex align-items-center">
