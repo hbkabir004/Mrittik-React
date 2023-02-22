@@ -21,6 +21,7 @@ import ProjectDetails02 from "../Pages/ProjectDetails02";
 import Service01 from "../Pages/Service01";
 import Service02 from "../Pages/Service02";
 import ServiceDetails from "../Pages/ServiceDetails";
+import Shop01 from "../Pages/Shop01";
 import Signin from "../Pages/Signin";
 import Team from "../Pages/Team";
 import TeamDetails from "../Pages/TeamDetails";
@@ -77,6 +78,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/project-details-2',
                 element: <ProjectDetails02/>,
+            },
+            {
+                path: '/shop-1',
+                element: <Shop01/>,
             },
             {
                 path: '/service-1',
