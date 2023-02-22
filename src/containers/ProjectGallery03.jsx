@@ -2,7 +2,7 @@ import Isotope from 'isotope-layout';
 import React, { useEffect, useState } from 'react';
 import ProjectCard04 from '../components/ProjectCard04';
 
-const ProjectGallery03 = (props) => {
+const ProjectGallery03 = () => {
     const [filterKey, setFilterKey] = useState('*')
 
     useEffect(() => {
@@ -38,12 +38,12 @@ const ProjectGallery03 = (props) => {
         // }
         // updateFilterCount();
 
-        // // change is-checked class on buttons
+        // // change is-checked className on buttons
         // $('.filters-button-group').each(function (i, buttonGroup) {
         //     var $buttonGroup = $(buttonGroup);
         //     $buttonGroup.on('click', 'button', function () {
-        //         $buttonGroup.find('.is-checked').removeClass('is-checked');
-        //         $(this).addClass('is-checked');
+        //         $buttonGroup.find('.is-checked').removeClassName('is-checked');
+        //         $(this).addClassName('is-checked');
         //     });
         // });
 
@@ -58,12 +58,12 @@ const ProjectGallery03 = (props) => {
         // var counter = initShow;
         // loadMore(initShow);
         // function loadMore(toShow) {
-        //     $grid.find(".hidden").removeClass("hidden");
+        //     $grid.find(".hidden").removeClassName("hidden");
 
         //     var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function (item) {
         //         return item.element;
         //     });
-        //     $(hiddenElems).addClass('hidden');
+        //     $(hiddenElems).addClassName('hidden');
         //     $grid.Isotope('layout');
 
         //     if (hiddenElems.length == 0) {
@@ -75,7 +75,7 @@ const ProjectGallery03 = (props) => {
         // }
 
         // //append load more button
-        // //$grid.after('<button id="load-more" class="btn btn-dark">Load More</button>');
+        // //$grid.after('<button id="load-more" className="btn btn-dark">Load More</button>');
         // //when load more button clicked
         // $("#load-more").click(function () {
         //     if ($('.filters-button-group').data('clicked')) {
@@ -131,48 +131,92 @@ const ProjectGallery03 = (props) => {
     const handleFilterKeyChange = key => () => setFilterKey(key)
 
     return (
-        <section className="projects masonry bg-transparent effect-tilt">
-            <div className="container">
-                <div className="portfolio-filters-content">
-                    <div className="filters-button-group">
-                        <button className="button is-checked" onClick={handleFilterKeyChange('*')}>All <sup className="filter-count"></sup></button>
-                        <button className="button" onClick={handleFilterKeyChange('exterior')}>Exterior <sup className="filter-count"></sup></button>
-                        <button className="button" onClick={handleFilterKeyChange('residences')}>Residences <sup className="filter-count"></sup></button>
-                        <button className="button" onClick={handleFilterKeyChange('interiors')}>Interiors <sup className="filter-count"></sup></button>
-                        <button className="button" onClick={handleFilterKeyChange('landscape')}>Landscape <sup className="filter-count"></sup></button>
+        // <section classNameName="projects masonry bg-transparent effect-tilt">
+        //     <div classNameName="container">
+        //         <div classNameName="portfolio-filters-content">
+        //             <div classNameName="filters-button-group">
+        //                 <button classNameName="button is-checked" onClick={handleFilterKeyChange('*')}>All <sup classNameName="filter-count"></sup></button>
+        //                 <button classNameName="button" onClick={handleFilterKeyChange('exterior')}>Exterior <sup classNameName="filter-count"></sup></button>
+        //                 <button classNameName="button" onClick={handleFilterKeyChange('residences')}>Residences <sup classNameName="filter-count"></sup></button>
+        //                 <button classNameName="button" onClick={handleFilterKeyChange('interiors')}>Interiors <sup classNameName="filter-count"></sup></button>
+        //                 <button classNameName="button" onClick={handleFilterKeyChange('landscape')}>Landscape <sup classNameName="filter-count"></sup></button>
+        //             </div>
+        //         </div>
+
+        //         <div classNameName="grid gutter-20 grid-1 clearfix">
+        //             <div classNameName="grid-sizer"></div>
+        //             <div classNameName="grid-item residences">
+        //                 <ProjectCard04 img='images/portfolio/grid-list/1.jpg' details='California young menz club' />
+        //             </div>
+        //             <div classNameName="grid-item interiors">
+        //                 <ProjectCard04 img='images/portfolio/grid-list/2.jpg' details='Sunlight in the Room' />
+        //             </div>
+        //             <div classNameName="grid-item residences">
+        //                 <ProjectCard04 img='images/portfolio/grid-list/3.jpg' details='Find your own self invintage lake house' />
+        //             </div>
+        //             <div classNameName="grid-item landscape exterior">
+        //                 <ProjectCard04 img='images/portfolio/grid-list/4.jpg' details='Well decor house in Sydney' />
+
+        //             </div>
+        //             <div classNameName="grid-item landscape">
+        //                 <ProjectCard04 img='images/portfolio/grid-list/5.jpg' details='Huge large area Bedroom' />
+
+        //             </div>
+        //             <div classNameName="grid-item interiors">
+        //                 <ProjectCard04 img='images/portfolio/grid-list/6.jpg' details='Clean water in the swiming pool' />
+
+        //             </div>
+
+        //         </div>
+        //         <div classNameName="btn_group w-100 text-center">
+        //             <button id="load-more" classNameName="btn gray">Load More</button>
+        //         </div>
+        //     </div>
+        // </section>
+
+        <main className="wrapper">
+            {/* <!-- Scroll Progress --> */}
+
+            <section className="projects packery bg-transparent project-grid-list">
+                <div className="container">
+                    <div className="portfolio-filters-content">
+                        <div className="filters-button-group">
+                            <button className="button is-checked" onClick={handleFilterKeyChange('*')}>All <sup className="filter-count"></sup></button>
+                            <button className="button" onClick={handleFilterKeyChange('exterior')}>Exterior <sup className="filter-count"></sup></button>
+                            <button className="button" onClick={handleFilterKeyChange('residences')}>Residences <sup className="filter-count"></sup></button>
+                            <button className="button" onClick={handleFilterKeyChange('interiors')}>Interiors <sup className="filter-count"></sup></button>
+                            <button className="button" onClick={handleFilterKeyChange('landscape')}>Landscape <sup className="filter-count"></sup></button>
+                        </div>
                     </div>
+
+                    <div className="grid gutter-20 grid-1 clearfix">
+                        <div className="grid-sizer"></div>
+                        <div className="grid-item residences">
+                            <ProjectCard04 img='images/portfolio/grid-list/1.jpg' details='California young menz club' />
+                        </div>
+                        <div className="grid-item interiors">
+                            <ProjectCard04 img='images/portfolio/grid-list/2.jpg' details='Sunlight in the Room' />
+                        </div>
+                        <div className="grid-item residences">
+                            <ProjectCard04 img='images/portfolio/grid-list/3.jpg' details='Find your own self invintage lake house' />
+                        </div>
+                        <div className="grid-item landscape exterior">
+                            <ProjectCard04 img='images/portfolio/grid-list/4.jpg' details='Well decor house in Sydney' />
+                        </div>
+                        <div className="grid-item landscape">
+                            <ProjectCard04 img='images/portfolio/grid-list/5.jpg' details='Huge large area Bedroom' />
+                        </div>
+                        <div className="grid-item interiors">
+                            <ProjectCard04 img='images/portfolio/grid-list/6.jpg' details='Clean water in the swiming pool' />
+
+                        </div>
+                    </div>
+                    {/* <div className="btn_group w-100 text-center">
+                        <button id="load-more" className="btn gray">Load More</button>
+                    </div> */}
                 </div>
-
-                <div className="grid gutter-20 grid-1 clearfix">
-                    <div className="grid-sizer"></div>
-                    <div className="grid-item residences">
-                        <ProjectCard04 img='images/portfolio/grid-list/1.jpg' details='California young menz club' />
-                    </div>
-                    <div className="grid-item interiors">
-                        <ProjectCard04 img='images/portfolio/grid-list/2.jpg' details='Sunlight in the Room' />
-                    </div>
-                    <div className="grid-item residences">
-                        <ProjectCard04 img='images/portfolio/grid-list/3.jpg' details='Find your own self invintage lake house' />
-                    </div>
-                    <div className="grid-item landscape exterior">
-                        <ProjectCard04 img='images/portfolio/grid-list/4.jpg' details='Well decor house in Sydney' />
-
-                    </div>
-                    <div className="grid-item landscape">
-                        <ProjectCard04 img='images/portfolio/grid-list/5.jpg' details='Huge large area Bedroom' />
-
-                    </div>
-                    <div className="grid-item interiors">
-                        <ProjectCard04 img='images/portfolio/grid-list/6.jpg' details='Clean water in the swiming pool' />
-
-                    </div>
-
-                </div>
-                <div className="btn_group w-100 text-center">
-                    <button id="load-more" className="btn gray">Load More</button>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
     );
 };
 
