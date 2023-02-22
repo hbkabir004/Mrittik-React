@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import '../assets/plugins/select2/css/select2.min.css';
-// import '../assets/plugins/select2/js/select2.js';
-
+// import '../assets/plugins/select2/js/select2.min.js';
 const ShopFilter = () => {
     useEffect(() => {
         // Select 2
