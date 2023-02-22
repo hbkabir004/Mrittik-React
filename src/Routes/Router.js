@@ -22,6 +22,7 @@ import Service01 from "../Pages/Service01";
 import Service02 from "../Pages/Service02";
 import ServiceDetails from "../Pages/ServiceDetails";
 import Shop01 from "../Pages/Shop01";
+import Shop02 from "../Pages/Shop02";
 import Signin from "../Pages/Signin";
 import Team from "../Pages/Team";
 import TeamDetails from "../Pages/TeamDetails";
@@ -82,6 +83,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/shop-1',
                 element: <Shop01/>,
+            },
+            {
+                path: '/shop-2',
+                element: <Shop02/>,
             },
             {
                 path: '/service-1',
