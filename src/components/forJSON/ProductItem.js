@@ -11,7 +11,7 @@ const ProductItem = ({productItem}) => {
                     <img className="primary_img" src={img} alt="img" />
                     <div className="cart_button">
                         <a href="#" className="button">
-                            Add to Car
+                            Add to Cart
                         </a>
                     </div>
                 </div>
