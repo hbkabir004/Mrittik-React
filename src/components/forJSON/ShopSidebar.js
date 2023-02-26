@@ -1,10 +1,20 @@
-import React from 'react';
-import '../assets/plugins/price_range/script';
-import CategoryItem from '../components/CategoryItem';
-import WidgetTitle from '../components/WidgetTitle';
-import WidgetSearch from './WidgetSearch';
+import React, { createContext, useEffect, useState } from 'react';
+import WidgetTitle from '../../components/WidgetTitle';
+import WidgetSearch from '../../containers/WidgetSearch';
+// import '../assets/plugins/price_range/script';
+import CategoryItem from './CategoryItem';
+export const CategoryContext = createContext();
+
+
 const ShopSidebar = () => {
-    // const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState([]);
+    useEffect(() => {
+        fetch('https://mrittik-server.vercel.app/category')
+            .then(res => res.json())
+            .then(data => setCategories(data));
+    }, [])
+    
+    
     // useEffect(() => {
     //     $("#slider-range").slider({
     //         range: true,
@@ -26,29 +36,17 @@ const ShopSidebar = () => {
             <WidgetSearch />
             <div id="category" className="widget widget_categories">
                 <WidgetTitle title='Product Categories' />
+                <CategoryContext.Provider value={categories}>
                 <ul className="sidebar_category">
-                    {/* {
+                    {
                         categories.map(category => <CategoryItem
                             key={category.id}
                             categoryItem={category}
                         ></CategoryItem>)
-                    } */}
-
-                    <CategoryItem id='tool_one' href='#tool_one' room='Bed Room' item1='Almirah' item2='Tool' item3='Mirror' />
-
-                    <CategoryItem id='tool_two' href='#tool_two' room='Living Room' item1='Sofa' item2='Chair' item3='Table' />
-
-                    <CategoryItem id='tool_three' href='#tool_three' room='Dining Room' item1='Dining Table' item2='Fruit Basket' />
-
-                    <CategoryItem id='tool_four' href='#tool_four' room='Garden' item1='Spade' item2='Knife' item3='Plant' />
-
-                    <CategoryItem id='tool_five' href='#tool_five' room='Wall Paintings' item1='Artistic' item2='Paint' item3='Brush' />
-
-                    <CategoryItem id='tool_six' href='#tool_six' room='Furniture' item1='Chair' item2='Table' item3='Showcase' />
-
-                    <CategoryItem id='tool_seven' href='#tool_seven' room='Furniture' item1='Plant' item2='Lamp' item3='Paintings' />
+                    }
 
                 </ul>
+                </CategoryContext.Provider>
             </div>
 
             <div id="pricerange" className="widget widget_additional_filter">
@@ -171,7 +169,6 @@ const ShopSidebar = () => {
             </div>
 
         </div>
-
     );
 };
 

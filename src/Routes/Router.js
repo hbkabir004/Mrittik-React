@@ -32,6 +32,7 @@ import TeamDetails from "../Pages/TeamDetails";
 export const routes = createBrowserRouter([
     {
         path: "/",
+        // loader: ()=> fetch('https://mrittik-server.vercel.app/category'),
         element: <Main/>,
         children: [
             {
@@ -84,6 +85,9 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/shop-1',
+                // loader:async({params})=>{
+                //     return fetch(`https://mrittik-server.vercel.app/products/category/${params.id}`);
+                //   },
                 element: <Shop01/>,
             },
             {
