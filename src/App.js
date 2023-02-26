@@ -1,16 +1,17 @@
 import { RouterProvider } from 'react-router-dom';
 // import './App.css';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 import './assets/css/style.css';
 import './assets/css/swiper-bundle.min.css';
-import Loader from './Pages/Shared/Loader';
 import { routes } from './Routes/Router';
 
 
-function App() {
+function App(props) {
   return (
     <div>
-      <Loader></Loader>
-      <RouterProvider router={routes} />
+      <RouterProvider router={routes} /> || <Skeleton />
+      {props.body || <Skeleton count={10} />}
     </div>
   );
 }
