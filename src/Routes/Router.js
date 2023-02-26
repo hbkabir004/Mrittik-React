@@ -24,6 +24,8 @@ import ServiceDetails from "../Pages/ServiceDetails";
 import Shop01 from "../Pages/Shop01";
 import Shop02 from "../Pages/Shop02";
 import Shop03 from "../Pages/Shop03";
+import ShopCart from "../Pages/ShopCart";
+import ShopCheckout from "../Pages/ShopCheckout";
 import ShopProduct from "../Pages/ShopProduct";
 import Signin from "../Pages/Signin";
 import Team from "../Pages/Team";
@@ -101,6 +103,14 @@ export const routes = createBrowserRouter([
             {
                 path: '/shop-product',
                 element: <ShopProduct/>,
+            },
+            {
+                path: '/shop-cart',
+                element: <ShopCart/>,
+            },
+            {
+                path: '/shop-checkout',
+                element: <ShopCheckout/>,
             },
             {
                 path: '/service-1',
