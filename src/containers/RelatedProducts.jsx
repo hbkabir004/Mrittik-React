@@ -1,7 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Swiper from 'swiper';
+import RelatedProduct from '../components/forJSON/RelatedProduct';
+import { ProductContext } from '../components/forJSON/TabContent';
 
-const RelatedProducts = () => {
+const RelatedProducts = ({ relatedProducts }) => {
+    const { categoryID } = relatedProducts;
+
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        fetch(`https://mrittik-server.vercel.app/products/category/${categoryID}`)
+            .then(res => res.json())
+            .then(data => setProducts(data));
+    }, [])
+
     useEffect(() => {
         // Related Products
         var swipert10 = new Swiper('.swiper_related_products', {
@@ -54,113 +65,16 @@ const RelatedProducts = () => {
                 <div class="product_view_grid type_1">
                     <div class="swiper swiper_related_products">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="product_item">
-                                    <div class="product_thumb">
-                                        <div class="product_imagebox">
-                                            <span class="badge-new">New</span>
-                                            <img class="primary_img" src="images/shop/products/1-1.png" alt="img" />
-                                            <div class="cart_button">
-                                                <a href="#" class="button">
-                                                    Add to Cart
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="product_item_inner">
-                                            <div class="label_text">
-                                                <h4 class="product_item_name"><a href="shop-product.html">Decor Plant</a> <span class="product_item_price">$15.00</span></h4>
-                                                <div class="product_category"><a href="#">Decoration</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <ProductContext.Provider value={products}>
+                                {
+                                    products.map(product => <RelatedProduct
+                                        key={product.id}
+                                        productItem={product}
+                                    ></RelatedProduct>)
+                                }
 
-                            <div class="swiper-slide">
-                                <div class="product_item">
-                                    <div class="product_thumb">
-                                        <div class="product_imagebox">
-                                            <img class="primary_img" src="images/shop/products/2-1.png" alt="img" />
-                                            <div class="cart_button">
-                                                <a href="#" class="button">
-                                                    Add to Cart
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="product_item_inner">
-                                            <div class="label_text">
-                                                <h4 class="product_item_name"><a href="shop-product.html">Hanging Light</a> <span class="product_item_price">$15.00</span></h4>
-                                                <div class="product_category"><a href="#">Decoration</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </ProductContext.Provider>
 
-                            <div class="swiper-slide">
-                                <div class="product_item">
-                                    <div class="product_thumb">
-                                        <div class="product_imagebox">
-                                            <span class="badge-sale">Sale</span>
-                                            <img class="primary_img" src="images/shop/products/3-1.png" alt="img" />
-                                            <div class="cart_button">
-                                                <a href="#" class="button">
-                                                    Add to Cart
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="product_item_inner">
-                                            <div class="label_text">
-                                                <h4 class="product_item_name"><a href="shop-product.html">Green Armchair</a> <span class="product_item_price"> <del class="old_price">$19.00</del> $15.00</span></h4>
-                                                <div class="product_category"><a href="#">Decoration</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="product_item">
-                                    <div class="product_thumb">
-                                        <div class="product_imagebox">
-                                            <img class="primary_img" src="images/shop/products/4-1.png" alt="img" />
-                                            <div class="cart_button">
-                                                <a href="#" class="button">
-                                                    Add to Cart
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="product_item_inner">
-                                            <div class="label_text">
-                                                <h4 class="product_item_name"><a href="shop-product.html">Brown Table Lamp</a> <span class="product_item_price">$15.00</span></h4>
-                                                <div class="product_category"><a href="#">Decoration</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="product_item">
-                                    <div class="product_thumb">
-                                        <div class="product_imagebox">
-                                            <span class="badge-new">New</span>
-                                            <img class="primary_img" src="images/shop/products/5-1.png" alt="img" />
-                                            <div class="cart_button">
-                                                <a href="#" class="button">
-                                                    Add to Cart
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="product_item_inner">
-                                            <div class="label_text">
-                                                <h4 class="product_item_name"><a href="shop-product.html">Wooden Center Table</a> <span class="product_item_price">$15.00</span></h4>
-                                                <div class="product_category"><a href="#">Decoration</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         {/* <!-- Add Pagination --> */}
                         <div class="swiper-pagination"></div>

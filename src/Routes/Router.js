@@ -87,11 +87,14 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/shop-1',
-                // loader:async({params})=>{
-                //     return fetch(`https://mrittik-server.vercel.app/products/category/${params.id}`);
-                //   },
                 element: <Shop01/>,
             },
+            {
+                path: '/shop-product/:id',
+                element: <ShopProduct/>,
+                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/${params.id}`)
+            },
+           
             {
                 path: '/shop-2',
                 element: <Shop02/>,

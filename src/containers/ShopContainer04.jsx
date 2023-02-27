@@ -3,13 +3,25 @@ import ProductDetails from './ProductDetails';
 import ProductView from './ProductView';
 import RelatedProducts from './RelatedProducts';
 
-const ShopContainer04 = () => {
+// export const SingleProductContext = createContext();
+
+
+const ShopContainer04 = ({ product }) => {
+    // const product = useLoaderData();
+    // const [product, setProduct] = useState([]);
+
+    // useEffect(() => {
+    //     fetch(`https://mrittik-server.vercel.app/products/${id}`)
+    //         .then(res => res.json())
+    //         .then(data => setProduct(data));
+    // }, [])
+
     return (
         <main className="wrapper">
-            <ProductView />
-            <ProductDetails />
-            <RelatedProducts />
-        </main>
+            <ProductView productView={product} />
+            <ProductDetails projectDetails={product} />
+            <RelatedProducts relatedProducts={product} />
+        </main >
     );
 };
 

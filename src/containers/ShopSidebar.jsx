@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/plugins/price_range/script';
+// import '../assets/plugins/price_range/script';
 import CategoryItem from '../components/CategoryItem';
 import WidgetTitle from '../components/WidgetTitle';
 import WidgetSearch from './WidgetSearch';

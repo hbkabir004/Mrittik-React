@@ -2,7 +2,8 @@ import React from 'react';
 import ProductZoomInfo from '../components/ProductZoomInfo';
 import ProductZoomBtnGrp from './ProductZoomBtnGrp';
 
-const ProductView = () => {
+const ProductView = ({ productView }) => {
+    const { id, img, name, badge, newClass, oldClass, price, oldPrice, categoryName } = productView;
     return (
         <section clasNames="product_view bg-dark-200">
             <div className="container">
@@ -10,13 +11,13 @@ const ProductView = () => {
                     <div className="col-lg-7 pe-lg-5">
                         <div className="product_left">
                             <div className="product_zoom">
-                                <ProductZoomBtnGrp bgImg1='images/shop/single/1.png' bgImg2='images/shop/single/2.png' bgImg3='images/shop/single/3.png' bgImg4='images/shop/single/4.png' />
+                                <ProductZoomBtnGrp bgImg1={img} bgImg2={img} bgImg3={img} bgImg4={img} />
 
                                 <div className="product_zoom_container">
-                                    <ProductZoomInfo img='images/shop/single/1.png' />
-                                    <ProductZoomInfo img='images/shop/single/2.png' />
-                                    <ProductZoomInfo img='images/shop/single/3.png' />
-                                    <ProductZoomInfo img='images/shop/single/4.png' />
+                                    <ProductZoomInfo img={img} />
+                                    <ProductZoomInfo img={img} />
+                                    <ProductZoomInfo img={img} />
+                                    <ProductZoomInfo img={img} />
 
                                 </div>
                             </div>
@@ -25,7 +26,7 @@ const ProductView = () => {
                     <div className="col-lg-5 ps-lg-0 pe-lg-5">
                         <div className="product_right">
                             <div className="product_info">
-                                <div className="product_title"><h2>Green Armchair</h2></div>
+                                <div className="product_title"><h2>{name}</h2></div>
                                 <div className="product_rating">
                                     <i className="bi bi-star-fill"></i>
                                     <i className="bi bi-star-fill"></i>
@@ -36,7 +37,7 @@ const ProductView = () => {
                                 </div>
                             </div>
                             <div className="product_price">
-                                <span className="product_per_price" data-price="15.00"></span> $<span className="product_total_price">15.00</span>
+                                <span className="product_per_price" data-price="15.00">{price}</span>
                             </div>
                             <div className="product_description">
                                 Ut enim ad minima veniam, quis nostrum exercitationem corporis commosequatur? Quis autem vel eum iure veniam, quis nostrum sequatur? Quis autem vel eum iure...
@@ -68,7 +69,7 @@ const ProductView = () => {
 
                             <div className="product_view_bottom_credential">
                                 <ul className="px-0 mb-0">
-                                    <li className="categories"><span>Category:</span> <a href="#">Furniture</a></li>
+                                    <li className="categories"><span>Category:</span> <a href="#">{categoryName}</a></li>
                                     <li className="sku"><span>SKU:</span> 07</li>
                                     <li className="tags"><span>Tags:</span> <a href="#">Wooden</a> <a href="#">Armchair</a> <a href="#">Sofa</a></li>
                                 </ul>
