@@ -37,7 +37,8 @@ const ProductView = ({ productView }) => {
                                 </div>
                             </div>
                             <div className="product_price">
-                                <span className="product_per_price" data-price="15.00">{price}</span>
+                                <span className="product_item_price"> <del className={oldClass}>{oldPrice}</del> {price}</span>
+                                <span className="product_item_price"></span>
                             </div>
                             <div className="product_description">
                                 Ut enim ad minima veniam, quis nostrum exercitationem corporis commosequatur? Quis autem vel eum iure veniam, quis nostrum sequatur? Quis autem vel eum iure...

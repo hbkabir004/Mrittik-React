@@ -35,7 +35,7 @@ const ProductDetails = ({ projectDetails }) => {
                         </div>
                         <div class="tab-pane fade" id="reviews" tabindex="0">
                             <div class="review_sec">
-                                <h6 class="review_title">1 review for <a href="#">{name}</a></h6>
+                                <h6 class="review_title">1 review for <a href="#">Product Name</a></h6>
                                 <ul class="review_area">
                                     {/* <!-- First Review --> */}
                                     <li class="blog_review_user">
