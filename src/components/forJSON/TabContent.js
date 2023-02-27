@@ -4,6 +4,7 @@ import PaginationDiv02 from '../../components/PaginationDiv02';
 import ListProductItem from './ListProductItem';
 import ProductItem from './ProductItem';
 
+export const CartContext = createContext();
 export const ProductContext = createContext();
 
 const TabContent = () => {
@@ -14,18 +15,25 @@ const TabContent = () => {
             .then(data => setProducts(data));
     }, [])
 
+    // const [cart, setCart] = useContext(CartContext)
+    //   console.log(cart)
+   
+
     return (
         <div className="tab-content">
             <div className="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
                 <div className="product_view_type">
                     <div className="product_view_grid product_col_3 type_1">
                         <ProductContext.Provider value={products}>
+                          {/* <CartContext.Provider value={[cart, setCart]}> */}
+
                         {
                             products.map(product => <ProductItem
                                 key={product.id}
                                 productItem={product}
                             ></ProductItem>)
                         }
+                            {/* </CartContext.Provider> */}
                         </ProductContext.Provider>
 
                     </div>

@@ -3,15 +3,23 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../Pages/Shared/Footer';
 import Header from '../Pages/Shared/Header';
 
-export const ShopContext = React.createContext();
+// export const ShopContext = createContext();
+// export const CartContext = createContext([]);
 
 const Main = () => {
+    // const { allProducts, initialCart } = useLoaderData([]);
+    // // const [cart, setCart] = useState(initialCart);
+
     return (
-        <div>
+        // <ProductContext.Provider value={allProducts}>
+        //     <CartContext.Provider value={[cart, setCart]}>
+        <>
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>
-        </div >
+        </>
+        //     </CartContext.Provider>
+        // </ProductContext.Provider>
     );
 };
 

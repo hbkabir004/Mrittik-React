@@ -3,7 +3,8 @@ import ProductZoomInfo from '../components/ProductZoomInfo';
 import ProductZoomBtnGrp from './ProductZoomBtnGrp';
 
 const ProductView = ({ productView }) => {
-    const { id, img, name, badge, newClass, oldClass, price, oldPrice, categoryName } = productView;
+    const { img, name, oldClass, price, oldPrice, categoryName } = productView;
+
     return (
         <section clasNames="product_view bg-dark-200">
             <div className="container">
@@ -65,7 +66,7 @@ const ProductView = ({ productView }) => {
                             </div>
 
                             <div className="cart_button">
-                                <a className="button" href="#" >Add to Cart</a>
+                                <button className="button" href="#" >Add to Cart</button>
                             </div>
 
                             <div className="product_view_bottom_credential">

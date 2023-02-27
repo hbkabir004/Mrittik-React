@@ -3,12 +3,21 @@ import CartContent from '../components/CartContent';
 import CartHeader from '../components/CartHeader';
 
 const CartContainer = () => {
+
     return (
         <section className="shopping_cart bg-dark-200">
             <div className="container">
                 <form action="checkout.php" method="POST">
                     <table className="cart_table">
                         <CartHeader />
+                        {/* 
+                        {cart.map(product => (
+                            <CartContent
+                                key={product.id}
+                                product={product}
+                                handleRemoveItem={handleRemoveItem}
+                            />
+                        ))} */}
 
                         <CartContent title='Traffic Cone' img='images/shop/products/1-1.png' price='15' />
                         <CartContent title='Safty Helmet' img='images/shop/products/2-1.png' price='17' />

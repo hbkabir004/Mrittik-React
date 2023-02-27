@@ -1,6 +1,8 @@
 import React from 'react';
 
 const CartContent = (props) => {
+    // const { id, img, title, name, price, quantity } = product;
+    // { product, handleRemoveItem, cart }
     return (
         <tr className="cart_content">
             <td className="cart_image"><img src={props.img} alt="img" /></td>
