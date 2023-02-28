@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductItem = ({productItem}) => {
+const ProductItem = ({productItem, handleAddToCart}) => {
     const { id, img, name, badge, newClass, oldClass, price, oldPrice, categoryName } = productItem;
 
     return (
@@ -10,7 +10,7 @@ const ProductItem = ({productItem}) => {
                 <div className="product_imagebox">
                     <span className={newClass}>{badge}</span>
                     <img className="primary_img" src={img} alt="img" />
-                    <div className="cart_button">
+                    <div onClick={() => handleAddToCart(productItem)} className="cart_button">
                         <a href="#" className="button">
                             Add to Cart
                         </a>

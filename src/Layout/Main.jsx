@@ -1,25 +1,27 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
+import React, { createContext, useState } from 'react';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import Footer from '../Pages/Shared/Footer';
 import Header from '../Pages/Shared/Header';
 
 // export const ShopContext = createContext();
-// export const CartContext = createContext([]);
+export const ProductContext = createContext([]);
+export const CartContext = createContext([]);
 
 const Main = () => {
-    // const { allProducts, initialCart } = useLoaderData([]);
-    // // const [cart, setCart] = useState(initialCart);
+    const { products, initialCart } = useLoaderData()
+    const [cart, setCart] = useState(initialCart)
+
 
     return (
-        // <ProductContext.Provider value={allProducts}>
-        //     <CartContext.Provider value={[cart, setCart]}>
-        <>
-            <Header></Header>
-            <Outlet></Outlet>
-            <Footer></Footer>
-        </>
-        //     </CartContext.Provider>
-        // </ProductContext.Provider>
+        <ProductContext.Provider value={products}>
+            <CartContext.Provider value={[cart, setCart]}>
+                {/* <> */}
+                <Header></Header>
+                <Outlet></Outlet>
+                <Footer></Footer>
+                {/* </> */}
+            </CartContext.Provider>
+        </ProductContext.Provider>
     );
 };
 

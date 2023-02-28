@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import { productsAndCartData } from "../components/forJSON/getCart&ProductsData";
 import Main from "../Layout/Main";
 import AboutUs from "../Pages/AboutUs";
 import Blog from "../Pages/Blog";
@@ -34,7 +35,7 @@ import TeamDetails from "../Pages/TeamDetails";
 export const routes = createBrowserRouter([
     {
         path: "/",
-        loader: ()=> fetch('https://mrittik-server.vercel.app/products'),
+        loader: productsAndCartData,
         element: <Main/>,
         children: [
             {

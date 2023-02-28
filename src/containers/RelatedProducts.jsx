@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Swiper from 'swiper';
 import RelatedProduct from '../components/forJSON/RelatedProduct';
-import { ProductContext } from '../components/forJSON/TabContent';
 
 const RelatedProducts = ({ relatedProducts }) => {
     const { categoryID } = relatedProducts;
@@ -65,15 +64,15 @@ const RelatedProducts = ({ relatedProducts }) => {
                 <div class="product_view_grid type_1">
                     <div class="swiper swiper_related_products">
                         <div class="swiper-wrapper">
-                            <ProductContext.Provider value={products}>
-                                {
-                                    products.map(product => <RelatedProduct
-                                        key={product.id}
-                                        productItem={product}
-                                    ></RelatedProduct>)
-                                }
+                            {/* <ProductContext.Provider value={products}> */}
+                            {
+                                products.map(product => <RelatedProduct
+                                    key={product.id}
+                                    productItem={product}
+                                ></RelatedProduct>)
+                            }
 
-                            </ProductContext.Provider>
+                            {/* </ProductContext.Provider> */}
 
                         </div>
                         {/* <!-- Add Pagination --> */}
