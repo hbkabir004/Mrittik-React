@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const CartContent = ({ product, handleRemoveItem }) => {
     const { id, img, title, name, price, quantity } = product;
     const total = (Number(price) * Number(quantity));
+
+    let [count, setCount] = useState(quantity);
+
+    const increment = () => {
+        setCount((prevCount) => prevCount + 1);
+    };
+
+    const decrement = () => {
+        setCount((prevCount) => prevCount - 1);
+    };
 
     return (
         <tr className="cart_content">
@@ -12,11 +22,11 @@ const CartContent = ({ product, handleRemoveItem }) => {
             <td className="cart_quantity">
                 <div className="product_quantity_inner">
                     <span className="qty_btn product_quantity_subtract">
-                        <i className="bi bi-dash-lg"></i>
+                        <i onClick={decrement} className="bi bi-dash-lg"></i>
                     </span>
-                    <input type="text" id="product_quantity_input" placeholder="0" value={quantity} />
+                    <input type="text" id="product_quantity_input" placeholder="0" value={count} />
                     <span className="qty_btn product_quantity_add">
-                        <i className="bi bi-plus-lg"></i>
+                        <i onClick={increment} className="bi bi-plus-lg"></i>
                     </span>
                 </div>
             </td>
