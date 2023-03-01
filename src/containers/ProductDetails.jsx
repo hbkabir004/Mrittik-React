@@ -1,7 +1,10 @@
+import Aos from 'aos';
 import React from 'react';
 
 const ProductDetails = ({ projectDetails }) => {
     const { id, img, name, badge, newClass, oldClass, price, oldPrice, categoryName } = projectDetails;
+    Aos.init();
+
     return (
         <section class="product_details_section bg-dark-200">
             <div class="container">

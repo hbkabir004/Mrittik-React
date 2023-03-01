@@ -42,9 +42,6 @@ const TabContent = () => {
             <div className="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
                 <div className="product_view_type">
                     <div className="product_view_grid product_col_3 type_1">
-                        {/* <ProductContext.Provider value={products}>
-                          <CartContext.Provider value={[cart, setCart]}> */}
-
                         {
                             products.map(product => <ProductItem
                                 key={product.id}
@@ -53,9 +50,7 @@ const TabContent = () => {
                                 
                             ></ProductItem>)
                         }
-                            {/* </CartContext.Provider>
-                        </ProductContext.Provider> */}
-
+                        
                     </div>
 
                     <PaginationDiv02 />

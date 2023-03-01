@@ -1,9 +1,43 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { addToDb } from '../components/forJSON/fakeDB';
 import ProductZoomInfo from '../components/ProductZoomInfo';
+import { CartContext } from '../Layout/Main';
 import ProductZoomBtnGrp from './ProductZoomBtnGrp';
 
 const ProductView = ({ productView }) => {
     const { img, name, oldClass, price, oldPrice, categoryName } = productView;
+    const [cart, setCart] = useContext(CartContext);
+
+    // const CustomToastWithLink = () => (
+    //     <div>
+    //         <Link to="/toasttest">This is a link</Link>
+    //     </div>
+    // );
+
+    const handleAddToCart = productView => {
+        let newCart = []
+        const exists = cart.find(
+            existingProduct => existingProduct.id === productView.id
+        )
+        if (!exists) {
+            productView.quantity = 1
+            newCart = [...cart, productView]
+        } else {
+            const rest = cart.filter(
+                existingProduct => existingProduct.id !== productView.id
+            )
+            exists.quantity = exists.quantity + 1
+            newCart = [...rest, exists]
+        }
+
+        setCart(newCart)
+        addToDb(productView.id)
+        toast.info('Info: Product Added!', { autoClose: 500 });
+
+        // toast.info(CustomToastWithLink);
+    }
 
     return (
         <section clasNames="product_view bg-dark-200">
@@ -65,8 +99,9 @@ const ProductView = ({ productView }) => {
                                 </div>
                             </div>
 
-                            <div className="cart_button">
-                                <button className="button" href="#" >Add to Cart</button>
+                            <div className="cart_button d-flex justify-content-start">
+                                <Link ><button onClick={() => handleAddToCart(productView)} className="button">Add to Cart</button></Link>
+                                <Link to="/shop-checkout" ><button className="button">Buy Now</button></Link>
                             </div>
 
                             <div className="product_view_bottom_credential">

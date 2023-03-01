@@ -17810,7 +17810,7 @@ label {
 }
 
 .product_right .cart_button .button {
-  width: 100%;
+  /* width: 100%; */
   font-size: 0.75rem;
   line-height: 1.375rem;
   font-weight: 600;
@@ -17818,6 +17818,7 @@ label {
   padding: 10px 25px;
   z-index: 1;
   color: #ffffff;
+  margin-right: 10px;
 }
 
 .product_right .cart_button .button:before {
