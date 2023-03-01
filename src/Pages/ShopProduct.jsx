@@ -8,10 +8,11 @@ export const SingleProductContext = createContext();
 
 const ShopProduct = () => {
     const selectedProduct = useLoaderData();
+    // console.log(selectedProduct);
     return (
         <SingleProductContext.Provider value={selectedProduct}>
             <PageBanner02 title="Shop" page="Shop" activePage='Product Details' href="/shop-1" />
-            <ShopContainer04 product={selectedProduct} />
+            <ShopContainer04 selectedProduct={selectedProduct} />
         </SingleProductContext.Provider>
     );
 };

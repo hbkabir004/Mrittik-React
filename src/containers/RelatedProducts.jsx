@@ -12,6 +12,7 @@ const RelatedProducts = ({ relatedProducts }) => {
             .then(data => setProducts(data));
     }, [])
 
+    // console.log(products);
     useEffect(() => {
         // Related Products
         var swipert10 = new Swiper('.swiper_related_products', {
@@ -68,7 +69,7 @@ const RelatedProducts = ({ relatedProducts }) => {
                             {
                                 products.map(product => <RelatedProduct
                                     key={product.id}
-                                    productItem={product}
+                                    relatedProduct={product}
                                 ></RelatedProduct>)
                             }
 

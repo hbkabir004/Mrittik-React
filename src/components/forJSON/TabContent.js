@@ -13,7 +13,7 @@ import ProductItem from './ProductItem';
 const TabContent = () => {
     const products = useContext(ProductContext)
     const [cart, setCart] = useContext(CartContext)
-    console.log(products)
+    // console.log(products)
   
     const handleAddToCart = product => {
       let newCart = []

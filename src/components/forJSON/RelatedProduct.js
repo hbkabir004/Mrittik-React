@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const RelatedProduct = ({product}) => {
-    const { id, img, name, badge, newClass, oldClass, price, oldPrice, categoryName } = product;
+const RelatedProduct = ({relatedProduct}) => {
+    const { id, img, name, badge, newClass, oldClass, price, oldPrice, categoryName } = relatedProduct;
 
     return (
         <div class="swiper-slide">

@@ -93,7 +93,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/shop-product/:id',
-                element: <ShopProduct/>,
+            element: <ShopProduct/>,
                 loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/${params.id}`)
             },
            

@@ -6,7 +6,7 @@ import RelatedProducts from './RelatedProducts';
 // export const SingleProductContext = createContext();
 
 
-const ShopContainer04 = ({ product }) => {
+const ShopContainer04 = ({ selectedProduct }) => {
     // const product = useLoaderData();
     // const [product, setProduct] = useState([]);
 
@@ -18,9 +18,9 @@ const ShopContainer04 = ({ product }) => {
 
     return (
         <main className="wrapper">
-            <ProductView productView={product} />
-            <ProductDetails projectDetails={product} />
-            <RelatedProducts relatedProducts={product} />
+            <ProductView productView={selectedProduct} />
+            <ProductDetails projectDetails={selectedProduct} />
+            <RelatedProducts relatedProducts={selectedProduct} />
         </main >
     );
 };

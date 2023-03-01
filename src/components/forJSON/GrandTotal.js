@@ -4,7 +4,7 @@ import WidgetTitle from '../WidgetTitle';
 const GrandTotal = ({total}) => {
     const tax = (Number(total)* 0.1).toFixed(2);
     const grandTotal = (Number(total) + Number(tax)).toFixed(2);
-    console.log(total);
+    // console.log(total);
     return (
         <div className="grand_total">
             <WidgetTitle title='Card Total' className='widget-title' />
