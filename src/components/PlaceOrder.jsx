@@ -17,8 +17,9 @@ const PlaceOrder = () => {
 
     const orderHandler = () => {
         if (cart.length) {
-            setCart([])
-            deleteShoppingCart()
+            setCart([]);
+            deleteShoppingCart();
+            window.location.href = '/thank-you';
             return toast.success('Order Placed!', { autoClose: 500 })
         }
 
@@ -27,7 +28,7 @@ const PlaceOrder = () => {
 
     return (
         <div class="place_order">
-            <WidgetTitle title='Your Order' />
+            <WidgetTitle title='Your Order' className='widget-title' />
             <ul>
                 <li class="totalvalue"><span class="text">Product</span> <span class="value">Price</span></li>
 

@@ -16,7 +16,7 @@ const Checkout = () => {
                         </div>
                         <div class="row">
                             <div class="col-lg-7 pe-5">
-                                <WidgetTitle title='Billing Address' />
+                                <WidgetTitle title='Billing Address' className='widget-title' />
                                 <CheckoutForm />
                             </div>
                             <div class="col-lg-5">

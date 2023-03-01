@@ -31,6 +31,7 @@ import ShopProduct from "../Pages/ShopProduct";
 import Signin from "../Pages/Signin";
 import Team from "../Pages/Team";
 import TeamDetails from "../Pages/TeamDetails";
+import ThankYou from "../Pages/ThankYou";
 
 export const routes = createBrowserRouter([
     {
@@ -133,8 +134,12 @@ export const routes = createBrowserRouter([
                 element: <Signin/>,
             },
             {
-                path: '/comingsoon',
+                path: '/coming-soon',
                 element: <CommingSoon/>,
+            },
+            {
+                path: '/thank-you',
+                element: <ThankYou/>,
             },
             {
                 path: '/team',

@@ -7,7 +7,7 @@ const GrandTotal = ({total}) => {
     console.log(total);
     return (
         <div className="grand_total">
-            <WidgetTitle title='Card Total' />
+            <WidgetTitle title='Card Total' className='widget-title' />
                 <ul>
                     <li><span className="text">Subtotal</span> <span className="value total_price">${total}</span></li>
                     <li><span className="text">Tax (10%)</span> <span className="value">${tax}</span></li>

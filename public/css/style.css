@@ -18393,8 +18393,8 @@ label {
   background-color: #000000;
 }
 
-.grand_total .widget-title {
-  color: #ffffff;
+body.bg-white .grand_total .widget-title {
+  color: black;
   text-transform: capitalize;
 }
 

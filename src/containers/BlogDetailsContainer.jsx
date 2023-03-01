@@ -26,7 +26,7 @@ const BlogDetailsContainer = () => {
                                     <div className="fulltext">
                                         <BlockGallery className='block-gallery mb-0' img='images/blog/details/1.jpg' />
 
-                                        <WidgetTitle title='Project Features' />
+                                        <WidgetTitle title='Project Features' className='title-line' />
 
                                         <Paragraph text='We design with people in mind and use every expertise at our disposal.Our practice connects communities and is committed to the stewardship of place, people, and the environment.' />
 

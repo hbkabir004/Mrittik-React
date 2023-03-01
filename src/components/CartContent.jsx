@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 const CartContent = ({ product, handleRemoveItem }) => {
     const { id, img, title, name, price, quantity } = product;
-    const total = (Number(price) * Number(quantity));
 
     let [count, setCount] = useState(quantity);
+    const total = (Number(price) * Number(count));
 
     const increment = () => {
         setCount((prevCount) => prevCount + 1);
@@ -17,7 +17,7 @@ const CartContent = ({ product, handleRemoveItem }) => {
     return (
         <tr className="cart_content">
             <td className="cart_image"><img src={img} alt="img" /></td>
-            <td className="cart_title">{title}</td>
+            <td className="cart_title">{name}</td>
             <td className="cart_price">$<span className="product_per_price" data-price="15">{price}</span></td>
             <td className="cart_quantity">
                 <div className="product_quantity_inner">

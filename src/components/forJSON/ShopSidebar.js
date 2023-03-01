@@ -35,7 +35,7 @@ const ShopSidebar = () => {
         <div className="shop_sidebar">
             <WidgetSearch />
             <div id="category" className="widget widget_categories">
-                <WidgetTitle title='Product Categories' />
+                <WidgetTitle title='Product Categories' className='widget-title'/>
                 <CategoryContext.Provider value={categories}>
                 <ul className="sidebar_category">
                     {
