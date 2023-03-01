@@ -45,7 +45,7 @@ const Footer = () => {
                             <div className="footer_elements d-flex align-items-center justify-content-end">
                                 <div className="footer_elements_inner">
                                     <div className="footer_logo">
-                                        <a href="index.html" className="light_logo"><img src="images/logo-light.svg" alt="logo" /></a>
+                                        <a href="/" className="light_logo"><img src="images/logo-light.svg" alt="logo" /></a>
                                     </div>
                                     <div className="footer_social">
                                         <ul className="social_list">
@@ -84,7 +84,7 @@ const Footer = () => {
                     <li className="grid_line"></li>
                 </ul>
             </div>
-        </footer>
+        </footer >
     );
 };
 

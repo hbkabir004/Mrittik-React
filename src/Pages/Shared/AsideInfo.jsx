@@ -5,9 +5,9 @@ const AsideInfo = () => {
         <div className="aside_info_wrapper">
             <button className="aside_close"><i className="bi bi-x-lg"></i></button>
             <div className="aside_logo">
-                <a href="index.html" className="light_logo"><img src="images/logo-light-lg.svg" alt="logo" /></a>
-                <a href="index.html" className="dark_logo"><img src="images/logo-dark-lg.svg" alt="logo" /></a>
-            </div>
+                <a href="/" className="light_logo"><img src="images/logo-light-lg.svg" alt="logo" /></a>
+                <a href="/" className="dark_logo"><img src="images/logo-dark-lg.svg" alt="logo" /></a>
+            </div >
             <div className="aside_info_inner">
                 <p>Mrittik Architects is a full-service design firm providing architecture architecture.</p>
 
@@ -29,7 +29,7 @@ const AsideInfo = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div >
 
     );
 };

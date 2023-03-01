@@ -4,7 +4,7 @@ import React from 'react';
 const ServiceCard02 = (props) => {
     Aos.init()
     return (
-        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="500">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-duration={props.duration}>
             <div class="icon_box type-2">
                 <img src={props.img01} alt="img" class="post-bg" />
                 <div class="icon_box_inner">

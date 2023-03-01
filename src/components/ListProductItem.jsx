@@ -10,7 +10,7 @@ const ListProductItem = (props) => {
                 </div>
                 <div className="product_item_inner">
                     <div className="label_text">
-                        <h4 className="product_item_name"><a href="shop-product.html">Decor Plant</a> <span className={props.oldClass}>{props.price}</span></h4>
+                        <h4 className="product_item_name"><a href="/shop-product">Decor Plant</a> <span className={props.oldClass}>{props.price}</span></h4>
                         <div className="rating">
                             <ul>
                                 <li><i className="bi bi-star-fill"></i></li>

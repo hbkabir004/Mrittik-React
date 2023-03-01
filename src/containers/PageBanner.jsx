@@ -9,7 +9,7 @@ const PageBanner = (props) => {
                         <div className="page_header_content d-flex align-items-center justify-content-between">
                             <h2 className="heading">{props.title}</h2>
                             <ul className="breadcrumb d-flex align-items-center">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li><a href="#">Pages</a></li>
                                 <li className="active">{props.activePage}</li>
                             </ul>

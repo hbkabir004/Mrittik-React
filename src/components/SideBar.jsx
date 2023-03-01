@@ -18,10 +18,10 @@ const SideBar = () => {
                 <div className="wp-block-group__inner-container">
                     <h2 className="widget-title">Recent Posts <span className="title-line"></span></h2>
                     <ul className="wp-block-latest-posts__list wp-block-latest-posts">
-                        <li><a href="blog-details.html">California Mansion Residence</a></li>
-                        <li><a href="blog-details.html">Well decor house in Sydney</a></li>
-                        <li><a href="blog-details.html">Huge large area Bedroom</a></li>
-                        <li><a href="blog-details.html">Recent trends in designing space</a></li>
+                        <li><a href="/blog-details">California Mansion Residence</a></li>
+                        <li><a href="/blog-details">Well decor house in Sydney</a></li>
+                        <li><a href="/blog-details">Huge large area Bedroom</a></li>
+                        <li><a href="/blog-details">Recent trends in designing space</a></li>
                     </ul>
                 </div>
             </div>
