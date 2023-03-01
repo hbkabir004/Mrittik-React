@@ -10,7 +10,7 @@ import { routes } from './Routes/Router';
 
 function App(props) {
   return (
-    <div>
+    <div className='bg-dark'>
       <ThemeSwitcher/>
       <RouterProvider router={routes} /> || <Skeleton />
       {props.body || <Skeleton count={10} />}
