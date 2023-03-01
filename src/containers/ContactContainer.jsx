@@ -1,9 +1,11 @@
+import Aos from 'aos';
 import React from 'react';
 import Form from '../components/Form';
 import Paragraph from '../components/Paragraph';
 import SectionGridLines from '../components/SectionGridLines';
 
 const ContactContainer = () => {
+    Aos.init();
     return (
         <main className="wrapper">
             <section className="gmap box_padding">

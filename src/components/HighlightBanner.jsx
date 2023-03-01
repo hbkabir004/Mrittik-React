@@ -1,6 +1,8 @@
+import Aos from 'aos';
 import React from 'react';
 
 const HighlightBanner = () => {
+    Aos.init();
     return (
         <section className="highlight_banner bg-dark-200">
             <div className="container">

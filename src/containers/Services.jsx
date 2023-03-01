@@ -1,9 +1,7 @@
-import Aos from 'aos';
 import React from 'react';
 import ServiceCard from '../components/ServiceCard';
 
 const Services = () => {
-    Aos.init()
     return (
         <section className="services bg-dark-100 pt-4 pb-0">
             <div className="container">

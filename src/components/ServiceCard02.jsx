@@ -1,6 +1,8 @@
+import Aos from 'aos';
 import React from 'react';
 
 const ServiceCard02 = (props) => {
+    Aos.init()
     return (
         <div class="col-lg-4" data-aos="fade-up" data-aos-duration="500">
             <div class="icon_box type-2">

@@ -1,6 +1,9 @@
+import Aos from 'aos';
 import $ from 'jquery';
 import React, { useEffect } from 'react';
 const Footer = () => {
+    Aos.init()
+
     useEffect(() => {
         // Totop Button
         $('.totop a').on('click', function (e) {

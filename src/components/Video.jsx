@@ -1,8 +1,10 @@
+import Aos from 'aos';
 import $ from 'jquery';
 import React, { useEffect } from 'react';
 import '../assets/plugins/fancybox/jquery.fancybox.css';
 
 const Video = () => {
+    Aos.init()
     useEffect(() => {
         // Youtube
         var $ytvideoTrigger = $(".ytplay_btn");

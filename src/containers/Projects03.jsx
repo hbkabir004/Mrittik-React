@@ -1,8 +1,10 @@
+import Aos from 'aos';
 import React from 'react';
 import ProjectCard03 from '../components/ProjectCard03';
 import ProjectCard3_2 from '../components/ProjectCard03_2';
 
 const Projects03 = () => {
+    Aos.init();
     return (
         <section className="projects masonry bg-transparent effect-tilt p-0 mt-lg-minus">
             <div className="container">

@@ -1,6 +1,8 @@
+import Aos from 'aos';
 import React from 'react';
 
 const PostFooter = () => {
+    Aos.init();
     return (
         <div className="post-footer">
             <div className="post-share">
