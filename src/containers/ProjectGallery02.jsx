@@ -147,47 +147,47 @@ const ProjectGallery02 = (props) => {
                 <div className="grid grid-2 gutter-90 clearfix">
                     <div className="grid-sizer"></div>
                     <div className="grid-item residences">
-                        <ProjectCard03 img='images/portfolio/1.jpg' />
+                        <ProjectCard03 img='images/portfolio/1.jpg' details='California young menz club' />
                     </div>
                     <div className="grid-item interiors">
-                        <ProjectCard3_2 img='images/portfolio/2.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/2.jpg' details='Sunlight in the Room' />
                     </div>
                     <div className="grid-item residences">
-                        <ProjectCard3_2 img='images/portfolio/3.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/3.jpg' details='Find your own self invintage lake house' />
                     </div>
                     <div className="grid-item landscape exterior">
-                        <ProjectCard3_2 img='images/portfolio/4.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/4.jpg' details='Huge large area Bedroom' />
 
                     </div>
                     <div className="grid-item landscape">
-                        <ProjectCard3_2 img='images/portfolio/5.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/5.jpg' details='Clean water in the swiming pool' />
 
                     </div>
                     <div className="grid-item interiors">
-                        <ProjectCard3_2 img='images/portfolio/6.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/6.jpg' details='Huge large area Bedroom' />
 
                     </div>
                     <div className="grid-item interiors">
-                        <ProjectCard3_2 img='images/portfolio/7.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/7.jpg' details='California young menz club' />
 
                     </div>
                     <div className="grid-item residences">
-                        <ProjectCard3_2 img='images/portfolio/8.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/8.jpg' details='Find your own self invintage lake house' />
                     </div>
                     <div className="grid-item exterior">
-                        <ProjectCard3_2 img='images/portfolio/1.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/1.jpg' details='Clean water in the swiming pool' />
 
                     </div>
                     <div className="grid-item interiors">
-                        <ProjectCard3_2 img='images/portfolio/2.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/2.jpg' details='California young menz club' />
 
                     </div>
                     <div className="grid-item residences">
-                        <ProjectCard3_2 img='images/portfolio/2.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/2.jpg' details='Sunlight in the Room' />
 
                     </div>
                     <div className="grid-item landscape exterior">
-                        <ProjectCard3_2 img='images/portfolio/3.jpg' />
+                        <ProjectCard3_2 img='images/portfolio/3.jpg' details='California young menz club' />
 
                     </div>
                 </div>

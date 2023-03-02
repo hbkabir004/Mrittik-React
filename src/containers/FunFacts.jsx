@@ -5,7 +5,8 @@ import FunFact from '../components/FunFact';
 const FunFacts = (props) => {
     useEffect(() => {
         var a = 0;
-        $(window).scroll(function () {
+        $(window).on("scroll", function () {
+
             var oTop = $('#funfacts').offset().top - window.innerHeight;
             if (a == 0 && $(window).scrollTop() > oTop) {
                 $('.fun-number').each(function () {

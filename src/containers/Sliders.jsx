@@ -63,9 +63,9 @@ const Sliders = () => {
             <div className="container">
                 <div className="swiper swiper_theme_slider" data-swiper-autoplay="2000">
                     <div className="swiper-wrapper">
-                        <SliderCard bgImg="images/slider/14.jpg"></SliderCard>
-                        <SliderCard bgImg="images/slider/5.jpg"></SliderCard>
-                        <SliderCard bgImg="images/slider/8.jpg"></SliderCard>
+                        <SliderCard bgImg="images/slider/14.jpg" />
+                        <SliderCard bgImg="images/slider/5.jpg" />
+                        <SliderCard bgImg="images/slider/8.jpg" />
                     </div>
                     {/* <!-- Add Pagination --> */}
                     <div className="swiper-pagination"></div>

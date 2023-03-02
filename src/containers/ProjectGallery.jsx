@@ -22,43 +22,13 @@ const ProjectGallery = () => {
             columnWidth: '.grid-sizer',
         })
 
-        // cleanup
-        return () => Isotope.current.destroy()
-
-
-        // // Isotope Portfolio
-        // var iso = $grid.data('isotope');
-        // var $filterCount = $('.filter-count');
-
-        // // bind filter button click
-        // $('.filters-button-group .button').on('click', function () {
-        //     var filterValue = $(this).attr('data-filter');
-        //     // use filterFn if matches value
-        //     $grid.Isotope({ filter: filterValue });
-        //     updateFilterCount();
-        // });
-
-        // function updateFilterCount() {
-        //     $filterCount.text(iso.filteredItems.length);
-        // }
-        // updateFilterCount();
-
-        // // change is-checked class on buttons
-        // $('.filters-button-group').each(function (i, buttonGroup) {
-        //     var $buttonGroup = $(buttonGroup);
-        //     $buttonGroup.on('click', 'button', function () {
-        //         $buttonGroup.find('.is-checked').removeClass('is-checked');
-        //         $(this).addClass('is-checked');
-        //     });
-        // });
-
         // $grid.imagesLoaded().progress(function () {
-        //     $grid.Isotope('layout');
+        //     $grid.isotope('layout');
         // });
 
-        // //****************************
-        // // Isotope Load more button
-        // //****************************
+        //****************************
+        // Isotope Load more button
+        //****************************
         // var initShow = 8;
         // var counter = initShow;
         // loadMore(initShow);
@@ -69,9 +39,9 @@ const ProjectGallery = () => {
         //         return item.element;
         //     });
         //     $(hiddenElems).addClass('hidden');
-        //     $grid.Isotope('layout');
+        //     $grid.isotope('layout');
 
-        //     if (hiddenElems.length == 0) {
+        //     if (hiddenElems.length === 0) {
         //         $("#load-more").hide();
         //     } else {
         //         $("#load-more").show();
@@ -79,9 +49,10 @@ const ProjectGallery = () => {
 
         // }
 
-        // //append load more button
-        // $grid.after('<button id="load-more" class="btn btn-dark">Load More</button>');
+        //append load more button
+        //$grid.after('<button id="load-more" class="btn btn-dark">Load More</button>');
         //when load more button clicked
+
         // $("#load-more").click(function () {
         //     if ($('.filters-button-group').data('clicked')) {
         //         counter = initShow;
@@ -124,6 +95,9 @@ const ProjectGallery = () => {
         //     scale: 1.01,
         //     reset: true
         // });
+
+        // cleanup
+        return () => Isotope.current.destroy()
     }, []);
 
     // handling filter key change
@@ -144,7 +118,7 @@ const ProjectGallery = () => {
             </div>
             <div className="container">
                 <div className="section-header text-center has_line">
-                    <PageHeder title="Project Gallery"></PageHeder>
+                    <PageHeder className='text-white' title="Project Gallery"></PageHeder>
                     <div className="section-desc row align-items-center justify-content-center">
                         <div className="col-lg-6 text-end">
                             <Paragraph text="We will continue to grow and evolve Mrittik for the betterment of our clients and our people. Vision includes the continual expansion."></Paragraph>
@@ -166,6 +140,11 @@ const ProjectGallery = () => {
                 </div>
                 <div className="grid gutter-20 clearfix">
                     <div className="grid-sizer"></div>
+                    {/* <OnImagesLoaded
+                        onLoaded={runAfterImagesLoaded}
+                        onTimeout={runTimeoutFunction}
+                        timeout={7000}
+                    > */}
                     {/* <div className="grid-item residences width-100">
                         <ProjectCard img="images/portfolio/packery/1.jpg" details="California young menz club" />
                     </div> */}
@@ -193,9 +172,9 @@ const ProjectGallery = () => {
                         <ProjectCard img="images/portfolio/packery/7.jpg" details="California young menz club" />
 
                     </div> */}
-                    {/* <div className="grid-item exterior width-100">
+                    <div className="grid-item exterior width-50">
                         <ProjectCard img="images/portfolio/packery/8.jpg" details="Newyork golf club house" />
-                    </div> */}
+                    </div>
                     <div className="grid-item interiors width-50">
                         <ProjectCard img="images/portfolio/packery/2.jpg" details="California young menz club" />
 
@@ -204,10 +183,12 @@ const ProjectGallery = () => {
                         <ProjectCard img="images/portfolio/packery/3.jpg" details="California young menz club" />
 
                     </div>
-                    {/* <div className="grid-item landscape exterior width-100">
+                    {/* <div className="grid-item landscape exterior width-50">
                         <ProjectCard img="images/portfolio/packery/4.jpg" details="California young menz club" />
 
                     </div> */}
+
+                    {/* </OnImagesLoaded> */}
                 </div>
                 <LoadmoreBtn text='Discover All Projects' className='btn olive w-100' />
             </div>

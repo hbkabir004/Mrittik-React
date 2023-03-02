@@ -1,9 +1,25 @@
 import $ from 'jquery';
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import MiniCart from '../../containers/MiniCart';
+import { CartContext } from '../../Layout/Main';
 import AsideInfo from './AsideInfo';
 
 const Header = () => {
+    const [cart, setCart] = useContext(CartContext);
+
+    // const handleRemoveItem = id => {
+    //     const remaining = cart.filter(product => product.id !== id)
+    //     setCart(remaining)
+    //     removeFromDb(id)
+    //     toast.warning('Product Removed!', { autoClose: 500 })
+    // }
+
+    // let total = 0
+
+    // for (const product of cart) {
+    //     total = total + product.price * product.quantity
+    // }
+
     useEffect(() => {
         // Aside info bar
         $('.aside_open').click(function (e) {
@@ -32,6 +48,8 @@ const Header = () => {
             }
         });
     }, []);
+
+
     return (
         <>
             <header className="header">
@@ -86,7 +104,7 @@ const Header = () => {
                                                 <li className="menu-item"><a href="/shop-1">Shop One</a></li>
                                                 <li className="menu-item"><a href="/shop-2">Shop Two</a></li>
                                                 <li className="menu-item"><a href="/shop-3">Shop Three</a></li>
-                                                <li className="menu-item"><a href="/shop-product">Product Details</a></li>
+                                                {/* <li className="menu-item"><a href="/shop-product">Product Details</a></li> */}
                                                 <li className="menu-item"><a href="/shop-cart">Shop Cart</a></li>
                                                 <li className="menu-item"><a href="/shop-checkout">Checkout</a></li>
                                                 <li className="menu-item"><a href="/login">Login</a></li>
@@ -114,7 +132,16 @@ const Header = () => {
                             </button>
 
                             <div className="header_search">
-                                <MiniCart />
+                                {/* <MiniCart /> */}
+                                <button className="navbar-toggler me-3 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                >
+                                    <span className="bi bi-cart-dash-fill" />
+                                    <p className='position-absolute top-0 start-100 translate-middle rounded-circle cart-length-bg'>{cart.length}</p>
+
+
+                                </button>
+
+
                                 <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>
                             </div>
                             <div className="open_search">
@@ -132,7 +159,8 @@ const Header = () => {
                 </div>
             </header>
 
-            <AsideInfo></AsideInfo>
+            <MiniCart id='offcanvasNavbar' />
+            <AsideInfo />
         </>
     );
 };

@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import "../assets/css/MiniCart.css";
-import { deleteShoppingCart, removeFromDb } from '../components/forJSON/fakeDB';
+import { removeFromDb } from '../components/forJSON/fakeDB';
 import MiniCartContent from '../components/MiniCartContent';
 import { CartContext } from '../Layout/Main';
 
-const MiniCart = () => {
+const MiniCart = (props) => {
     const [cart, setCart] = useContext(CartContext);
 
     const handleRemoveItem = id => {
@@ -22,27 +22,17 @@ const MiniCart = () => {
         total = total + product.price * product.quantity
     }
 
-    const orderHandler = () => {
-        if (cart.length) {
-            setCart([])
-            deleteShoppingCart()
-            return toast.success('Order Placed!', { autoClose: 500 })
-        }
-
-        return toast.error('Cart is empty', { autoClose: 500 })
-    }
-
 
     return (
         <>
-            <button className="navbar-toggler me-3 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+            {/* <button className="navbar-toggler me-3 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
             >
                 <span className="bi bi-cart-dash-fill" />
                 <p className='position-absolute top-0 start-100 translate-middle rounded-circle cart-length-bg'>{cart.length}</p>
 
 
-            </button>
-            <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            </button> */}
+            <div className="offcanvas offcanvas-end" tabindex="-1" id={props.id} aria-labelledby="offcanvasNavbarLabel">
                 <div className="offcanvas-header">
                     <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Cart</h5>
                     <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>

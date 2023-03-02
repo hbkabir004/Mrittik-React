@@ -138,7 +138,7 @@ const ProjectGallery03 = () => {
                     <div className="portfolio-filters-content">
                         <div className="filters-button-group">
                             <button className="button is-checked" onClick={handleFilterKeyChange('*')}>All <sup className="filter-count"></sup></button>
-                            <button className="button" onClick={handleFilterKeyChange('exterior')}>Exterior <sup className="filter-count"></sup></button>
+                            {/* <button className="button" onClick={handleFilterKeyChange('exterior')}>Exterior <sup className="filter-count"></sup></button> */}
                             <button className="button" onClick={handleFilterKeyChange('residences')}>Residences <sup className="filter-count"></sup></button>
                             <button className="button" onClick={handleFilterKeyChange('interiors')}>Interiors <sup className="filter-count"></sup></button>
                             <button className="button" onClick={handleFilterKeyChange('landscape')}>Landscape <sup className="filter-count"></sup></button>
@@ -156,9 +156,9 @@ const ProjectGallery03 = () => {
                         <div className="grid-item residences">
                             <ProjectCard04 img='images/portfolio/grid-list/3.jpg' details='Find your own self invintage lake house' />
                         </div>
-                        <div className="grid-item landscape exterior">
+                        {/* <div className="grid-item exterior">
                             <ProjectCard04 img='images/portfolio/grid-list/4.jpg' details='Well decor house in Sydney' />
-                        </div>
+                        </div> */}
                         <div className="grid-item landscape">
                             <ProjectCard04 img='images/portfolio/grid-list/5.jpg' details='Huge large area Bedroom' />
                         </div>

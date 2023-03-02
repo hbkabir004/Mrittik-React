@@ -8,7 +8,7 @@ const TeamContainer = () => {
         <section className="team in-team">
             <div className="container-sm">
                 <div className="section-header medium">
-                    <PageHeader title="Meet Our Team" />
+                    <PageHeader className='heading' title="Meet Our Team" />
                     <div className="section-desc row align-items-center justify-content-center">
                         <div className="col-lg-5">
                             <Paragraph text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture, space planning & programming." />

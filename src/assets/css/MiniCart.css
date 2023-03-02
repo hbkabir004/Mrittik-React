@@ -108,13 +108,11 @@
 
   .bi.bi-cart-dash-fill{
     font-size: 20px;
-    opacity: 0.6;
-    transition: 0.3s;
+    transition: all 0.5s ease-in-out; 
   }
   
   .bi.bi-cart-dash-fill:hover{
     color: #a6a182;
-    opacity: 1;
   }
 
   .cart-length-bg{
