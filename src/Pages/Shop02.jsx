@@ -5,7 +5,7 @@ import ShopContainer02 from '../containers/ShopContainer02';
 const Shop02 = () => {
     return (
         <>
-            <PageBanner title="Shop" activePage="Shop" />
+            <PageBanner pageTitle='Pages' title="Shop" activePage="Shop" />
             <main className="wrapper">
                 <ShopContainer02 />
             </main>

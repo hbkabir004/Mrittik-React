@@ -7,8 +7,7 @@ import ProjectCard from '../components/ProjectCard';
 import SectionGridLines from '../components/SectionGridLines';
 import SectionHeader from '../components/SectionHeader';
 
-
-const ProjectGallery = (props) => {
+const ProjectGallery = () => {
     const [filterKey, setFilterKey] = useState('*')
 
     useEffect(() => {
@@ -81,8 +80,8 @@ const ProjectGallery = (props) => {
         // }
 
         // //append load more button
-        // //$grid.after('<button id="load-more" class="btn btn-dark">Load More</button>');
-        // //when load more button clicked
+        // $grid.after('<button id="load-more" class="btn btn-dark">Load More</button>');
+        //when load more button clicked
         // $("#load-more").click(function () {
         //     if ($('.filters-button-group').data('clicked')) {
         //         counter = initShow;
@@ -210,7 +209,7 @@ const ProjectGallery = (props) => {
 
                     </div> */}
                 </div>
-                <LoadmoreBtn text={props.text} className={props.className} />
+                <LoadmoreBtn text='Discover All Projects' className='btn olive w-100' />
             </div>
         </section>
     );

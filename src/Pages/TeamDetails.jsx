@@ -5,7 +5,7 @@ import TeamDetailsContainer from '../containers/TeamDetailsContainer';
 const TeamDetails = () => {
     return (
         <>
-            <PageBanner title="Benjamin Brook" activePage="Team" />
+            <PageBanner pageTitle='Pages' title="Benjamin Brook" activePage="Team" />
             <TeamDetailsContainer />
 
         </>

@@ -5,7 +5,7 @@ import TeamContainer from '../containers/TeamContainer';
 const Team = () => {
     return (
         <>
-            <PageBanner title="Our Team" activePage="Team" />
+            <PageBanner pageTitle='Pages' title="Our Team" activePage="Team" />
             <main className="wrapper">
                 <TeamContainer></TeamContainer>
             </main>

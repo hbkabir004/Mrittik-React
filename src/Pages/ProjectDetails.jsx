@@ -1,10 +1,13 @@
 import React from 'react';
+import PageBanner from '../containers/PageBanner';
+import ProjectDetailsContainer from '../containers/ProjectDetailsContainer';
 
 const ProjectDetails = () => {
     return (
-        <div>
-
-        </div>
+        <main className="wrapper">
+            <PageBanner pageTitle='Projects' title="Project Details" activePage="California Mansion Residence" />
+            <ProjectDetailsContainer />
+        </main>
     );
 };
 

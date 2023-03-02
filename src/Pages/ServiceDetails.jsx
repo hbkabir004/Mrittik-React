@@ -5,7 +5,7 @@ import ServiceContainer03 from '../containers/ServiceContainer03';
 const ServiceDetails = () => {
     return (
         <>
-            <PageBanner title="Service Details" activePage="California Mansion Residence" />
+            <PageBanner pageTitle='Pages' title="Service Details" activePage="California Mansion Residence" />
             <ServiceContainer03 />
         </>
     );
