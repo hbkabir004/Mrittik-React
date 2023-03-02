@@ -16,9 +16,10 @@ const Main = () => {
         <ProductContext.Provider value={products}>
             <CartContext.Provider value={[cart, setCart]}>
                 {/* <> */}
-                <Header></Header>
-                <Outlet></Outlet>
-                <Footer></Footer>
+                <Header />
+                {/* <MiniCart /> */}
+                <Outlet />
+                <Footer />
                 {/* </> */}
             </CartContext.Provider>
         </ProductContext.Provider>

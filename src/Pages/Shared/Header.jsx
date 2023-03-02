@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
+import MiniCart from '../../containers/MiniCart';
 import AsideInfo from './AsideInfo';
 
 const Header = () => {
@@ -104,13 +105,16 @@ const Header = () => {
                                 </li>
                             </ul>
                         </div>
+
                         <div className="header_right_part d-flex align-items-center">
                             <button className="aside_open">
                                 <span className="line"></span>
                                 <span className="line"></span>
                                 <span className="line"></span>
                             </button>
+
                             <div className="header_search">
+                                <MiniCart />
                                 <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>
                             </div>
                             <div className="open_search">
@@ -119,6 +123,7 @@ const Header = () => {
                                     <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>
                                 </form>
                             </div>
+
                             <button className="ma5menu__toggle d-lg-none d-block" type="button">
                                 <i className="bi bi-list"></i>
                             </button>
