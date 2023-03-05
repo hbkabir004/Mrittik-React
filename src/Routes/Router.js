@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { productsAndCartData } from "../components/forJSON/getCart&ProductsData";
+import ShopCategory from "../containers/ShopCategory";
 import Main from "../Layout/Main";
 import AboutUs from "../Pages/AboutUs";
 import Blog from "../Pages/Blog";
@@ -88,12 +89,17 @@ export const routes = createBrowserRouter([
                 element: <ProjectDetails02/>,
             },
             {
+                path: '/shop-category/:id',
+                element: <ShopCategory/>,
+                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/category/${params.id}`),
+            },
+            {
                 path: '/shop-1',
                 element: <Shop01/>,
             },
             {
                 path: '/shop-product/:id',
-            element: <ShopProduct/>,
+                element: <ShopProduct/>,
                 loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/${params.id}`)
             },
            

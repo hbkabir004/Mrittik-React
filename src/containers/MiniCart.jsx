@@ -24,7 +24,7 @@ const MiniCart = (props) => {
 
 
     return (
-        <div className="offcanvas offcanvas-end" tabindex="-1" id={props.id} aria-labelledby="offcanvasNavbarLabel">
+        <div className="bg-dark offcanvas offcanvas-end" tabindex="-1" id={props.id} aria-labelledby="offcanvasNavbarLabel">
             <div className="offcanvas-header">
                 <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Cart</h5>
                 <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>

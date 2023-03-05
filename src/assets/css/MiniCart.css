@@ -125,3 +125,16 @@
     font-size: 12px;
     font-weight: 700;
   }
+
+  .bg-dark .offcanvas-title, .bg-dark .cart-item-price{
+    color: white;
+  }
+
+  .bg-white .offcanvas-title, .bg-white .cart-item-price{
+    color: black;
+  }
+
+  .bg-dark .btn-close{
+    background-color: white;
+  }
+  
