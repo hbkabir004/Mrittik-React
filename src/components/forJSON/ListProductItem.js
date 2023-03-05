@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ListProductItem = ({productItem}) => {
+const ListProductItem = ({productItem, handleAddToCart}) => {
     const { img, name, badge, newClass, oldClass, price, oldPrice } = productItem;
 
     return (
@@ -22,7 +22,7 @@ const ListProductItem = ({productItem}) => {
                                 <li><i className="bi bi-star-fill"></i></li>
                             </ul>
                         </div>
-                        <div className="cart_button">
+                        <div onClick={() => handleAddToCart(productItem)} className="cart_button">
                             <a href="#" className="button">Add to Cart</a>
                         </div>
                     </div>

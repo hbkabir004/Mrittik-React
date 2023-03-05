@@ -63,6 +63,7 @@ const TabContent = () => {
                         products.map(product => <ListProductItem
                             key={product.id}
                             productItem={product}
+                            handleAddToCart={handleAddToCart}
                         ></ListProductItem>)
                     }
                     {/* </ProductContext.Provider> */}

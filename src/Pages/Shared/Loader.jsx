@@ -6,7 +6,7 @@ const Loader = () => {
         // Preloader
         setTimeout(function () {
             $('#preloader').addClass('hide');
-        }, 500);
+        }, 200);
 
         $("#preloader").append('<div class="hide-loader">Hide Preloader</div>');
         $('.hide-loader').click(function (e) {

@@ -1,8 +1,8 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
+import ShopSidebar from '../components/forJSON/ShopSidebar';
+import TabContent from '../components/forJSON/TabContent';
 import ShopFilter from './ShopFilter';
-import ShopSidebar from './ShopSidebar';
-import TabContent from './TabContent';
 
 const ShopContainer02 = () => {
     useEffect(() => {

@@ -17,7 +17,10 @@ const CategoryItem = ({ categoryItem }) => {
                 </span>
             </div>
             <ul id={id} className="child_category collapse">
-                <>
+                <li>
+                    <div className="cat_name"><a href="#">{item1}</a></div>
+                </li>
+                {/* <>
                 {
                     item1 ? <>
                                 <li>
@@ -25,7 +28,8 @@ const CategoryItem = ({ categoryItem }) => {
                                 </li> 
                             </> : <></>
                 }
-                </>
+                </> */}
+
                 <>
                 {
                     item2 ? <>

@@ -18,7 +18,7 @@ const CategotyProductItem = ({productItem, handleAddToCart}) => {
                 </div>
                 <div className="product_item_inner">
                     <div className="label_text">
-                        <Link to={`/shop-product/${id}`}><h4 className="product_item_name"><a href="/shop-product">{name}</a>
+                        <Link to={`/shop-product/${id}`}><h4 className="product_item_name"><a>{name}</a>
                             <span className="product_item_price"> <del className={oldClass}>{oldPrice}</del> {price}</span>
                             <span className="product_item_price"></span>
                         </h4></Link>
