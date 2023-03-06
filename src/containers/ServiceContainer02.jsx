@@ -1,7 +1,6 @@
 import React from 'react';
 import ServiceCard02 from '../components/ServiceCard02';
 import FormContainer from './FormContainer';
-import Testimonials from './Testimonials';
 
 const ServiceContainer02 = () => {
     return (
@@ -24,7 +23,7 @@ const ServiceContainer02 = () => {
                 </div>
             </section>
 
-            <Testimonials />
+            {/* <Testimonials /> */}
             <FormContainer />
 
         </main>
