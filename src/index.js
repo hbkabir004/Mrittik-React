@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import App from './App';
-import './assets/css/fancybox.min.css';
 import './assets/css/style.css';
 import './index.css';
 import reportWebVitals from './reportWebVitals';

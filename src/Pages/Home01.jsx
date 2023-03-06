@@ -7,7 +7,6 @@ import ProjectGallery from '../containers/ProjectGallery';
 import RunningProjects from '../containers/RunningProjects';
 import Services from '../containers/Services';
 import Sliders from '../containers/Sliders';
-import Testimonials from '../containers/Testimonials';
 
 const Home01 = () => {
     return (
@@ -18,7 +17,7 @@ const Home01 = () => {
             <FunFacts className='funfacts bg_1' />
             <RunningProjects />
             <ProjectGallery />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Blogs />
             <FormContainer />
         </div>

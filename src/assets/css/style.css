@@ -36,8 +36,8 @@
 -----------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url("../fonts/bootstrap-icons/font/bootstrap-icons.css");
-@import url("../css/cursor-effect.css");
-@import url("../plugins/aos/aos.css");
+/* @import url("../css/cursor-effect.css");
+@import url("../plugins/aos/aos.css"); */
 /* @import url("../../plugins/menu/ma5-menu.css");
 @import url("../../plugins/select2/css/select2.css");
 @import url("../../plugins/jquery_ui/style.css");
@@ -13705,13 +13705,6 @@ label {
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
   border-left: 18px solid #a6a182;
-}
-
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: -10px;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,

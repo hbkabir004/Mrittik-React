@@ -1,9 +1,12 @@
 import Aos from 'aos';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { RouterProvider } from 'react-router-dom';
+import 'swiper/css/autoplay';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import "swiper/swiper.min.css";
 import './App.css';
 import './assets/css/style.css';
-import './assets/css/swiper-bundle.min.css';
 import Loader from './Pages/Shared/Loader';
 import ThemeSwitcher from './Pages/Shared/ThemeSwitcher';
 import { routes } from './Routes/Router';

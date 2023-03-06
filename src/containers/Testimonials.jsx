@@ -1,54 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Swiper from 'swiper';
+import SwiperCore, { A11y, Autoplay, Pagination, Scrollbar } from "swiper/core";
+import { SwiperSlide } from 'swiper/react';
 import SectionGridLines from '../components/SectionGridLines';
 import TestimonialSlide from '../components/TestimonialSlide';
 
-const Testimonials = () => {
-    useEffect(() => {
-        // Testimonial
-        var swipert7 = new Swiper('.swiper_testimonial', {
-            slidesPerView: '1',
-            centeredSlides: true,
-            speed: 1600,
-            spaceBetween: 50,
-            parallax: true,
-            autoHeight: true,
-            effect: 'slide',
-            controller: {
-                inverse: true,
-            },
-            slideToClickedSlide: true,
-            lazyLoading: true,
-            loop: true,
-            keyboard: {
-                enabled: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                dynamicBullets: true,
-            },
+SwiperCore.use([Pagination, Scrollbar, Autoplay]);
 
-            breakpoints: {
-                767: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 70,
-                },
-                1200: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 120,
-                },
-                1400: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 170,
-                },
-            }
-        });
-    }, []);
+
+const Testimonials = () => {
     return (
         <section className="testimonial box_padding pb-0">
             <SectionGridLines></SectionGridLines>
@@ -56,17 +16,53 @@ const Testimonials = () => {
             <div className="testimonial_inner bg-black">
                 {/* <!-- Swiper Testimonial --> */}
                 <div className="swiper swiper_testimonial">
-                    <div className="swiper-wrapper">
-                        <TestimonialSlide></TestimonialSlide>
-                        <TestimonialSlide></TestimonialSlide>
-                        <TestimonialSlide></TestimonialSlide>
-                        <TestimonialSlide></TestimonialSlide>
-                        <TestimonialSlide></TestimonialSlide>
-                        <TestimonialSlide></TestimonialSlide>
-                        <TestimonialSlide></TestimonialSlide>
-                        <TestimonialSlide></TestimonialSlide>
-                        <TestimonialSlide></TestimonialSlide>
-                    </div>
+                    <Swiper
+                        modules={[Pagination, Scrollbar, A11y]}
+                        autoplay={{
+                            delay: 4000,
+                            disableOnInteraction: false
+                        }}
+
+                        slidesPerView={1}
+                        loop={true}
+                        initialSlide={1}
+                        centeredSlides={true}
+                        pagination={{
+                            clickable: true,
+                            dynamicBullets: true,
+                        }}
+                    >
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+
+
+                        {/*<SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                         <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide> */}
+                    </Swiper>
+
                     <div className="swiper-pagination"></div>
                 </div>
             </div>

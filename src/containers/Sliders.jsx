@@ -1,25 +1,27 @@
 import React from 'react';
-import SwiperCore, { Navigation, Pagination } from "swiper/core";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import SwiperCore, { A11y, Autoplay, Pagination, Scrollbar } from "swiper/core";
+import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard from '../components/SliderCard';
 
-
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Pagination, Scrollbar, Autoplay]);
 
 const Sliders = () => {
-    const swiper = useSwiper();
     return (
         <div className="theme_slider bg-black">
             <div className="container">
                 <div className="swiper swiper_theme_slider" data-swiper-autoplay="2000">
                     {/* <div className="swiper-wrapper"> */}
                     <Swiper
-                        // modules={[Navigation, Pagination]}
+                        modules={[Pagination, Scrollbar, A11y]}
+                        autoplay={{
+                            delay: 4000,
+                            disableOnInteraction: false
+                        }}
+
                         slidesPerView={1}
                         loop={true}
                         initialSlide={1}
                         centeredSlides={true}
-                        navigation
                         pagination={{
                             clickable: true,
                             dynamicBullets: true,
