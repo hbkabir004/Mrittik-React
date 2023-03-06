@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Controller } from 'swiper';
 import SwiperCore, { A11y, Autoplay, Pagination, Scrollbar } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,7 +8,8 @@ import SliderCard07 from '../components/SliderCard07';
 SwiperCore.use([Pagination, Scrollbar, Autoplay]);
 
 const Sliders07 = () => {
-    const [controlledSwiper, setControlledSwiper] = useState(null);
+    // const [controlledSwiper, setControlledSwiper] = useState(null);
+
     // useEffect(() => {
     //     // Slider 6
     //     var swiper6 = new Swiper(".swiper_theme_slider_6", {
@@ -49,9 +50,9 @@ const Sliders07 = () => {
         <div className="theme_slider_6">
             <div className="swiper swiper_theme_slider_6">
                 <Swiper
-                    modules={[Controller]}
+                    modules={[Scrollbar, A11y, Controller]}
                     autoplay={{
-                        delay: 4000,
+                        delay: 2000,
                         disableOnInteraction: false
                     }}
 
@@ -59,7 +60,10 @@ const Sliders07 = () => {
                     loop={true}
                     initialSlide={1}
                     centeredSlides={true}
-
+                    // pagination={{
+                    //     clickable: true,
+                    //     dynamicBullets: true,
+                    // }}
                     // spaceBetween={20}
                     parallax={true}
                     autHeight={true}
@@ -106,9 +110,9 @@ const Sliders07 = () => {
 
             <div className="swiper swiper_theme_slider_6 second_row">
                 <Swiper
-                    modules={[Pagination, Scrollbar, A11y, Controller]}
+                    modules={[Scrollbar, A11y, Controller]}
                     autoplay={{
-                        delay: 4000,
+                        delay: 2000,
                         disableOnInteraction: false
                     }}
 
@@ -116,10 +120,10 @@ const Sliders07 = () => {
                     loop={true}
                     initialSlide={1}
                     centeredSlides={true}
-                    pagination={{
-                        clickable: true,
-                        dynamicBullets: true,
-                    }}
+                    // pagination={{
+                    //     clickable: true,
+                    //     dynamicBullets: true,
+                    // }}
                     // spaceBetween={20}
                     parallax={true}
                     autHeight={true}
