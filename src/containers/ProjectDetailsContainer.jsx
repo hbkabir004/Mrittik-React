@@ -16,7 +16,7 @@ const ProjectDetailsContainer = () => {
                             modules={[Pagination, Scrollbar, A11y, EffectFade]}
                             effect="slide"
                             autoplay={{
-                                delay: 3000,
+                                delay: 4000,
                                 disableOnInteraction: false,
                                 speed: 3000
                             }}
@@ -27,19 +27,6 @@ const ProjectDetailsContainer = () => {
                             pagination={{
                                 clickable: true,
                                 dynamicBullets: true,
-                            }}
-                            spaceBetween={50}
-                            parallax={true}
-                            autHeight={true}
-                            mousewheel={true}
-                            // effect={slide}
-                            controller={{
-                                inverse: true,
-                            }}
-                            slideToClickedSlide={true}
-                            lazyLoading={true}
-                            keyboard={{
-                                enabled: true,
                             }}
 
 
