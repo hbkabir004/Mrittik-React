@@ -130,26 +130,10 @@ const RelatedProjects = () => {
                     <RelatedProjectCard img='images/portfolio/4.jpg' name='California young menz club' />
                 </div>
                 <div className="grid-item interiors">
-                    <div className="thumb">
-                        <img className="item_image" src="images/portfolio/2.jpg" alt="" />
-                        <div className="works-info">
-                            <div className="label-text">
-                                <h5><a href="project-details.html">California young menz club</a></h5>
-                                <h6><a href="#">Club House</a>, <a href="#">Interior</a></h6>
-                            </div>
-                        </div>
-                    </div>
+                    <RelatedProjectCard img='images/portfolio/2.jpg' name='California young menz club' />
                 </div>
                 <div className="grid-item residences">
-                    <div className="thumb">
-                        <img className="item_image" src="images/portfolio/3.jpg" alt="" />
-                        <div className="works-info">
-                            <div className="label-text">
-                                <h5><a href="project-details.html">California young menz club</a></h5>
-                                <h6><a href="#">Club House</a>, <a href="#">Interior</a></h6>
-                            </div>
-                        </div>
-                    </div>
+                    <RelatedProjectCard img='images/portfolio/3.jpg' name='California young menz club' />
                 </div>
             </div>
         </div>
