@@ -1,8 +1,8 @@
 import React from 'react';
 // import { Parallax } from 'swiper';
-import SwiperCore, {Mousewheel, Pagination } from "swiper/core";
+import SwiperCore, { Mousewheel, Pagination } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SliderCard from '../components/SliderCard';
+import SliderCard02 from '../components/SliderCard02';
 
 SwiperCore.use([Mousewheel, Pagination]);
 
@@ -81,16 +81,16 @@ const Sliders02 = () => {
                 }}
             >
                 <SwiperSlide>
-                    <SliderCard bgImg="images/slider/9.jpg" />
+                    <SliderCard02 bgImg="images/slider/9.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <SliderCard bgImg="images/slider/10.jpg" />
+                    <SliderCard02 bgImg="images/slider/10.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <SliderCard bgImg="images/slider/11.jpg" />
+                    <SliderCard02 bgImg="images/slider/11.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <SliderCard bgImg="images/slider/12.jpg" />
+                    <SliderCard02 bgImg="images/slider/12.jpg" />
                 </SwiperSlide>
             </Swiper>
         </div>
