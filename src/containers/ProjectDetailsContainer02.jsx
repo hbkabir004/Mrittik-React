@@ -1,11 +1,8 @@
 import React from 'react';
-import SwiperCore, { Autoplay, Pagination, Scrollbar } from "swiper/core";
-import ProjectDetailsInner from '../components/ProjectDetailsInner';
+import ProjectDetailsInner02 from '../components/ProjectDetailsInner02';
 import SideBar02 from '../components/SideBar02';
 
-SwiperCore.use([Pagination, Scrollbar, Autoplay]);
-
-const ProjectDetailsContainer = () => {
+const ProjectDetailsContainer02 = () => {
     return (
         <section class="project-details bg-dark-200">
             <div class="container">
@@ -14,7 +11,7 @@ const ProjectDetailsContainer = () => {
                         <div class="post-image">
                             <img src="images/portfolio/details/sl-1.jpg" alt="image" />
                         </div>
-                        <ProjectDetailsInner />
+                        <ProjectDetailsInner02 />
                     </div>
 
                     <div class="col-lg-4 col-md-4">
@@ -26,4 +23,4 @@ const ProjectDetailsContainer = () => {
     );
 };
 
-export default ProjectDetailsContainer;
+export default ProjectDetailsContainer02;
