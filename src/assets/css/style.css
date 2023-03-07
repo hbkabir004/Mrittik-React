@@ -12720,7 +12720,10 @@ label {
 .theme_slider_2 {
   position: relative;
 }
-
+.theme_slider_2 .swiper_theme_slider_2,
+.theme_slider_2 .swiper_theme_slider_2 .swiper-slide {
+  height: 100vh !important;
+}
 .theme_slider_2 .swiper-slide .slider {
   background-repeat: repeat;
   background-size: cover;
@@ -12730,6 +12733,7 @@ label {
   transition: all 0.5s ease-in-out;
   display: flex;
   justify-content: start;
+  height: 100vh;
 }
 
 .theme_slider_2 .swiper-slide .slider .slide_content {

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Parallax } from 'swiper';
-import SwiperCore, { Autoplay, Mousewheel, Pagination, Scrollbar } from "swiper/core";
+// import { Parallax } from 'swiper';
+import SwiperCore, {Mousewheel, Pagination } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard from '../components/SliderCard';
 
-SwiperCore.use([Pagination, Scrollbar, Autoplay]);
+SwiperCore.use([Mousewheel, Pagination]);
 
 const Sliders02 = () => {
     // useEffect(() => {
@@ -49,10 +49,9 @@ const Sliders02 = () => {
 
     return (
         <div className="theme_slider_2 p-0">
-            {/* <div className="swiper_theme_slider_2"> */}
             <Swiper
                 // direction="vertical"
-                modules={[Pagination, Scrollbar, Parallax, Mousewheel]}
+                modules={[Mousewheel, Pagination]}
                 className="swiper_theme_slider_2"
                 direction={'vertical'}
                 autoplay={{
@@ -94,15 +93,6 @@ const Sliders02 = () => {
                     <SliderCard bgImg="images/slider/12.jpg" />
                 </SwiperSlide>
             </Swiper>
-            {/* <!-- Add Pagination --> */}
-            {/* <div className="swiper-pagination"></div> */}
-
-            {/* <!-- Add Buttons --> */}
-            {/* <div className="swiper-navigation">
-                    <div className="swiper-button-prev"><i className="bi bi-arrow-left"></i></div>
-                    <div className="swiper-button-next"><i className="bi bi-arrow-right"></i></div>
-                </div> */}
-            {/* </div> */}
         </div>
     );
 };
