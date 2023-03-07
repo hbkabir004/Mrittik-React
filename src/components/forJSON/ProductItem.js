@@ -11,7 +11,7 @@ const ProductItem = ({productItem, handleAddToCart}) => {
                     <span className={newClass}>{badge}</span>
                     <img className="primary_img" src={img} alt="img" />
                     <div onClick={() => handleAddToCart(productItem)} className="cart_button">
-                        <a href="#" className="button">
+                        <a className="button">
                             Add to Cart
                         </a>
                     </div>

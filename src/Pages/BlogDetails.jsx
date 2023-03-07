@@ -5,7 +5,7 @@ import PageBanner from '../containers/PageBanner';
 const BlogDetails = () => {
     return (
         <>
-            <PageBanner pageTitle='Pages' title="California Mansion Residence" activePage="Contact"></PageBanner>
+            <PageBanner pageTitle='Pages' title="California Mansion Residence" activePage="Blog-Details"></PageBanner>
             <BlogDetailsContainer />
         </>
     );

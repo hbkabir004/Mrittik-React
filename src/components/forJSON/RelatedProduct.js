@@ -12,7 +12,7 @@ const RelatedProduct = ({relatedProduct}) => {
                         <span className={newClass}>{badge}</span>
                         <img className="primary_img" src={img} alt="img" />
                         <div className="cart_button">
-                            <a href="#" className="button">
+                            <a className="button">
                                 Add to Cart
                             </a>
                         </div>

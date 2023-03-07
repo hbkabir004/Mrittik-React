@@ -1,83 +1,94 @@
-import React, { useEffect } from 'react';
-import Swiper from 'swiper';
+import React from 'react';
+import { EffectFade } from 'swiper';
+import { A11y, Pagination, Scrollbar } from "swiper/core";
+import { Swiper, SwiperSlide } from "swiper/react";
 import GalleryImg from '../components/GalleryImg';
 import Paragraph from '../components/Paragraph';
 import PointOrder from '../components/PointOrder';
 import PointOrder02 from '../components/PointOrder02';
 import PostFooter from '../components/PostFooter';
-import ProjectCard from '../components/ProjectCard';
+import RelatedProjects from '../components/RelatedProjects';
 import WidgetTitle from '../components/WidgetTitle';
 import PostHeader from './PostHeader';
 
 const ServiceContainer03 = () => {
-    useEffect(() => {
-        // Gallery
-        var swiper9 = new Swiper('.swiper_gallery', {
-            slidesPerView: '1',
-            centeredSlides: true,
-            // slideToClickedSlide: true,
-            speed: 1400,
-            spaceBetween: 0,
-            parallax: true,
-            autHeight: true,
-            effect: "creative",
-            creativeEffect: {
-                prev: {
-                    shadow: true,
-                    translate: ["-20%", 0, -1],
-                },
-                next: {
-                    translate: ["100%", 0, 0],
-                },
-            },
-            controller: {
-                inverse: true,
-            },
-            slideToClickedSlide: true,
-            lazyLoading: true,
-            loop: false,
-            keyboard: {
-                enabled: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                dynamicBullets: true,
-            },
-        });
+    // useEffect(() => {
+    //     Gallery
+    //     var swiper9 = new Swiper('.swiper_gallery', {
+    //         slidesPerView: '1',
+    //         centeredSlides: true,
+    //         // slideToClickedSlide: true,
+    //         speed: 1400,
+    //         spaceBetween: 0,
+    //         parallax: true,
+    //         autHeight: true,
+    //         effect: "creative",
+    //         creativeEffect: {
+    //             prev: {
+    //                 shadow: true,
+    //                 translate: ["-20%", 0, -1],
+    //             },
+    //             next: {
+    //                 translate: ["100%", 0, 0],
+    //             },
+    //         },
+    //         controller: {
+    //             inverse: true,
+    //         },
+    //         slideToClickedSlide: true,
+    //         lazyLoading: true,
+    //         loop: false,
+    //         keyboard: {
+    //             enabled: true,
+    //         },
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         pagination: {
+    //             el: '.swiper-pagination',
+    //             clickable: true,
+    //             dynamicBullets: true,
+    //         },
+    //     });
 
-    }, []);
+    // }, []);
     return (
         <main className="wrapper">
             <section className="project-details bg-dark-200">
                 <div className="container">
                     <div className="gallery_slider">
                         <div className="swiper swiper_gallery">
-                            <div className="swiper-wrapper">
-                                <div className="swiper-slide">
+                            <Swiper
+                                modules={[Pagination, Scrollbar, A11y, EffectFade]}
+                                effect="slide"
+                                autoplay={{
+                                    delay: 4000,
+                                    disableOnInteraction: false,
+                                    speed: 3000
+                                }}
+                                slidesPerView={1}
+                                loop={true}
+                                initialSlide={1}
+                                centeredSlides={true}
+                                pagination={{
+                                    clickable: true,
+                                    dynamicBullets: true,
+                                }}
+
+
+                            >
+                                <SwiperSlide>
                                     <GalleryImg img='images/portfolio/details/sl-1.jpg' />
-                                </div>
-
-                                <div className="swiper-slide">
+                                </SwiperSlide>
+                                <SwiperSlide>
                                     <GalleryImg img='images/portfolio/details/sl-2.jpg' />
-                                </div>
-
-                                <div className="swiper-slide">
+                                </SwiperSlide>
+                                <SwiperSlide>
                                     <GalleryImg img='images/portfolio/details/sl-3.jpg' />
-                                </div>
-                            </div>
-                            {/* <!-- Add Pagination --> */}
-                            {/* <!-- <div className="swiper-pagination"></div> --> */}
+                                </SwiperSlide>
+                            </Swiper>
 
-                            {/* <!-- Add Buttons --> */}
-                            <div className="swiper-navigation">
-                                <div className="swiper-button-prev"><i className="bi bi-arrow-left"></i></div>
-                                <div className="swiper-button-next"><i className="bi bi-arrow-right"></i></div>
-                            </div>
                         </div>
                     </div>
 
@@ -109,21 +120,7 @@ const ServiceContainer03 = () => {
                                         <PostFooter />
                                     </div>
 
-                                    <div className="related-posts">
-                                        <WidgetTitle title='More Projects' />
-                                        <div className="grid grid-3 gutter-15 clearfix">
-                                            <div className="grid-sizer"></div>
-                                            <div className="grid-item residences">
-                                                <ProjectCard img="images/portfolio/4.jpg" details="California young menz club" />
-                                            </div>
-                                            <div className="grid-item interiors">
-                                                <ProjectCard img="images/portfolio/2.jpg" details="California young menz club" />
-                                            </div>
-                                            <div className="grid-item residences">
-                                                <ProjectCard img="images/portfolio/3.jpg" details="California young menz club" />
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <RelatedProjects />
                                 </div>
                             </div>
                         </div>
