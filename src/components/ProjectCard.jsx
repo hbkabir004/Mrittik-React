@@ -4,7 +4,7 @@ import LazyLoad from 'react-lazyload';
 const ProjectCard = (props) => {
     return (
         <div className="thumb">
-            <LazyLoad height={800} offset={100} once>
+            <LazyLoad height={600} offset={100} once>
                 <img className="item_image" src={props.img} alt="" />
             </LazyLoad>
             <div className="works-info">

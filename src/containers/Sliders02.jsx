@@ -51,6 +51,7 @@ const Sliders02 = () => {
             <div className="swiper swiper_theme_slider_2">
                 <div className="swiper-wrapper">
                     <Swiper
+                        // direction="vertical"
                         modules={[Pagination, Scrollbar, A11y]}
                         autoplay={{
                             delay: 4000,

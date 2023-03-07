@@ -7,11 +7,8 @@ import ProjectCard from '../components/ProjectCard';
 import SectionGridLines from '../components/SectionGridLines';
 import SectionHeader from '../components/SectionHeader';
 
-// Lazy loading 
-// const ProjectCard = React.lazy(() => import('../components/ProjectCard'));
-
 const ProjectGallery = () => {
-    const [filterKey, setFilterKey] = useState('*');
+    const [filterKey, setFilterKey] = useState('*')
 
     useEffect(() => {
         Isotope.current = new Isotope('.grid', {
@@ -178,14 +175,14 @@ const ProjectGallery = () => {
                     <div className="grid-item exterior width-50">
                         <ProjectCard img="images/portfolio/packery/8.jpg" details="Newyork golf club house" />
                     </div>
-                    <div className="grid-item interiors width-50">
+                    {/* <div className="grid-item interiors width-50">
                         <ProjectCard img="images/portfolio/packery/2.jpg" details="California young menz club" />
 
-                    </div>
-                    <div className="grid-item residences width-50">
+                    </div> */}
+                    {/* <div className="grid-item residences width-50">
                         <ProjectCard img="images/portfolio/packery/3.jpg" details="California young menz club" />
 
-                    </div>
+                    </div> */}
                     {/* <div className="grid-item landscape exterior width-50">
                         <ProjectCard img="images/portfolio/packery/4.jpg" details="California young menz club" />
 
