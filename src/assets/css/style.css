@@ -12742,6 +12742,7 @@ label {
 }
 
 .theme_slider_2 .swiper-slide .slider .slide_content .slide_content_wrapper {
+  height: 100%;
   display: flex;
   align-items: center;
   padding: calc(1.375rem + 1.28571vw) calc(1.375rem + 1.28571vw);

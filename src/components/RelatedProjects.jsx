@@ -1,5 +1,6 @@
 import Isotope from 'isotope-layout';
 import React, { useEffect } from 'react';
+import RelatedProjectCard from './RelatedProjectCard';
 
 const RelatedProjects = () => {
     useEffect(() => {
@@ -126,15 +127,7 @@ const RelatedProjects = () => {
             <div className="grid grid-3 gutter-15 clearfix">
                 <div className="grid-sizer"></div>
                 <div className="grid-item residences">
-                    <div className="thumb">
-                        <img className="item_image" src="images/portfolio/4.jpg" alt="" />
-                        <div className="works-info">
-                            <div className="label-text">
-                                <h5><a href="project-details.html">California young menz club</a></h5>
-                                <h6><a href="#">Club House</a></h6>
-                            </div>
-                        </div>
-                    </div>
+                    <RelatedProjectCard img='images/portfolio/4.jpg' name='California young menz club' />
                 </div>
                 <div className="grid-item interiors">
                     <div className="thumb">
