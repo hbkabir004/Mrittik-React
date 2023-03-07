@@ -1,7 +1,7 @@
 import React from 'react';
 import PageBanner02 from '../containers/PageBanner02';
 
-const Signin = () => {
+const Login = () => {
     return (
         <>
             <PageBanner02 title="Login" page="Shop" activePage='Login' href="/shop-1"></PageBanner02>
@@ -47,4 +47,4 @@ const Signin = () => {
     );
 };
 
-export default Signin;
+export default Login;

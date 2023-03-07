@@ -15,6 +15,7 @@ import Home04 from "../Pages/Home04";
 import Home05 from "../Pages/Home05";
 import Home06 from "../Pages/Home06";
 import Home07 from "../Pages/Home07";
+import Login from "../Pages/Login";
 import Project01 from "../Pages/Project01";
 import Project02 from "../Pages/Project02";
 import Project03 from "../Pages/Project03";
@@ -29,7 +30,6 @@ import Shop03 from "../Pages/Shop03";
 import ShopCart from "../Pages/ShopCart";
 import ShopCheckout from "../Pages/ShopCheckout";
 import ShopProduct from "../Pages/ShopProduct";
-import Signin from "../Pages/Signin";
 import Team from "../Pages/Team";
 import TeamDetails from "../Pages/TeamDetails";
 import ThankYou from "../Pages/ThankYou";
@@ -136,8 +136,8 @@ export const routes = createBrowserRouter([
                 element: <ServiceDetails/>,
             },
             {
-                path: '/signin',
-                element: <Signin/>,
+                path: '/login',
+                element: <Login/>,
             },
             {
                 path: '/coming-soon',

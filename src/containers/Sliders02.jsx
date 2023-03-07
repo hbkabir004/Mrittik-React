@@ -53,6 +53,7 @@ const Sliders02 = () => {
                     <Swiper
                         // direction="vertical"
                         modules={[Pagination, Scrollbar, A11y]}
+                        direction={'vertical'}
                         autoplay={{
                             delay: 4000,
                             disableOnInteraction: false
