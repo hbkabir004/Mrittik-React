@@ -7,20 +7,13 @@ import AsideInfo from './AsideInfo';
 const Header = () => {
     const [cart, setCart] = useContext(CartContext);
 
-    // const handleRemoveItem = id => {
-    //     const remaining = cart.filter(product => product.id !== id)
-    //     setCart(remaining)
-    //     removeFromDb(id)
-    //     toast.warning('Product Removed!', { autoClose: 500 })
-    // }
-
-    // let total = 0
-
-    // for (const product of cart) {
-    //     total = total + product.price * product.quantity
-    // }
-
     useEffect(() => {
+        // Toggle Header Search
+        $('.header_search .form-control-submit').on("click", function () {
+            // e.preventDefault();
+            $('.open_search').toggleClass('active');
+        });
+
         // Aside info bar
         $('.aside_open').click(function (e) {
             e.preventDefault();
@@ -31,10 +24,7 @@ const Header = () => {
             $('.aside_info_wrapper').removeClass('show');
         });
 
-        // Toggle Header Search
-        $('.header_search .form-control-submit').click(function (e) {
-            $('.open_search').toggleClass('active');
-        });
+
 
         // Sticky Header
         var header = $("header");
@@ -131,17 +121,16 @@ const Header = () => {
                                 <span className="line"></span>
                             </button>
 
+
+                            {/* MiniCart Button */}
+                            <button className="navbar-toggler me-3 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            >
+                                <span className="bi bi-cart-dash-fill" />
+                                <p className='position-absolute top-0 start-100 translate-middle rounded-circle cart-length-bg'>{cart.length}</p>
+                            </button>
+
+                            {/* Header Search */}
                             <div className="header_search">
-                                {/* <MiniCart /> */}
-                                <button className="navbar-toggler me-3 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                                >
-                                    <span className="bi bi-cart-dash-fill" />
-                                    <p className='position-absolute top-0 start-100 translate-middle rounded-circle cart-length-bg'>{cart.length}</p>
-
-
-                                </button>
-
-
                                 <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>
                             </div>
                             <div className="open_search">
@@ -150,6 +139,7 @@ const Header = () => {
                                     <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>
                                 </form>
                             </div>
+
 
                             <button className="ma5menu__toggle d-lg-none d-block" type="button">
                                 <i className="bi bi-list"></i>

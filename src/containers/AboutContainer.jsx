@@ -28,13 +28,21 @@ const AboutContainer = () => {
 
                             <div className="about_icon_box">
                                 <div className="row">
-                                    <IconBoxFlex img="images/about/i2.svg" text="3D Space Designing"></IconBoxFlex>
-                                    <IconBoxFlex img="images/about/i3.svg" text="Architectural Drawing"></IconBoxFlex>
-                                    <IconBoxFlex img="images/about/i1.svg" text="3D Model building"></IconBoxFlex>
-                                    <IconBoxFlex img="images/about/i4.svg" text="Building The Space"></IconBoxFlex>
-
+                                    <div className="col-lg-6">
+                                        <IconBoxFlex img="images/about/i2.svg" text="3D Space Designing"></IconBoxFlex>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <IconBoxFlex img="images/about/i3.svg" text="Architectural Drawing"></IconBoxFlex>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <IconBoxFlex img="images/about/i1.svg" text="3D Model building"></IconBoxFlex>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <IconBoxFlex img="images/about/i4.svg" text="Building The Space"></IconBoxFlex>
+                                    </div>
                                 </div>
                             </div>
+
                             <div className="btn_group" data-aos="fade-down" data-aos-duration="1000">
                                 <a href="/about" className="btn gray">Read More</a>
                             </div>

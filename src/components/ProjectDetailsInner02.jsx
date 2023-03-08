@@ -1,4 +1,5 @@
 import React from 'react';
+import BlockGalleryItemCard from './BlockGalleryItemCard';
 import RelatedProjects from './RelatedProjects';
 
 
@@ -36,30 +37,10 @@ const ProjectDetailsInner02 = () => {
 
                     <figure class="block-gallery">
                         <ul class="blocks-gallery-grid">
-                            <li class="blocks-gallery-item">
-                                <figure>
-                                    <img src="images/portfolio/details/3.jpg" alt="img" class="block-image" />
-                                    <div class="popup-btn"><a href="images/portfolio/details/3.jpg" data-fancybox="images"><i class="bi bi-plus"></i></a></div>
-                                </figure>
-                            </li>
-                            <li class="blocks-gallery-item">
-                                <figure>
-                                    <img src="images/portfolio/details/4.jpg" alt="img" class="block-image" />
-                                    <div class="popup-btn"><a href="images/portfolio/details/4.jpg" data-fancybox="images"><i class="bi bi-plus"></i></a></div>
-                                </figure>
-                            </li>
-                            <li class="blocks-gallery-item">
-                                <figure>
-                                    <img src="images/portfolio/details/5.jpg" alt="img" class="block-image" />
-                                    <div class="popup-btn"><a href="images/portfolio/details/5.jpg" data-fancybox="images"><i class="bi bi-plus"></i></a></div>
-                                </figure>
-                            </li>
-                            <li class="blocks-gallery-item">
-                                <figure>
-                                    <img src="images/portfolio/details/6.jpg" alt="img" class="block-image" />
-                                    <div class="popup-btn"><a href="images/portfolio/details/6.jpg" data-fancybox="images"><i class="bi bi-plus"></i></a></div>
-                                </figure>
-                            </li>
+                            <BlockGalleryItemCard img='images/portfolio/details/3.jpg' />
+                            <BlockGalleryItemCard img='images/portfolio/details/4.jpg' />
+                            <BlockGalleryItemCard img='images/portfolio/details/5.jpg' />
+                            <BlockGalleryItemCard img='images/portfolio/details/6.jpg' />
                         </ul>
                     </figure>
 

@@ -21,11 +21,11 @@ const ProductDetails = ({ projectDetails }) => {
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade show active" id="description" tabindex="0">
+                        <div class="tab-pane fade show active" id="description" tabIndex="0">
                             <p>Senectus et netus et malesuada. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt eget. Leo a tempor id. A lacus vest ibulum sed arcu non odio euismod lacinia. In tellus integer feugiat sceleris que. Feugiat in ferme ntum posuere urna nec tincidunt praesent.</p>
                             <p>Porttitor rhonc elementum facilisis. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectusSenectus et netus et malesuada. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Ne semper auctor.</p>
                         </div>
-                        <div class="tab-pane fade" id="information" tabindex="0">
+                        <div class="tab-pane fade" id="information" tabIndex="0">
                             <div class="product_additional_info">
                                 <p class="mb-3">A lacus vestibulum sed arcu non odio euismod lacinia. In tellus integer feugiat scelerisque. Feugiat in fermentum posuere urna nec tincidunt praesent. Porttitor rhonc
                                     elementum facilisis.</p>
@@ -36,7 +36,7 @@ const ProductDetails = ({ projectDetails }) => {
                                 </ul>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="reviews" tabindex="0">
+                        <div class="tab-pane fade" id="reviews" tabIndex="0">
                             <div class="review_sec">
                                 <h6 class="review_title">1 review for <a href="#">Product Name</a></h6>
                                 <ul class="review_area">

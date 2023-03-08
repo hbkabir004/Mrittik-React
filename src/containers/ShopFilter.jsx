@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react';
-import '../assets/plugins/select2/css/select2.min.css';
-// import '../assets/plugins/select2/js/select2.min.js';
-const ShopFilter = () => {
-    useEffect(() => {
-        // Select 2
-        // $('.basic_select').select2({});
+import React from 'react';
+import Select2 from 'react-select2-wrapper';
+import 'react-select2-wrapper/css/select2.css';
 
-    }, []);
+const ShopFilter = () => {
+
     return (
         <div className="shop_filtering_method d-flex align-items-center flex-wrap">
             <div className="view_type_wrapper d-flex align-items-center">
@@ -24,6 +21,25 @@ const ShopFilter = () => {
             </div>
             <div className="sorting_wrapper">
                 <div className="sorting_select">
+                    <div className="basic_select" id="sorting">
+                        <Select2
+                            data={[
+                                { text: 'Default Sorting', id: 0 },
+                                { text: 'Title', id: 1 },
+                                { text: 'Price: Low to High', id: 2 },
+                                { text: 'Price: High to Low', id: 3 },
+                                { text: 'Popular', id: 4 },
+                            ]}
+                            options={{
+                                placeholder: 'search by tags',
+                            }}
+                        />
+                    </div>
+                </div>
+            </div>
+
+            {/* <div className="sorting_wrapper">
+                <div className="sorting_select">
                     <select className="basic_select" id="sorting">
                         <option value="0">Default Sorting</option>
                         <option value="1">Title</option>
@@ -32,7 +48,7 @@ const ShopFilter = () => {
                         <option value="4">Popular</option>
                     </select>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { EffectFade } from 'swiper';
-import { A11y, Pagination, Scrollbar } from "swiper/core";
+import { Pagination, Scrollbar } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectDetailsInner from '../components/ProjectDetailsInner';
 import ProjectDetailsSlider from '../components/ProjectDetailsSlider';
@@ -13,11 +13,11 @@ const ProjectDetailsContainer = () => {
                 <div className="gallery_slider">
                     <div className="swiper swiper_gallery">
                         <Swiper
-                            modules={[Pagination, Scrollbar, A11y, EffectFade]}
+                            modules={[Pagination, Scrollbar, EffectFade]}
                             effect="slide"
                             autoplay={{
                                 delay: 4000,
-                                disableOnInteraction: false,
+                                disableOnInteraction: true,
                                 speed: 3000
                             }}
                             slidesPerView={1}
@@ -28,8 +28,6 @@ const ProjectDetailsContainer = () => {
                                 clickable: true,
                                 dynamicBullets: true,
                             }}
-
-
                         >
                             <SwiperSlide>
                                 <ProjectDetailsSlider img='images/portfolio/details/sl-1.jpg' />

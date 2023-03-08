@@ -4,10 +4,10 @@ const WidgetSearch = () => {
     return (
         <div id="search" className="widget widget_search">
             <div className="sidebar_search">
-                <form className="search_form" action="search.php">
+                <div className="search_form">
                     <input type="text" name="search" className="keyword form-control" placeholder="Search Products" />
                     <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>
-                </form>
+                </div>
             </div>
         </div>
     );

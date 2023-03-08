@@ -6663,7 +6663,7 @@ jest@^27.4.3:
     import-local "^3.0.2"
     jest-cli "^27.5.1"
 
-jquery@^3.6.3:
+jquery@^3.4.1, jquery@^3.6.3:
   version "3.6.3"
   resolved "https://registry.npmjs.org/jquery/-/jquery-3.6.3.tgz"
   integrity sha512-bZ5Sy3YzKo9Fyc8wH2iIQK4JImJ6R0GWI9kL1/k7Z91ZBNgkRXE6U0JfHIizZbort8ZunhSI3jw9I6253ahKfg==
@@ -8862,7 +8862,7 @@ prop-types-extra@^1.1.0:
     react-is "^16.3.2"
     warning "^4.0.0"
 
-prop-types@^15.5.6, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -9040,6 +9040,13 @@ react-error-overlay@^6.0.11:
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
 
+react-fancybox-aslam@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/react-fancybox-aslam/-/react-fancybox-aslam-0.0.8.tgz#a9761b6e3c35104fb6bea4571b50fc11f3524c2b"
+  integrity sha512-bEjxsymw/ZuaGCkrhUEes4zfgcksjSfHCb0cnfOQxMRtDydl+qSqKPzUSK4QxNGvcijq9Xl4TXWeJj3wnRHXHQ==
+  dependencies:
+    jquery "^3.4.1"
+
 react-fancybox@^0.2.5:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/react-fancybox/-/react-fancybox-0.2.5.tgz#b96a1b4b1b3a8fbf0ee7a6160d51cddcf47fdfd8"
@@ -9178,9 +9185,18 @@ react-select2-wrapper@^1.0.3:
     select2 "^4.0.0"
     shallow-equal-fuzzy "^0.0.2"
 
+react-select2-wrapper@^1.0.4-beta6:
+  version "1.0.4-beta6"
+  resolved "https://registry.yarnpkg.com/react-select2-wrapper/-/react-select2-wrapper-1.0.4-beta6.tgz#f2681d86cc6828fccc078037d51f82019df02434"
+  integrity sha512-YejtCElEf8GUYzbfOEs6cv8YUjul031nNdwkSpkGSQ0NkktPzXAzlcehKb1coC3tmmIxbCFH6flEjMt9dqckDg==
+  dependencies:
+    prop-types "^15.5.8"
+    select2 "^4.0.0"
+    shallow-equal-fuzzy "^0.0.2"
+
 react-select2@^4.0.3:
   version "4.0.3"
-  resolved "https://registry.npmjs.org/react-select2/-/react-select2-4.0.3.tgz"
+  resolved "https://registry.yarnpkg.com/react-select2/-/react-select2-4.0.3.tgz#89cc79e7eafcdff1a2f31f096e8deb483b7503ea"
   integrity sha512-wvn7uV0UW5O0TdeEeBRLxB1GJ7NAFTbMumgRa/+e2TVHnqUdMM7wX+ImjpsITcuIjbwyRmkIpBoooZyM3MMffw==
   dependencies:
     react-select2-wrapper "^1.0.3"
