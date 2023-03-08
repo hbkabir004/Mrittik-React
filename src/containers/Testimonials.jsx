@@ -20,7 +20,8 @@ const Testimonials = () => {
                             disableOnInteraction: true,
                             speed: 5000
                         }}
-                        slidesPerView={1}
+                        slidesPerView={1.5}
+                        spaceBetween={100}
                         loop={true}
                         initialSlide={1}
                         centeredSlides={true}
