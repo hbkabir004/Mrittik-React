@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const CuponCode = () => {
     return (
@@ -12,7 +13,7 @@ const CuponCode = () => {
             </div>
             <div className="cartupdate">
                 <div className="btn_group">
-                    <input className="btn white" type="submit" value="Update Cart" name="submit" />
+                    <Link to='/shop-checkout'><input className="btn white" type="submit" value="Update Cart" name="submit" /></Link>
                 </div>
             </div>
         </div>
