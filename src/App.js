@@ -1,6 +1,7 @@
 import Aos from 'aos';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { RouterProvider } from 'react-router-dom';
+import 'react-select2-wrapper/css/select2.css';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
@@ -11,6 +12,7 @@ import './assets/css/style.css';
 import Loader from './Pages/Shared/Loader';
 import ThemeSwitcher from './Pages/Shared/ThemeSwitcher';
 import { routes } from './Routes/Router';
+
 
 
 function App() {

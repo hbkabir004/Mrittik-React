@@ -440,12 +440,6 @@ select:disabled {
   display: none !important;
 }
 
-/* .basic_select
-[type="text"]
-{
-  color: red;
-} */
-
 button,
 [type="button"],
 [type="reset"],
@@ -16819,6 +16813,11 @@ label {
   width: 100% !important;
 }
 
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #a6a182;
+  color: white;
+}
+
 .shop_sidebar .select2-container .select2-selection--single {
   height: 56px;
   line-height: 50px;
@@ -16861,6 +16860,8 @@ label {
   color: #ffffff;
   transition: all 0.8s ease-in-out;
 }
+
+
 
 .shop_sidebar .sidebar_search {
   text-align: left;
@@ -18230,10 +18231,10 @@ label {
   font-size: 0.875rem;
 }
 
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+/* .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: #2e2e2e;
   color: #ffffff;
-}
+} */
 
 .select2-container--default .select2-results__option--selected {
   background-color: #a6a182;
