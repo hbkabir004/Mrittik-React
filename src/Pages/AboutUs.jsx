@@ -1,5 +1,4 @@
 import React from 'react';
-import SwiperCore, { A11y, Autoplay, Scrollbar } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import HighlightBanner from "../components/HighlightBanner";
@@ -9,55 +8,9 @@ import Video from "../components/Video";
 import FormContainer from "../containers/FormContainer";
 import FunFacts from '../containers/FunFacts';
 import MissionContainer from "../containers/MissionContainer";
-
-SwiperCore.use([Scrollbar, Autoplay]);
+import Testimonials from '../containers/Testimonials';
 
 const AboutUs = () => {
-    // useEffect(() => {
-    //     // Team
-    //     var swipert8 = new Swiper('.swiper_team', {
-    //         slidesPerView: '3',
-    //         centeredSlides: false,
-    //         speed: 1400,
-    //         spaceBetween: 65,
-    //         parallax: true,
-    //         autHeight: true,
-    //         effect: 'slide',
-    //         controller: {
-    //             inverse: true,
-    //         },
-    //         slideToClickedSlide: true,
-    //         lazyLoading: true,
-    //         loop: true,
-    //         keyboard: {
-    //             enabled: true,
-    //         },
-    //         navigation: {
-    //             nextEl: '.swiper-button-next',
-    //             prevEl: '.swiper-button-prev',
-    //         },
-    //         pagination: {
-    //             el: '.swiper-pagination',
-    //             clickable: true,
-    //             dynamicBullets: true,
-    //         },
-
-    //         breakpoints: {
-    //             767: {
-    //                 slidesPerView: 2,
-    //                 spaceBetween: 30,
-    //             },
-    //             1200: {
-    //                 slidesPerView: 3,
-    //                 spaceBetween: 65,
-    //             },
-    //             1400: {
-    //                 slidesPerView: 3,
-    //                 spaceBetween: 65,
-    //             },
-    //         }
-    //     });
-    // }, []);
     return (
         <main className="wrapper">
 
@@ -95,7 +48,7 @@ const AboutUs = () => {
                         {/* <!-- Swiper Team --> */}
                         <div className="swiper swiper_team">
                             <Swiper
-                                modules={[Scrollbar, A11y]}
+                                // modules={[Scrollbar, A11y]}
                                 autoplay={{
                                     delay: 2000,
                                     disableOnInteraction: false
@@ -105,22 +58,7 @@ const AboutUs = () => {
                                 loop={true}
                                 initialSlide={1}
                                 centeredSlides={true}
-                                // pagination={{
-                                //     clickable: true,
-                                //     dynamicBullets: true,
-                                // }}
-                                parallax={true}
-                                autHeight={true}
-                                mousewheel={true}
-                                // effect: 'slide',
-                                controller={{
-                                    inverse: true,
-                                }}
-                                slideToClickedSlide={true}
-                                lazyLoading={true}
-                                keyboard={{
-                                    enabled: true,
-                                }}
+
                             >
                                 <SwiperSlide>
                                     <TeamCard img="images/team/1.jpg" name="Michel Robertson" designation="ARCHITECT" />
@@ -143,21 +81,12 @@ const AboutUs = () => {
                                 </SwiperSlide>
                             </Swiper>
 
-
-                            {/* <!-- Add Pagination -->
-                            <!-- <div className="swiper-pagination"></div> --> */}
-
-                            {/* <!-- Add Buttons --> */}
-                            {/* <div className="swiper-navigation">
-                                <div className="swiper-button-prev"><i className="bi bi-arrow-left"></i></div>
-                                <div className="swiper-button-next"><i className="bi bi-arrow-right"></i></div>
-                            </div> */}
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* <Testimonials /> */}
+            <Testimonials />
 
             <FormContainer />
 

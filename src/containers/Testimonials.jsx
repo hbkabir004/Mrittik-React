@@ -1,28 +1,25 @@
 import React from 'react';
-import Swiper from 'swiper';
-import SwiperCore, { A11y, Autoplay, Pagination, Scrollbar } from "swiper/core";
-import { SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionGridLines from '../components/SectionGridLines';
 import TestimonialSlide from '../components/TestimonialSlide';
 
-SwiperCore.use([Pagination, Scrollbar, Autoplay]);
-
-
 const Testimonials = () => {
     return (
-        <section className="testimonial box_padding pb-0">
-            <SectionGridLines></SectionGridLines>
+        <section class="testimonial box_padding pb-0">
+            <SectionGridLines />
             <div className="has_line_lg"></div>
-            <div className="testimonial_inner bg-black">
-                {/* <!-- Swiper Testimonial --> */}
-                <div className="swiper swiper_testimonial">
-                    <Swiper
-                        modules={[Pagination, Scrollbar, A11y]}
-                        autoplay={{
-                            delay: 4000,
-                            disableOnInteraction: false
-                        }}
 
+            <div class="testimonial_inner bg-black">
+                <div class="swiper swiper_testimonial">
+
+                    <Swiper
+                        modules={[Pagination]}
+                        autoplay={{
+                            delay: 5000,
+                            disableOnInteraction: true,
+                            speed: 5000
+                        }}
                         slidesPerView={1}
                         loop={true}
                         initialSlide={1}
@@ -32,6 +29,25 @@ const Testimonials = () => {
                             dynamicBullets: true,
                         }}
                     >
+
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialSlide />
+                        </SwiperSlide>
                         <SwiperSlide>
                             <TestimonialSlide />
                         </SwiperSlide>
@@ -42,28 +58,7 @@ const Testimonials = () => {
                             <TestimonialSlide />
                         </SwiperSlide>
 
-
-                        {/*<SwiperSlide>
-                            <TestimonialSlide />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <TestimonialSlide />
-                        </SwiperSlide>
-                         <SwiperSlide>
-                            <TestimonialSlide />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <TestimonialSlide />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <TestimonialSlide />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <TestimonialSlide />
-                        </SwiperSlide> */}
                     </Swiper>
-
-                    <div className="swiper-pagination"></div>
                 </div>
             </div>
         </section>

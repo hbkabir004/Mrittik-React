@@ -3,6 +3,7 @@ import Blogs from '../containers/Blogs';
 import FormContainer from '../containers/FormContainer';
 import Projects04 from '../containers/Projects04';
 import Sliders05 from '../containers/Sliders05';
+import Testimonials from '../containers/Testimonials';
 
 
 const Home05 = () => {
@@ -10,7 +11,7 @@ const Home05 = () => {
         <div className="wrapper">
             <Sliders05 />
             <Projects04 />
-            {/* <Testimonials /> */}
+            <Testimonials />
             <Blogs />
             <FormContainer />
         </div>
