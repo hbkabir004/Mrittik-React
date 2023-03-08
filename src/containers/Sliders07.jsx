@@ -8,44 +8,6 @@ import SliderCard07 from '../components/SliderCard07';
 SwiperCore.use([Pagination, Scrollbar, Autoplay]);
 
 const Sliders07 = () => {
-    // const [controlledSwiper, setControlledSwiper] = useState(null);
-
-    // useEffect(() => {
-    //     // Slider 6
-    //     var swiper6 = new Swiper(".swiper_theme_slider_6", {
-    //         slidesPerView: '2',
-    //         speed: 1000,
-    //         autoplay: false,
-    //         spaceBetween: 20,
-    //         parallax: true,
-    //         autHeight: true,
-    //         mousewheel: true,
-    //         effect: 'slide',
-    //         controller: {
-    //             inverse: true,
-    //         },
-    //         slideToClickedSlide: true,
-    //         lazyLoading: true,
-    //         loop: false,
-    //         keyboard: {
-    //             enabled: true,
-    //         },
-    //         navigation: {
-    //             nextEl: '.swiper-button-next',
-    //             prevEl: '.swiper-button-prev',
-    //         },
-    //         pagination: {
-    //             el: '.swiper-pagination',
-    //             clickable: true,
-    //             dynamicBullets: true,
-    //         },
-    //         breakpoints: {
-    //             768: {
-    //                 slidesPerView: 3,
-    //             },
-    //         }
-    //     });
-    // }, []);
     return (
         <div className="theme_slider_6">
             <div className="swiper swiper_theme_slider_6">
@@ -53,30 +15,14 @@ const Sliders07 = () => {
                     modules={[Scrollbar, A11y, Controller]}
                     autoplay={{
                         delay: 2000,
-                        disableOnInteraction: false
+                        disableOnInteraction: true
                     }}
 
                     slidesPerView={3}
                     loop={true}
                     initialSlide={1}
                     centeredSlides={true}
-                    // pagination={{
-                    //     clickable: true,
-                    //     dynamicBullets: true,
-                    // }}
-                    // spaceBetween={20}
-                    parallax={true}
-                    autHeight={true}
-                    mousewheel={true}
-                    // effect: 'slide',
-                    controller={{
-                        inverse: true,
-                    }}
-                    slideToClickedSlide={true}
-                    lazyLoading={true}
-                    keyboard={{
-                        enabled: true,
-                    }}
+
                 >
                     <SwiperSlide>
                         <SliderCard07 img='images/slider/grid/1.jpg' />
@@ -101,7 +47,7 @@ const Sliders07 = () => {
                     <div className="container">
                         <div className="slide_content">
                             <div className="slide_content_wrapper mb-0 h-auto">
-                                <SliderCard06 title='As Architects We Love to Add Beauty & Aesthetics To Your Space' />
+                                <SliderCard06 title='As Architects We Love to Add Beauty' />
                             </div>
                         </div>
                     </div>
@@ -113,30 +59,18 @@ const Sliders07 = () => {
                     modules={[Scrollbar, A11y, Controller]}
                     autoplay={{
                         delay: 2000,
-                        disableOnInteraction: false
+                        disableOnInteraction: true
                     }}
 
                     slidesPerView={3}
                     loop={true}
                     initialSlide={1}
                     centeredSlides={true}
-                    // pagination={{
-                    //     clickable: true,
-                    //     dynamicBullets: true,
-                    // }}
-                    // spaceBetween={20}
-                    parallax={true}
-                    autHeight={true}
-                    mousewheel={true}
-                    // effect: 'slide',
-                    controller={{
-                        inverse: true,
-                    }}
-                    slideToClickedSlide={true}
-                    lazyLoading={true}
-                    keyboard={{
-                        enabled: true,
-                    }}
+                // pagination={{
+                //     clickable: true,
+                //     dynamicBullets: true,
+                // }}
+                // spaceBetween={20}
                 >
                     <SwiperSlide>
                         <SliderCard07 img='images/slider/grid/4.jpg' />
