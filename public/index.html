@@ -75,25 +75,21 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-    <!-- <script src="./js/cursor-effect.js"></script> -->
-    <!-- <script src="./plugins/isotope/isotope-init.js"></script>
-    <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
-    <script src="./plugins/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="./plugins/isotope/packery-mode.pkgd.js"></script>
-    <script src="./plugins/isotope/tilt.jquery.js"></script> -->
+    <script>
+    // Detect mobile device (Do not remove!!!)
+	  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Nokia|Opera Mini/i.test(navigator.userAgent) ? true : false;
+
+    // Add class "is-mobile" to </body>
+    if(isMobile) {
+      $("body").addClass("is-mobile");
+    }
+    </script>
 
     <!-- Fancy Box Script -->
     <script
       src="./js/bootstrap.bundle.min.js"
     ></script>
     <script src="./plugins/aos/aos.js"></script>
-    <!-- <script src="./plugins/fancybox/fancybox-init.js"></script> -->
-    <!-- <script
-      src="./js/theme.js"
-    ></script> -->
-
-    <!-- Select2 -->
-    <!-- <script src="./plugins/select2/js/select2.min.js"></script> -->
 
   </body>
 </html>

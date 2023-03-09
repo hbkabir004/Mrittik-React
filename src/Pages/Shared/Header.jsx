@@ -3,6 +3,7 @@ import React, { useContext, useEffect } from 'react';
 import MiniCart from '../../containers/MiniCart';
 import { CartContext } from '../../Layout/Main';
 import AsideInfo from './AsideInfo';
+import MobileResponsiveMenu from './MobileResponsiveMenu';
 
 const Header = () => {
     const [cart, setCart] = useContext(CartContext);
@@ -23,8 +24,6 @@ const Header = () => {
             e.preventDefault();
             $('.aside_info_wrapper').removeClass('show');
         });
-
-
 
         // Sticky Header
         var header = $("header");
@@ -140,15 +139,17 @@ const Header = () => {
                                 </form>
                             </div>
 
-
-                            <button className="ma5menu__toggle d-lg-none d-block" type="button">
-                                <i className="bi bi-list"></i>
+                            {/* Mobile Responsive Menu Toggle Button */}
+                            <button type="button" class="mr_menu_toggle d-lg-none">
+                                <i class="bi bi-list"></i>
                             </button>
+
                         </div>
                     </div>
                 </div>
             </header>
 
+            <MobileResponsiveMenu />
             <MiniCart id='offcanvasNavbar' />
             <AsideInfo />
         </>
