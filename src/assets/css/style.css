@@ -10854,6 +10854,7 @@ fieldset:disabled .btn {
 html {
   scroll-behavior: smooth;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -15674,6 +15675,7 @@ body.mr_menu_active .mr_menu_overlay {
   align-items: center;
   padding: 0px;
   margin-bottom: 0px;
+  cursor: pointer;
 }
 
 .footer .footer_inner .footer_social .social_list li {
@@ -20223,6 +20225,7 @@ body.bg-dark.bg-white .shop_page, body.bg-dark.bg-white .shopping_cart, body.bg-
 body.bg-dark.bg-white .shop_sidebar .sidebar_search .search_form .form-control, body.bg-white .shop_sidebar .sidebar_search .search_form .form-control {
   border-color: #e6e6e6;
   background-color: #ffffff;
+  color: #2e2e2e;
 }
 
 body.bg-dark.bg-white .shop_sidebar .sidebar_search .search_form .form-control-submit, body.bg-white .shop_sidebar .sidebar_search .search_form .form-control-submit {

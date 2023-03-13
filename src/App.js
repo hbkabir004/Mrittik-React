@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './App.css';
 import './assets/css/style.css';
+// import './assets/js/custom';
 import Loader from './Pages/Shared/Loader';
 import ThemeSwitcher from './Pages/Shared/ThemeSwitcher';
 import { routes } from './Routes/Router';
@@ -22,14 +23,13 @@ function App() {
     easing: 'ease-in-out',
     once: true,
     disable: false,
-})
+});
+
   return (
     <div className='bg-dark'>
       <Loader/>
       <ThemeSwitcher/>
       <RouterProvider router={routes} /> 
-      {/* || <Skeleton /> */}
-      {/* {props.body || <Skeleton count={10} />} */}
     </div>
   );
 }

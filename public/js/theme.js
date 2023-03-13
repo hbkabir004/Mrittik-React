@@ -12,13 +12,13 @@ Description: Mrittik is a Modern Architecture Theme
 
     
 
-	// Detect mobile device (Do not remove!!!)
-	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Nokia|Opera Mini/i.test(navigator.userAgent) ? true : false;
+	// // Detect mobile device (Do not remove!!!)
+	// var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Nokia|Opera Mini/i.test(navigator.userAgent) ? true : false;
 
-	// Add class "is-mobile" to </body>
-	if(isMobile) {
-		$("body").addClass("is-mobile");
-	}
+	// // Add class "is-mobile" to </body>
+	// if(isMobile) {
+	// 	$("body").addClass("is-mobile");
+	// }
 	
 	jQuery(document).ready(function () {
     
