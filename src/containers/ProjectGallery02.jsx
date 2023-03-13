@@ -1,10 +1,9 @@
 import Isotope from 'isotope-layout';
 import React, { useEffect, useState } from 'react';
-import Masonry from 'react-masonry-component';
 import ProjectCard03 from '../components/ProjectCard03';
 import ProjectCard3_2 from '../components/ProjectCard03_2';
 
-const ProjectGallery02 = (props) => {
+const ProjectGallery02 = () => {
     const [filterKey, setFilterKey] = useState('*')
 
     useEffect(() => {
@@ -48,63 +47,54 @@ const ProjectGallery02 = (props) => {
                         <button className="button" onClick={handleFilterKeyChange('landscape')}>Landscape <sup className="filter-count"></sup></button>
                     </div>
                 </div>
-                <Masonry
-                    className={'my-gallery-class'} // default ''
-                    elementType={'ul'} // default 'div'
-                    // options={masonryOptions} // default {}
-                    disableImagesLoaded={false} // default false
-                    updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-                // imagesLoadedOptions={imagesLoadedOptions} // default {}
-                >
 
-                    <div className="grid grid-2 gutter-90 clearfix">
-                        <div className="grid-sizer"></div>
-                        <div className="grid-item residences">
-                            <ProjectCard03 img='images/portfolio/1.jpg' details='California young menz club' />
-                        </div>
-                        <div className="grid-item interiors">
-                            <ProjectCard3_2 img='images/portfolio/2.jpg' details='Sunlight in the Room' />
-                        </div>
-                        <div className="grid-item residences">
-                            <ProjectCard3_2 img='images/portfolio/3.jpg' details='Find your own self invintage lake house' />
-                        </div>
-                        <div className="grid-item landscape exterior">
-                            <ProjectCard3_2 img='images/portfolio/4.jpg' details='Huge large area Bedroom' />
-
-                        </div>
-                        <div className="grid-item landscape">
-                            <ProjectCard3_2 img='images/portfolio/5.jpg' details='Clean water in the swiming pool' />
-
-                        </div>
-                        <div className="grid-item interiors">
-                            <ProjectCard3_2 img='images/portfolio/6.jpg' details='Huge large area Bedroom' />
-
-                        </div>
-                        <div className="grid-item interiors">
-                            <ProjectCard3_2 img='images/portfolio/7.jpg' details='California young menz club' />
-
-                        </div>
-                        <div className="grid-item residences">
-                            <ProjectCard3_2 img='images/portfolio/8.jpg' details='Find your own self invintage lake house' />
-                        </div>
-                        <div className="grid-item exterior">
-                            <ProjectCard3_2 img='images/portfolio/1.jpg' details='Clean water in the swiming pool' />
-
-                        </div>
-                        <div className="grid-item interiors">
-                            <ProjectCard3_2 img='images/portfolio/2.jpg' details='California young menz club' />
-
-                        </div>
-                        <div className="grid-item residences">
-                            <ProjectCard3_2 img='images/portfolio/2.jpg' details='Sunlight in the Room' />
-
-                        </div>
-                        <div className="grid-item landscape exterior">
-                            <ProjectCard3_2 img='images/portfolio/3.jpg' details='California young menz club' />
-
-                        </div>
+                <div className="grid grid-2 gutter-90 clearfix">
+                    <div className="grid-sizer"></div>
+                    <div className="grid-item residences">
+                        <ProjectCard03 img='images/portfolio/1.jpg' details='California young menz club' />
                     </div>
-                </Masonry>
+                    <div className="grid-item interiors">
+                        <ProjectCard3_2 img='images/portfolio/2.jpg' details='Sunlight in the Room' />
+                    </div>
+                    <div className="grid-item residences">
+                        <ProjectCard3_2 img='images/portfolio/3.jpg' details='Find your own self invintage lake house' />
+                    </div>
+                    <div className="grid-item landscape exterior">
+                        <ProjectCard3_2 img='images/portfolio/4.jpg' details='Huge large area Bedroom' />
+
+                    </div>
+                    <div className="grid-item landscape">
+                        <ProjectCard3_2 img='images/portfolio/5.jpg' details='Clean water in the swiming pool' />
+
+                    </div>
+                    <div className="grid-item interiors">
+                        <ProjectCard3_2 img='images/portfolio/6.jpg' details='Huge large area Bedroom' />
+
+                    </div>
+                    <div className="grid-item interiors">
+                        <ProjectCard3_2 img='images/portfolio/7.jpg' details='California young menz club' />
+
+                    </div>
+                    <div className="grid-item residences">
+                        <ProjectCard3_2 img='images/portfolio/8.jpg' details='Find your own self invintage lake house' />
+                    </div>
+                    <div className="grid-item exterior">
+                        <ProjectCard3_2 img='images/portfolio/1.jpg' details='Clean water in the swiming pool' />
+
+                    </div>
+                    <div className="grid-item interiors">
+                        <ProjectCard3_2 img='images/portfolio/2.jpg' details='California young menz club' />
+
+                    </div>
+                    <div className="grid-item residences">
+                        <ProjectCard3_2 img='images/portfolio/2.jpg' details='Sunlight in the Room' />
+
+                    </div>
+                    <div className="grid-item landscape exterior">
+                        <ProjectCard3_2 img='images/portfolio/3.jpg' details='California young menz club' />
+
+                    </div>
+                </div>
                 <div className="btn_group w-100 text-center">
                     <button id="load-more" className="btn gray">Load More</button>
                 </div>

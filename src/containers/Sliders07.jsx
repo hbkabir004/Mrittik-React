@@ -20,9 +20,6 @@ const Sliders07 = () => {
 
                     slidesPerView={3}
                     loop={true}
-                    initialSlide={1}
-                    centeredSlides={true}
-
                 >
                     <SwiperSlide>
                         <SliderCard07 img='images/slider/grid/1.jpg' />

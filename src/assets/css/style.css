@@ -12310,15 +12310,18 @@ body.mr_menu_active .mr_menu_overlay {
   position: relative;
 }
 
+.theme_slider_2 .swiper_theme_slider_2,
+.theme_slider_2 .swiper_theme_slider_2 .swiper-slide {
+  height: 100vh !important;
+}
+
 .theme_slider_2 .swiper-slide .slider {
   background-repeat: repeat;
   background-size: cover;
-  background-position: left center;
-  width: 100%;
-  height: 100%;
   transition: all 0.5s ease-in-out;
   display: flex;
   justify-content: start;
+  height: 100vh;
 }
 
 .theme_slider_2 .swiper-slide .slider .slide_content {
