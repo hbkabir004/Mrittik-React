@@ -9,12 +9,14 @@ const ProjectGallery03 = () => {
         Isotope.current = new Isotope('.grid', {
             itemSelector: '.grid-item',
             percentPosition: true,
-            // layoutMode: 'packery',
+            masonry: {
+                columnWidth: '.grid-sizer'
+            },
             transformsEnabled: true,
             transitionDuration: "700ms",
             resize: true,
             fitWidth: true,
-            columnWidth: '.grid-sizer',
+            // columnWidth: '.grid-sizer',
         })
 
         // cleanup

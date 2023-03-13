@@ -9,12 +9,14 @@ const Projects03 = () => {
         Isotope.current = new Isotope('.grid', {
             itemSelector: '.grid-item',
             percentPosition: true,
-            // layoutMode: 'packery',
+            masonry: {
+                columnWidth: '.grid-sizer'
+            },
             transformsEnabled: true,
             transitionDuration: "700ms",
             resize: true,
             fitWidth: true,
-            columnWidth: '.grid-sizer',
+            // columnWidth: '.grid-sizer',
         })
 
         // cleanup
@@ -22,7 +24,7 @@ const Projects03 = () => {
     }, []);
     Aos.init();
     return (
-        <section className="projects masonry bg-transparent effect-tilt p-0 mt-lg-minus">
+        <section className="projects masonry bg-transparent effect-tilt p-0">
             <div className="container">
                 <div className="grid grid-2 gutter-90 clearfix">
                     <div className="grid-sizer"></div>
