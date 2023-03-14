@@ -1,5 +1,4 @@
 import Aos from 'aos';
-import 'react-loading-skeleton/dist/skeleton.css';
 import { RouterProvider } from 'react-router-dom';
 import 'react-select2-wrapper/css/select2.css';
 import 'swiper/css';

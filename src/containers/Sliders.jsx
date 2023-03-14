@@ -20,8 +20,6 @@ const Sliders = () => {
                         }}
                         slidesPerView={1}
                         loop={true}
-                        initialSlide={1}
-                        centeredSlides={true}
                         pagination={{
                             clickable: true,
                             dynamicBullets: true,
