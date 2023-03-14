@@ -1,6 +1,5 @@
 import Isotope from 'isotope-layout';
 import React, { useEffect, useState } from 'react';
-import LoadmoreBtn from '../components/LoadmoreBtn';
 import PageHeder from '../components/PageHeder';
 import Paragraph from '../components/Paragraph';
 import ProjectCard from '../components/ProjectCard';
@@ -24,6 +23,51 @@ const ProjectGallery = () => {
             fitWidth: true,
             columnWidth: '.grid-sizer',
         })
+
+
+        //****************************
+        // Isotope Load more button
+        //****************************
+        // var initShow = 8;
+        // var counter = initShow;
+        // loadMore(initShow);
+        // function loadMore(toShow) {
+        //     $grid.find(".hidden").removeClass("hidden");
+
+        //     var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function (item) {
+        //         return item.element;
+        //     });
+        //     $(hiddenElems).addClass('hidden');
+        //     $grid.isotope('layout');
+
+        //     if (hiddenElems.length === 0) {
+        //         jQuery("#load-more").hide();
+        //     } else {
+        //         jQuery("#load-more").show();
+        //     };
+
+        // }
+
+        // //append load more button
+        // //$grid.after('<button id="load-more" class="btn btn-dark">Load More</button>');
+        // //when load more button clicked
+        // $("#load-more").click(function () {
+        //     if ($('.filters-button-group').data('clicked')) {
+        //         counter = initShow;
+        //         $('.filters-button-group').data('clicked', false);
+        //     } else {
+        //         counter = counter;
+        //     };
+        //     counter = counter + initShow;
+        //     loadMore(counter);
+        // });
+
+        // //when filter button clicked
+        // $(".filters-button-group").click(function () {
+        //     $(this).data('clicked', true);
+
+        //     loadMore(initShow);
+        // });
 
         // cleanup
         return () => Isotope.current.destroy()
@@ -69,14 +113,7 @@ const ProjectGallery = () => {
                 </div>
                 <div className="grid gutter-20 clearfix">
                     <div className="grid-sizer"></div>
-                    {/* <OnImagesLoaded
-                        onLoaded={runAfterImagesLoaded}
-                        onTimeout={runTimeoutFunction}
-                        timeout={7000}
-                    > */}
-                    {/* <div className="grid-item residences width-100">
-                        <ProjectCard img="images/portfolio/packery/1.jpg" details="California young menz club" />
-                    </div> */}
+
                     <div className="grid-item interiors width-50">
                         <ProjectCard img="images/portfolio/packery/2.jpg" details="Sunlight in the Room" />
 
@@ -85,10 +122,10 @@ const ProjectGallery = () => {
                         <ProjectCard img="images/portfolio/packery/3.jpg" details="Find your own self invintage lake house" />
 
                     </div>
-                    {/* <div className="grid-item landscape exterior width-100">
+                    <div className="grid-item landscape exterior width-50">
                         <ProjectCard img="images/portfolio/packery/4.jpg" details="Well decor house in Sydney" />
 
-                    </div> */}
+                    </div>
                     <div className="grid-item landscape width-50">
                         <ProjectCard img="images/portfolio/packery/5.jpg" details="Huge large area Bedroom" />
 
@@ -97,29 +134,27 @@ const ProjectGallery = () => {
                         <ProjectCard img="images/portfolio/packery/6.jpg" details="Clean water in the swiming pool" />
 
                     </div>
-                    {/* <div className="grid-item interiors width-100">
+                    <div className="grid-item interiors width-50">
                         <ProjectCard img="images/portfolio/packery/7.jpg" details="California young menz club" />
 
-                    </div> */}
+                    </div>
                     <div className="grid-item exterior width-50">
                         <ProjectCard img="images/portfolio/packery/8.jpg" details="Newyork golf club house" />
                     </div>
-                    {/* <div className="grid-item interiors width-50">
+                    <div className="grid-item interiors width-50">
                         <ProjectCard img="images/portfolio/packery/2.jpg" details="California young menz club" />
 
-                    </div> */}
-                    {/* <div className="grid-item residences width-50">
+                    </div>
+                    <div className="grid-item residences width-50">
                         <ProjectCard img="images/portfolio/packery/3.jpg" details="California young menz club" />
 
-                    </div> */}
-                    {/* <div className="grid-item landscape exterior width-50">
+                    </div>
+                    <div className="grid-item landscape exterior width-50">
                         <ProjectCard img="images/portfolio/packery/4.jpg" details="California young menz club" />
 
-                    </div> */}
-
-                    {/* </OnImagesLoaded> */}
+                    </div>
                 </div>
-                <LoadmoreBtn text='Discover All Projects' className='btn olive w-100' />
+                {/* <LoadmoreBtn text='Discover All Projects' className='btn olive w-100' /> */}
             </div>
         </section>
     );

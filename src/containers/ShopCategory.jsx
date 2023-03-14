@@ -49,7 +49,6 @@ const ShopCategory = () => {
 
                                     />)
                                 }
-
                             </div>
 
                             <PaginationDiv02 />
@@ -57,14 +56,13 @@ const ShopCategory = () => {
                     </div>
                     <div className="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
                         <div className="product_view_list">
-                            {/* <ProductContext.Provider value={products}> */}
+
                             {
                                 categoryProducts.map(product => <ListProductItem
                                     key={product.id}
                                     productItem={product}
                                 ></ListProductItem>)
                             }
-                            {/* </ProductContext.Provider> */}
 
                             <LoadmoreBtn className='btn olive w-100' text='Discover All Products' />
 

@@ -95,9 +95,9 @@ const ProjectGallery02 = () => {
 
                     </div>
                 </div>
-                <div className="btn_group w-100 text-center">
+                {/* <div className="btn_group w-100 text-center">
                     <button id="load-more" className="btn gray">Load More</button>
-                </div>
+                </div> */}
             </div>
         </section>
     );

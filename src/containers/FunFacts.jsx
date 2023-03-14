@@ -29,21 +29,8 @@ const FunFacts = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col">
-
                         <div className="funfacts_inner">
                             <FunFact contentName="Design Drawing" contentNumber="120" img="images/fact-1.png"></FunFact>
-
-
-                            {/* <div className="funfact2 d-flex align-items-center">
-                                <div className="fun_img">
-                                    <img src="images/fact-1.png" alt="img" />
-                                </div>
-                                <div className="funfact_content">
-                                    <p>Design Drawing</p>
-                                    <div className="d-flex align-items-center"><h2 className="fun-number">120</h2></div>
-                                </div>
-                            </div> */}
-
                             <FunFact contentName="Project Completed" contentNumber="210" span="+" img="images/fact-2.png"></FunFact>
                             <FunFact contentName="Design Award" contentNumber="15" img="images/fact-3.png"></FunFact>
                             <FunFact contentName="Project Running" contentNumber="62" img="images/fact-4.png"></FunFact>

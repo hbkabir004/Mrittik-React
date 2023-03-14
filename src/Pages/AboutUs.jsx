@@ -1,6 +1,6 @@
+import Aos from 'aos';
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import HighlightBanner from "../components/HighlightBanner";
 import ServiceCard from '../components/ServiceCard';
 import TeamCard from '../components/TeamCard';
@@ -11,27 +11,42 @@ import MissionContainer from "../containers/MissionContainer";
 import Testimonials from '../containers/Testimonials';
 
 const AboutUs = () => {
+    Aos.init();
     return (
         <main className="wrapper">
 
             <MissionContainer />
-            <Video />
+            <div className="video-block" data-aos="zoom-in" data-aos-duration="500">
+                <Video />
+            </div>
             <FunFacts className='funfacts pd-top-lg bg_2' />
 
             <section className="services inner pb-0">
                 <div className="container">
                     <div className="row">
-                        <ServiceCard duration='500' number="01" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Urban Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        <div className="col-lg-4" data-aos="fade-up" data-aos-duration='500'>
+                            <ServiceCard number="01" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Urban Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        </div>
 
-                        <ServiceCard duration='600' number="02" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Interior Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        <div className="col-lg-4" data-aos="fade-up" data-aos-duration='600'>
+                            <ServiceCard number="02" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Interior Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        </div>
 
-                        <ServiceCard duration='700' number="03" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        <div className="col-lg-4" data-aos="fade-up" data-aos-duration='700'>
+                            <ServiceCard number="03" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        </div>
 
-                        <ServiceCard duration='800' number="04" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        <div className="col-lg-4" data-aos="fade-up" data-aos-duration='800'>
+                            <ServiceCard number="04" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        </div>
 
-                        <ServiceCard duration='900' number="05" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        <div className="col-lg-4" data-aos="fade-up" data-aos-duration='900'>
+                            <ServiceCard number="05" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        </div>
 
-                        <ServiceCard duration='1000' number="06" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        <div className="col-lg-4" data-aos="fade-up" data-aos-duration='1000'>
+                            <ServiceCard number="06" imgDark="images/icon_box/d1.svg" imgLight="images/icon_box/d1-light.svg" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
+                        </div>
                     </div>
                 </div>
             </section>
