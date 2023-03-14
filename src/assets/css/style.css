@@ -20311,7 +20311,7 @@ body.bg-dark.bg-white .product_details_tab .nav li a, body.bg-white .product_det
   color: #1b1b1b;
 }
 
-body.bg-dark.bg-white .product_details_tab .nav li a.active, body.bg-white .product_details_tab .nav li a.active {
+#sidebar a.active {
   color: #a6a182;
 }
 

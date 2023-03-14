@@ -44,7 +44,7 @@ const Header = () => {
         <>
             <header className="header">
                 <div className="container">
-                    <div className="header_inner d-flex align-items-center justify-content-between">
+                    <nav id='sidebar' className="header_inner d-flex align-items-center justify-content-between">
                         <div className="logo">
                             <a href='/' className="light_logo"><img src="images/logo-light.svg" alt="logo" /></a>
                             <a href='/' className="dark_logo"><img src="images/logo-dark.svg" alt="logo" /></a>
@@ -54,16 +54,18 @@ const Header = () => {
                         <div className="mainnav d-none d-lg-block">
                             <ul className="main_menu">
                                 <li className="menu-item menu-item-has-children">
-                                    <NavLink to="/home-1"
-                                        className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "active" : ""
-                                        }
-                                    >
-                                        Home
-                                    </NavLink>
+                                    <a>
+                                        <NavLink
+                                            className={({ isActive }) =>
+                                                isActive ? "active" : undefined}
+                                            to="/"
+                                        >
+                                            Home
+                                        </NavLink>
+                                    </a>
                                     <ul className="sub-menu">
                                         <li className="menu-item">
-                                            <NavLink to="/home-1"
+                                            <NavLink to="/"
                                             >
                                                 Home One
                                             </NavLink>
@@ -106,7 +108,15 @@ const Header = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="menu-item menu-item-has-children"><NavLink to="/project-1">Gallery</NavLink>
+                                <li className="menu-item menu-item-has-children">
+                                    <a>
+                                        <NavLink
+                                            className={({ isActive }) =>
+                                                isActive ? "active" : undefined}
+                                            to="/project-1">
+                                            Gallery
+                                        </NavLink>
+                                    </a>
                                     <ul className="sub-menu">
                                         <li className="menu-item"><NavLink to="/project-1">Projects One</NavLink></li>
                                         <li className="menu-item"><NavLink to="/project-2">Projects Two</NavLink></li>
@@ -115,7 +125,15 @@ const Header = () => {
                                         <li className="menu-item"><NavLink to="/project-details-2">Peoject Details Two</NavLink></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item menu-item-has-children"><NavLink to="/about">Pages</NavLink>
+                                <li className="menu-item menu-item-has-children">
+                                    <a>
+                                        <NavLink
+                                            className={({ isActive }) =>
+                                                isActive ? "active" : undefined}
+                                            to="/shop-1">
+                                            Pages
+                                        </NavLink>
+                                    </a>
                                     <ul className="sub-menu">
                                         <li className="menu-item"><NavLink to="/about">About Us</NavLink></li>
                                         <li className="menu-item menu-item-has-children"><NavLink to="/">Team</NavLink>
@@ -146,8 +164,17 @@ const Header = () => {
                                         <li className="menu-item"><NavLink to="/coming-soon">Coming Soon</NavLink></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item"><NavLink to="/contact">Contacts</NavLink></li>
-                                <li className="menu-item menu-item-has-children"><NavLink to="/blog">Blog</NavLink>
+                                <li className="menu-item">
+                                    <NavLink className={({ isActive }) =>
+                                        isActive ? "active" : undefined} to="/contact">
+                                        Contacts
+                                    </NavLink>
+                                </li>
+                                <li className="menu-item menu-item-has-children">
+                                    <NavLink className={({ isActive }) =>
+                                        isActive ? "active" : undefined} to="/Blog">
+                                        Blog
+                                    </NavLink>
                                     <ul className="sub-menu">
                                         <li className="menu-item"><NavLink to="/blog">Blog</NavLink></li>
                                         <li className="menu-item"><NavLink to="/blog-details">Blog Details</NavLink></li>
@@ -188,7 +215,7 @@ const Header = () => {
                             </button>
 
                         </div>
-                    </div>
+                    </nav>
                 </div>
             </header>
 
