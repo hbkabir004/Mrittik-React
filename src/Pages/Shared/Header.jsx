@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import React, { useContext, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import MiniCart from '../../containers/MiniCart';
 import { CartContext } from '../../Layout/Main';
 import AsideInfo from './AsideInfo';
@@ -52,62 +53,104 @@ const Header = () => {
 
                         <div className="mainnav d-none d-lg-block">
                             <ul className="main_menu">
-                                <li className="menu-item menu-item-has-children active"><a href="/">Home</a>
+                                <li className="menu-item menu-item-has-children">
+                                    <NavLink to="/home-1"
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "active" : ""
+                                        }
+                                    >
+                                        Home
+                                    </NavLink>
                                     <ul className="sub-menu">
-                                        <li className="menu-item active"><a href="/">Home One</a></li>
-                                        <li className="menu-item"><a href="/home-2">Home Two</a></li>
-                                        <li className="menu-item"><a href="/home-3">Home Three</a></li>
-                                        <li className="menu-item"><a href="/home-4">Home Four</a></li>
-                                        <li className="menu-item"><a href="/home-5">Home Five</a></li>
-                                        <li className="menu-item"><a href="/home-6">Home Six</a></li>
-                                        <li className="menu-item"><a href="/home-7">Home Seven</a></li>
+                                        <li className="menu-item">
+                                            <NavLink to="/home-1"
+                                            >
+                                                Home One
+                                            </NavLink>
+                                        </li>
+                                        <li className="menu-item">
+                                            <NavLink to="/home-2"
+                                            >
+                                                Home Two
+                                            </NavLink>
+                                        </li>
+                                        <li className="menu-item">
+                                            <NavLink to="/home-3"
+                                            >
+                                                Home Three
+                                            </NavLink>
+                                        </li>
+                                        <li className="menu-item">
+                                            <NavLink to="/home-4"
+                                            >
+                                                Home Four
+                                            </NavLink>
+                                        </li>
+                                        <li className="menu-item">
+                                            <NavLink to="/home-5"
+                                            >
+                                                Home Five
+                                            </NavLink>
+                                        </li>
+                                        <li className="menu-item">
+                                            <NavLink to="/home-6"
+                                            >
+                                                Home Six
+                                            </NavLink>
+                                        </li>
+                                        <li className="menu-item">
+                                            <NavLink to="/home-7"
+                                            >
+                                                Home Seven
+                                            </NavLink>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li className="menu-item menu-item-has-children"><a href="/">Gallery</a>
+                                <li className="menu-item menu-item-has-children"><NavLink to="/project-1">Gallery</NavLink>
                                     <ul className="sub-menu">
-                                        <li className="menu-item"><a href="/project-1">Projects One</a></li>
-                                        <li className="menu-item"><a href="/project-2">Projects Two</a></li>
-                                        <li className="menu-item"><a href="/project-3">Peojects Three</a></li>
-                                        <li className="menu-item"><a href="/project-details">Peoject Details</a></li>
-                                        <li className="menu-item"><a href="/project-details-2">Peoject Details Two</a></li>
+                                        <li className="menu-item"><NavLink to="/project-1">Projects One</NavLink></li>
+                                        <li className="menu-item"><NavLink to="/project-2">Projects Two</NavLink></li>
+                                        <li className="menu-item"><NavLink to="/project-3">Peojects Three</NavLink></li>
+                                        <li className="menu-item"><NavLink to="/project-details">Peoject Details</NavLink></li>
+                                        <li className="menu-item"><NavLink to="/project-details-2">Peoject Details Two</NavLink></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item menu-item-has-children"><a href="/">Pages</a>
+                                <li className="menu-item menu-item-has-children"><NavLink to="/about">Pages</NavLink>
                                     <ul className="sub-menu">
-                                        <li className="menu-item"><a href="/about">About Us</a></li>
-                                        <li className="menu-item menu-item-has-children"><a href="/">Team</a>
+                                        <li className="menu-item"><NavLink to="/about">About Us</NavLink></li>
+                                        <li className="menu-item menu-item-has-children"><NavLink to="/">Team</NavLink>
                                             <ul className="sub-menu">
-                                                <li className="menu-item"><a href="/team">Our Team</a></li>
-                                                <li className="menu-item"><a href="/team-details">Team Details</a></li>
+                                                <li className="menu-item"><NavLink to="/team">Our Team</NavLink></li>
+                                                <li className="menu-item"><NavLink to="/team-details">Team Details</NavLink></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item menu-item-has-children"><a href="/">Services</a>
+                                        <li className="menu-item menu-item-has-children"><NavLink to="/service-1">Services</NavLink>
                                             <ul className="sub-menu">
-                                                <li className="menu-item"><a href="/service-1">Service One</a></li>
-                                                <li className="menu-item"><a href="/service-2">Service Two</a></li>
-                                                <li className="menu-item"><a href="/service-details">Service Details</a></li>
+                                                <li className="menu-item"><NavLink to="/service-1">Service One</NavLink></li>
+                                                <li className="menu-item"><NavLink to="/service-2">Service Two</NavLink></li>
+                                                <li className="menu-item"><NavLink to="/service-details">Service Details</NavLink></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item menu-item-has-children"><a href="/">Shop</a>
+                                        <li className="menu-item menu-item-has-children"><NavLink to="/shop-1">Shop</NavLink>
                                             <ul className="sub-menu">
-                                                <li className="menu-item"><a href="/shop-1">Shop One</a></li>
-                                                <li className="menu-item"><a href="/shop-2">Shop Two</a></li>
-                                                <li className="menu-item"><a href="/shop-3">Shop Three</a></li>
-                                                {/* <li className="menu-item"><a href="/shop-product">Product Details</a></li> */}
-                                                <li className="menu-item"><a href="/shop-cart">Shop Cart</a></li>
-                                                <li className="menu-item"><a href="/shop-checkout">Checkout</a></li>
-                                                <li className="menu-item"><a href="/login">Login</a></li>
+                                                <li className="menu-item"><NavLink to="/shop-1">Shop One</NavLink></li>
+                                                <li className="menu-item"><NavLink to="/shop-2">Shop Two</NavLink></li>
+                                                <li className="menu-item"><NavLink to="/shop-3">Shop Three</NavLink></li>
+                                                {/* <li className="menu-item"><NavLink to="/shop-product">Product Details</NavLink></li> */}
+                                                <li className="menu-item"><NavLink to="/shop-cart">Shop Cart</NavLink></li>
+                                                <li className="menu-item"><NavLink to="/shop-checkout">Checkout</NavLink></li>
+                                                <li className="menu-item"><NavLink to="/login">Login</NavLink></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item"><a href="/404">404 Page</a></li>
-                                        <li className="menu-item"><a href="/coming-soon">Coming Soon</a></li>
+                                        <li className="menu-item"><NavLink to="/404">404 Page</NavLink></li>
+                                        <li className="menu-item"><NavLink to="/coming-soon">Coming Soon</NavLink></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item"><a href="/contact">Contacts</a></li>
-                                <li className="menu-item menu-item-has-children"><a href="/">Blog</a>
+                                <li className="menu-item"><NavLink to="/contact">Contacts</NavLink></li>
+                                <li className="menu-item menu-item-has-children"><NavLink to="/blog">Blog</NavLink>
                                     <ul className="sub-menu">
-                                        <li className="menu-item"><a href="/blog">Blog</a></li>
-                                        <li className="menu-item"><a href="/blog-details">Blog Details</a></li>
+                                        <li className="menu-item"><NavLink to="/blog">Blog</NavLink></li>
+                                        <li className="menu-item"><NavLink to="/blog-details">Blog Details</NavLink></li>
                                     </ul>
                                 </li>
                             </ul>

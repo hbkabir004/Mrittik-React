@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import { toast } from 'react-toastify';
 import "../assets/css/MiniCart.css";
 import { removeFromDb } from '../components/forJSON/fakeDB';
@@ -43,8 +43,16 @@ const MiniCart = (props) => {
                 <div className="container mt-5">
                     <div className="row gutter-0">
                         <div className="cart_button d-flex justify-content-center">
-                            <Link to="/shop-cart"><button className="button me-3">View Cart</button></Link>
-                            <Link to="/shop-checkout" ><button className="button">Check Out</button></Link>
+                            <NavLink to="/shop-cart"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }
+                            ><button className="button me-3">View Cart</button></NavLink>
+                            <NavLink to="/shop-checkout"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }
+                            ><button className="button">Check Out</button></NavLink>
                         </div>
                     </div>
                 </div>
