@@ -7,14 +7,6 @@ import RelatedProducts from './RelatedProducts';
 
 
 const ShopContainer04 = ({ selectedProduct }) => {
-    // const product = useLoaderData();
-    // const [product, setProduct] = useState([]);
-
-    // useEffect(() => {
-    //     fetch(`https://mrittik-server.vercel.app/products/${id}`)
-    //         .then(res => res.json())
-    //         .then(data => setProduct(data));
-    // }, [])
 
     return (
         <main className="wrapper">

@@ -20,15 +20,12 @@ function App() {
     duration: 800, // values from 0 to 3000, with step 50ms
     easing: 'ease-in-out',
     once: true,
-    disable: false,
 })
   return (
     <div className='bg-dark'>
       <Loader/>
       <ThemeSwitcher/>
       <RouterProvider router={routes} /> 
-      {/* || <Skeleton /> */}
-      {/* {props.body || <Skeleton count={10} />} */}
     </div>
   );
 }
