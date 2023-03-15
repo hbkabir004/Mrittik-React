@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import LoadmoreBtn from '../../components/LoadmoreBtn';
 import PaginationDiv02 from '../../components/PaginationDiv02';
-import { CartContext, ProductContext } from '../../Layout/Main';
+import { CartContext, ProductContext } from '../../Layout/ShopLayout';
 import { addToDb } from './fakeDB';
 import ListProductItem from './ListProductItem';
 import ProductItem from './ProductItem';

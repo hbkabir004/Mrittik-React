@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { NavLink } from "react-router-dom";
 import { toast } from 'react-toastify';
-import "../assets/css/MiniCart.css";
-import { removeFromDb } from '../components/forJSON/fakeDB';
-import MiniCartContent from '../components/MiniCartContent';
-import { CartContext } from '../Layout/Main';
+import { removeFromDb } from '../../../components/forJSON/fakeDB';
+import { CartContext } from '../../../Layout/ShopLayout';
+import "./MiniCart.css";
+import MiniCartContent from './MiniCartContent';
 
 const MiniCart = (props) => {
     const [cart, setCart] = useContext(CartContext);

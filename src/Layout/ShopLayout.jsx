@@ -2,12 +2,12 @@ import React, { createContext, useState } from 'react';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import SectionGridLines from '../components/SectionGridLines';
 import Footer from '../Pages/Shared/Footer';
-import Header from '../Pages/Shared/Header';
+import ShopHeader from '../Pages/Shared/ShopHeader';
 
 export const ProductContext = createContext([]);
 export const CartContext = createContext([]);
 
-const Main = () => {
+const ShopLayout = () => {
     const { products, initialCart } = useLoaderData()
     const [cart, setCart] = useState(initialCart)
 
@@ -15,7 +15,7 @@ const Main = () => {
     return (
         <ProductContext.Provider value={products}>
             <CartContext.Provider value={[cart, setCart]}>
-                <Header />
+                <ShopHeader />
                 <Outlet />
                 <Footer />
                 <SectionGridLines />
@@ -24,4 +24,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default ShopLayout;

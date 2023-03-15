@@ -1,7 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import { productsAndCartData } from "../components/forJSON/getCart&ProductsData";
 import ShopCategory from "../containers/ShopCategory";
-import Main from "../Layout/Main";
+import HomeLayout from "../Layout/HomeLayout";
+import HomeLayout02 from "../Layout/HomeLayout02";
+import HomeLayout03 from "../Layout/HomeLayout03";
+import ShopLayout from "../Layout/ShopLayout";
 import AboutUs from "../Pages/AboutUs";
 import Blog from "../Pages/Blog";
 import BlogDetails from "../Pages/BlogDetails";
@@ -37,16 +40,11 @@ import ThankYou from "../Pages/ThankYou";
 export const routes = createBrowserRouter([
     {
         path: "/",
-        loader: productsAndCartData,
-        element: <Main/>,
+        element: <HomeLayout/>,
         children: [
             {
                 path: '/',
                 element: <Home01/>,
-            },
-            {
-                path: '/home-2',
-                element: <Home02/>,
             },
             {
                 path: '/home-3',
@@ -63,10 +61,6 @@ export const routes = createBrowserRouter([
             {
                 path: '/home-6',
                 element: <Home06/>,
-            },
-            {
-                path: '/home-7',
-                element: <Home07/>,
             },
             {
                 path: '/project-1',
@@ -87,41 +81,6 @@ export const routes = createBrowserRouter([
             {
                 path: '/project-details-2',
                 element: <ProjectDetails02/>,
-            },
-            {
-                path: '/shop-category/:id',
-                element: <ShopCategory/>,
-                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/category/${params.id}`),
-            },
-            {
-                path: '/shop-1',
-                element: <Shop01/>,
-            },
-            {
-                path: '/shop-product/:id',
-                element: <ShopProduct/>,
-                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/${params.id}`)
-            },
-           
-            {
-                path: '/shop-2',
-                element: <Shop02/>,
-            },
-            {
-                path: '/shop-3',
-                element: <Shop03/>,
-            },
-            {
-                path: '/shop-product',
-                element: <ShopProduct/>,
-            },
-            {
-                path: '/shop-cart',
-                element: <ShopCart/>,
-            },
-            {
-                path: '/shop-checkout',
-                element: <ShopCheckout/>,
             },
             {
                 path: '/service-1',
@@ -174,6 +133,71 @@ export const routes = createBrowserRouter([
             {
                 path: '*',
                 element: <ErrorPage/>,
+            },
+
+        ]
+    },
+    {
+        path: "/",
+        element: <HomeLayout02/>,
+        children: [
+            {
+                path: '/home-2',
+                element: <Home02/>,
+            },
+
+        ]
+    },
+    {
+        path: "/",
+        element: <HomeLayout03/>,
+        children: [
+            {
+                path: '/home-7',
+                element: <Home07/>,
+            },
+
+        ]
+    },
+    {
+        path: "/",
+        loader: productsAndCartData,
+        element: <ShopLayout/>,
+        children: [
+            {
+                path: '/shop-category/:id',
+                element: <ShopCategory/>,
+                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/category/${params.id}`),
+            },
+            {
+                path: '/shop-1',
+                element: <Shop01/>,
+            },
+            {
+                path: '/shop-product/:id',
+                element: <ShopProduct/>,
+                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/${params.id}`)
+            },
+           
+            {
+                path: '/shop-2',
+                element: <Shop02/>,
+            },
+            {
+                path: '/shop-3',
+                element: <Shop03/>,
+            },
+            {
+                path: '/shop-product',
+                element: <ShopProduct/>,
+            },
+            {
+                path: '/shop-cart',
+                element: <ShopCart/>,
+            },
+            {
+                path: '/shop-checkout',
+                element: <ShopCheckout/>,
             },
 
         ]

@@ -1,9 +1,13 @@
 import $ from 'jquery';
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { CartContext } from '../../Layout/ShopLayout';
 import AsideInfo from './AsideInfo';
+import MiniCart from './MiniCart/MiniCart';
 import MobileResponsiveMenu from './MobileResponsiveMenu';
 
-const Header = () => {
+const ShopHeader = () => {
+    const [cart, setCart] = useContext(CartContext);
+
     useEffect(() => {
         // Aside info bar
         $('.aside_open').click(function (e) {
@@ -112,6 +116,13 @@ const Header = () => {
                                 <span className="line"></span>
                             </button>
 
+                            {/* MiniCart Button */}
+                            <button className="navbar-toggler me-3 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            >
+                                <span className="bi bi-cart-dash-fill" />
+                                <p className='position-absolute top-0 start-100 translate-middle rounded-circle cart-length-bg'>{cart.length}</p>
+                            </button>
+
                             {/* Header Search */}
                             <div className="header_search">
                                 <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>
@@ -133,10 +144,11 @@ const Header = () => {
                 </div>
             </header>
 
+            <MiniCart id='offcanvasNavbar' />
             <MobileResponsiveMenu />
             <AsideInfo></AsideInfo>
         </>
     );
 };
 
-export default Header;
+export default ShopHeader;

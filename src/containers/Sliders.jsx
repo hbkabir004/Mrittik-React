@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard from '../components/SliderCard';
 
 const Sliders = () => {
+
     return (
         <div className="theme_slider bg-black">
             <div className="container">
