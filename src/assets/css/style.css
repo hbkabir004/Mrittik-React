@@ -520,12 +520,12 @@ select:disabled {
   display: none !important;
 }
 
-button,
+/* button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-}
+} */
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -585,7 +585,7 @@ legend + * {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  /* -webkit-appearance: textfield; */
 }
 
 /* rtl:raw:
@@ -596,9 +596,9 @@ legend + * {
   direction: ltr;
 }
 */
-::-webkit-search-decoration {
+/* ::-webkit-search-decoration {
   -webkit-appearance: none;
-}
+} */
 
 ::-webkit-color-swatch-wrapper {
   padding: 0;
@@ -606,7 +606,7 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  /* -webkit-appearance: button; */
 }
 
 output {
@@ -11104,7 +11104,7 @@ input[type="color"] {
   backface-visibility: hidden;
   box-sizing: border-box;
   outline: none;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   outline-offset: 0;
 }
 
@@ -11124,7 +11124,7 @@ textarea.form-control {
   backface-visibility: hidden;
   box-sizing: border-box;
   outline: none;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   outline-offset: 0;
 }
 
@@ -11673,7 +11673,7 @@ label {
 .header .mainnav ul.main_menu li ul li.menu-item-has-children > a:after {
   content: "\F285";
   font-family: 'bootstrap-icons';
-  speak: none;
+  /* speak: none; */
   position: absolute;
   top: 50%;
   right: 0;
@@ -11705,7 +11705,7 @@ label {
   content: "\F282";
   color: #ffffff;
   font-family: 'bootstrap-icons';
-  speak: none;
+  /* speak: none; */
   transition: all 0.5s ease-in-out;
   display: inline-block;
   margin-left: 5px;
@@ -12784,7 +12784,7 @@ body.mr_menu_active .mr_menu_overlay {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   opacity: 0;
   visibility: hidden;
@@ -18111,10 +18111,7 @@ body.mr_menu_active .mr_menu_overlay {
   }
 }
 
-/* Forms (shipping_form) */
-.shipping_form {
-  /* Coupon Code */
-}
+
 
 .shipping_form .widget-title {
   color: #ffffff;
@@ -18168,10 +18165,10 @@ body.mr_menu_active .mr_menu_overlay {
   background-clip: padding-box;
   border: 1px solid #000000;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
   box-sizing: border-box;
   outline: none;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   outline-offset: 0;
 }
 
@@ -18331,10 +18328,6 @@ body.mr_menu_active .mr_menu_overlay {
 
 .shipping_form .checkbox input:checked ~ .checkmark:after {
   display: block;
-}
-
-.place_order {
-  /* Customize Radio Button */
 }
 
 .place_order ul {
