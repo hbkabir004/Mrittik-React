@@ -44,7 +44,7 @@ const Sliders07 = () => {
                     <div className="container">
                         <div className="slide_content">
                             <div className="slide_content_wrapper mb-0 h-auto">
-                                <SliderCard06 title='As Architects We Love to Add Beauty' />
+                                <SliderCard06 title='The Future Architecture Is Here' />
                             </div>
                         </div>
                     </div>
