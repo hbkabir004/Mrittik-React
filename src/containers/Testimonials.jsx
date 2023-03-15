@@ -22,8 +22,7 @@ const Testimonials = () => {
                             disableOnInteraction: true,
                             speed: 5000
                         }}
-                        slidesPerView={1.5}
-                        spaceBetween={100}
+                        slidesPerView={1}
                         loop={true}
 
                         pagination={{

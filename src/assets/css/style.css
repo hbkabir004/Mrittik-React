@@ -14979,7 +14979,7 @@ body.mr_menu_active .mr_menu_overlay {
 }
 
 .swiper_testimonial {
-  padding-bottom: 50px;
+  padding: 0 300px 50px;
 }
 
 .swiper_testimonial .swiper-slide.swiper-slide-active .testimonial-block p {
