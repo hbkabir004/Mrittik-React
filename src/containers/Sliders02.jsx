@@ -42,16 +42,16 @@ const Sliders02 = () => {
                 }}
             >
                 <SwiperSlide>
-                    <SliderCard02 bgImg="images/slider/9.jpg" />
+                    <SliderCard02 bgImg="images/slider/9.jpg" title='As Architects We Love to Add Beauty & Aesthetics To Your Space' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <SliderCard02 bgImg="images/slider/10.jpg" />
+                    <SliderCard02 bgImg="images/slider/10.jpg" title='The goal of architects is to contribute to the built environment' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <SliderCard02 bgImg="images/slider/11.jpg" />
+                    <SliderCard02 bgImg="images/slider/11.jpg" title='Great Idea, Well Plan Can Make Safe Future' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <SliderCard02 bgImg="images/slider/12.jpg" />
+                    <SliderCard02 bgImg="images/slider/12.jpg" title='As Architects We Love to Add Beauty & Aesthetics To Your Space' />
                 </SwiperSlide>
             </Swiper>
         </div>

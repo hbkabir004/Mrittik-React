@@ -12334,6 +12334,7 @@ body.mr_menu_active .mr_menu_overlay {
   align-items: center;
   padding: calc(1.375rem + 1.28571vw) calc(1.375rem + 1.28571vw);
   transition: all 0.5s ease-in-out;
+  height: 100%;
 }
 
 @media (min-width: 1400px) {

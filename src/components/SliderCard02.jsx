@@ -7,9 +7,9 @@ const SliderCard02 = (props) => {
                 <div className="slide_content_wrapper mb-0 bg-dark-100">
                     <div className="slide_content_inner">
                         <div className="meta m-0">
-                            <div className="category text-olive text-uppercase">Condominium</div>
+                            <div className="category text-olive text-uppercase">Landscape Design</div>
                         </div>
-                        <h4><a href="/project-details" className="text-white">California young menz club in the city center</a></h4>
+                        <h4><a href="/project-details" className="text-white">{props.title}</a></h4>
                         <div className="details_link">
                             <a href="/project-details">
                                 <span className="link_text">View Details</span>
