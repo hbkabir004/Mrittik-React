@@ -22,9 +22,10 @@ const Testimonials = () => {
                             disableOnInteraction: true,
                             speed: 5000
                         }}
-                        slidesPerView={1}
+                        slidesPerView={1.5}
                         loop={true}
-
+                        spaceBetween={150}
+                        centeredSlides={true}
                         pagination={{
                             clickable: true,
                             dynamicBullets: true,

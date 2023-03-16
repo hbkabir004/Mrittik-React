@@ -14978,12 +14978,16 @@ body.mr_menu_active .mr_menu_overlay {
   top: 8px;
 }
 
-.swiper_testimonial {
+/* .swiper_testimonial {
   padding: 0 300px 50px;
-}
+  padding-bottom: 50px;
+} */
 
 .swiper_testimonial .swiper-slide.swiper-slide-active .testimonial-block p {
   color: #ffffff;
+}
+.swiper.swiper_testimonial .swiper-wrapper {
+  padding-bottom: 50px;
 }
 
 .page_header.in-service .page_header_inner {
