@@ -6,7 +6,7 @@ const Projects03 = () => {
     return (
         <section className="projects bg-transparent effect-tilt p-0">
             <div className="container">
-                <div className="row row-cols-1 mx-sm-3 row-cols-md-2 row-cols-lg-2 gutter-90 clearfix">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2 gutter-90 clearfix">
                     <div className="grid-item col residences">
                         <ProjectCard03 img="images/portfolio/1.jpg" details="California young menz club" />
                     </div>
@@ -29,7 +29,7 @@ const Projects03 = () => {
                         <ProjectCard3_2 img="images/portfolio/7.jpg" details="California young menz club"></ProjectCard3_2>
                     </div>
                     <div className="grid-item col residences">
-                        <ProjectCard3_2 img="images/portfolio/7.jpg" details="Newyork golf club house"></ProjectCard3_2>
+                        <ProjectCard3_2 img="images/portfolio/8.jpg" details="Newyork golf club house"></ProjectCard3_2>
                     </div>
                     <div className="grid-item col exterior">
                         <ProjectCard3_2 img="images/portfolio/1.jpg" details="California young menz club"></ProjectCard3_2>

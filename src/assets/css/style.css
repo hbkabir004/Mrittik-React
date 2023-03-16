@@ -13563,6 +13563,7 @@ body.mr_menu_active .mr_menu_overlay {
 /*------ Portfolio Grid ------*/
 .projects {
   z-index: 1;
+  margin-top: -300px;
 }
 
 .projects .section-header {
@@ -19494,6 +19495,15 @@ iframe, object, embed, iframe, object, iframe, video {
   }
   .theme_slider_2 .swiper-slide-active .slider .slide_content {
       max-width: 100%;
+  }
+
+  .grid-item {
+    margin: 0 50px;
+  }
+
+  .projects {
+    z-index: 1;
+    margin-top: 0px;
   }
 }
 
