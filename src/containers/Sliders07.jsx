@@ -1,5 +1,5 @@
 import React from 'react';
-import { Controller } from 'swiper';
+import { Controller, Navigation } from 'swiper';
 import SwiperCore, { A11y, Autoplay, Pagination, Scrollbar } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard06 from '../components/SliderCard06';
@@ -40,7 +40,31 @@ const Sliders07 = () => {
             </div>
 
             <div className="swiper_theme_slider_6_body">
-                <div className="slider">
+                <Swiper
+                    modules={[Controller, Navigation]}
+                    centeredSlides={true}
+                    slidesPerView={1}
+                    loop={true}
+                    navigation
+                >
+                    <SwiperSlide>
+                        <SliderCard06 title='The Future Architecture Is Here' />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <SliderCard06 title='The Future Architecture Is Here' />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <SliderCard06 title='The Future Architecture Is Here' />
+                    </SwiperSlide>
+                    {/* <SwiperSlide>
+                        <SliderCard06 title='The Future Architecture Is Here' />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <SliderCard06 title='The Future Architecture Is Here' />
+                    </SwiperSlide> */}
+
+                </Swiper>
+                {/* <div className="slider">
                     <div className="container">
                         <div className="slide_content">
                             <div className="slide_content_wrapper mb-0 h-auto">
@@ -48,12 +72,12 @@ const Sliders07 = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className="swiper swiper_theme_slider_6 second_row">
                 <Swiper
-                    modules={[Scrollbar, A11y, Controller]}
+                    modules={[Scrollbar, Controller]}
                     autoplay={{
                         delay: 2000,
                         disableOnInteraction: true
@@ -91,8 +115,8 @@ const Sliders07 = () => {
             {/* <div className="swiper-pagination"></div> */}
 
             {/* <!-- Add Buttons --> */}
-            {/* <div className="swiper-button-prev details_link l-dir pagination-previous"><a href="#"><span className="link_icon"><span className="line"></span> <span className="circle"></span><span className="dot"></span></span></a></div>
-            <div className="swiper-button-next details_link r-dir pagination-next"><a href="#"><span className="link_icon"><span className="line"></span> <span className="circle"></span><span className="dot"></span></span></a></div> */}
+            <div className="swiper-button-prev details_link l-dir pagination-previous"><a href="#"><span className="link_icon"><span className="line"></span> <span className="circle"></span><span className="dot"></span></span></a></div>
+            <div className="swiper-button-next details_link r-dir pagination-next"><a href="#"><span className="link_icon"><span className="line"></span> <span className="circle"></span><span className="dot"></span></span></a></div>
 
         </div >
     );

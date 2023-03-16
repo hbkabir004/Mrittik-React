@@ -31,7 +31,6 @@ const Testimonials = () => {
                             dynamicBullets: true,
                         }}
                     >
-
                         <SwiperSlide>
                             <TestimonialSlide />
                         </SwiperSlide>
@@ -59,7 +58,6 @@ const Testimonials = () => {
                         <SwiperSlide>
                             <TestimonialSlide />
                         </SwiperSlide>
-
                     </Swiper>
                 </div>
             </div>

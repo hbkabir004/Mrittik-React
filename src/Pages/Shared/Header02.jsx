@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
 import AsideInfo from './AsideInfo';
+import Home02Nav from './Home02Nav';
 import MobileResponsiveMenu from './MobileResponsiveMenu';
 
 const Header02 = () => {
@@ -43,7 +44,7 @@ const Header02 = () => {
                         </div>
 
 
-                        <div className="mainnav d-none">
+                        {/* <div className="mainnav d-none">
                             <ul className="main_menu">
                                 <li className="menu-item menu-item-has-children active"><a href="/">Home</a>
                                     <ul className="sub-menu">
@@ -87,7 +88,6 @@ const Header02 = () => {
                                                 <li className="menu-item"><a href="/shop-1">Shop One</a></li>
                                                 <li className="menu-item"><a href="/shop-2">Shop Two</a></li>
                                                 <li className="menu-item"><a href="/shop-3">Shop Three</a></li>
-                                                {/* <li className="menu-item"><a href="/shop-product">Product Details</a></li> */}
                                                 <li className="menu-item"><a href="/shop-cart">Shop Cart</a></li>
                                                 <li className="menu-item"><a href="/shop-checkout">Checkout</a></li>
                                                 <li className="menu-item"><a href="/login">Login</a></li>
@@ -105,7 +105,7 @@ const Header02 = () => {
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                         <div className="header_right_part d-flex align-items-center">
                             <button className="aside_open">
                                 <span className="line"></span>
@@ -122,6 +122,12 @@ const Header02 = () => {
                                 </form>
                             </div>
 
+                            <button type="button" className="mr_menu_toggle">
+                                <i className="bi bi-list"></i>
+                            </button>
+
+
+
                             {/* Mobile Responsive Menu Toggle Button */}
                             <button type="button" className="mr_menu_toggle d-lg-none">
                                 <i className="bi bi-list"></i>
@@ -131,7 +137,7 @@ const Header02 = () => {
                 </div>
             </header>
 
-
+            <Home02Nav />
             <MobileResponsiveMenu />
             <AsideInfo />
         </>
