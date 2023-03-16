@@ -4,7 +4,7 @@ import ProjectCard3_2 from '../components/ProjectCard03_2';
 
 const Projects03 = () => {
     return (
-        <section className="projects bg-transparent effect-tilt p-0">
+        <section className="projects top-margin bg-transparent effect-tilt p-0">
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2 gutter-90 clearfix">
                     <div className="grid-item col residences">

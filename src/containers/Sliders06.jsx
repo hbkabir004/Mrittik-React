@@ -18,7 +18,7 @@ const Sliders06 = () => {
                                 <img src="images/slider/star3.png" alt="" class="star3" />
                                 <img src="images/slider/star3-dark.png" alt="" class="star3-dark" />
                             </div>
-                            <SliderCard06 title='As Architects We Love to Add Beauty' />
+                            <SliderCard06 title='As Architects We Love to Add Beauty & Aesthetics To Your Space' />
                         </div>
                     </div>
                 </div>
