@@ -24,51 +24,6 @@ const ProjectGallery = () => {
             columnWidth: '.grid-sizer',
         })
 
-
-        //****************************
-        // Isotope Load more button
-        //****************************
-        // var initShow = 8;
-        // var counter = initShow;
-        // loadMore(initShow);
-        // function loadMore(toShow) {
-        //     $grid.find(".hidden").removeClass("hidden");
-
-        //     var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function (item) {
-        //         return item.element;
-        //     });
-        //     $(hiddenElems).addClass('hidden');
-        //     $grid.isotope('layout');
-
-        //     if (hiddenElems.length === 0) {
-        //         jQuery("#load-more").hide();
-        //     } else {
-        //         jQuery("#load-more").show();
-        //     };
-
-        // }
-
-        // //append load more button
-        // //$grid.after('<button id="load-more" class="btn btn-dark">Load More</button>');
-        // //when load more button clicked
-        // $("#load-more").click(function () {
-        //     if ($('.filters-button-group').data('clicked')) {
-        //         counter = initShow;
-        //         $('.filters-button-group').data('clicked', false);
-        //     } else {
-        //         counter = counter;
-        //     };
-        //     counter = counter + initShow;
-        //     loadMore(counter);
-        // });
-
-        // //when filter button clicked
-        // $(".filters-button-group").click(function () {
-        //     $(this).data('clicked', true);
-
-        //     loadMore(initShow);
-        // });
-
         // cleanup
         return () => Isotope.current.destroy()
     }, []);

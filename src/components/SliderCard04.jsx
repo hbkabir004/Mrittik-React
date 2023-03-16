@@ -2,8 +2,7 @@ import React from 'react';
 
 const SliderCard04 = (props) => {
     return (
-
-        <div className="slider" style={{ backgroundImage: `url(${props.bgImg02})` }}>
+        <div className="slider" style={{ backgroundImage: `url(${props.bgImg})` }}>
             <div class="container">
                 <div class="slide_content">
                     <div class="slide_content_wrapper mb-0 h-auto">
@@ -17,13 +16,11 @@ const SliderCard04 = (props) => {
                             </div>
                         </div>
 
-                        <div className="mask-content"
-                            style={{ backgroundImage: `url(${props.bgImg})` }}> {props.slide} </div>
+                        <div className="mask-content" style={{ backgroundImage: `url(${props.bgImg02})` }}> {props.slide} </div>
                     </div>
                 </div>
             </div>
         </div>
-
     );
 };
 

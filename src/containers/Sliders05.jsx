@@ -26,13 +26,13 @@ const Sliders05 = () => {
                     }}
                 >
                     <SwiperSlide>
-                        <SliderCard04 bgImg="images/slider/6.jpg" bgImg02="images/slider/15.jpg" title="The Future Architecture Is Here" slide="A" />
+                        <SliderCard04 bgImg="images/slider/2.jpg" bgImg02="images/slider/6.jpg" title="The Future Architecture Is Here" slide="A" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard04 bgImg="images/slider/2.jpg" bgImg02="images/slider/16.jpg" title="We value your Dream" slide="D" />
+                        <SliderCard04 bgImg="images/slider/3.jpg" bgImg02="images/slider/5.jpg" title="We value your Dream" slide="D" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard04 bgImg="images/slider/4.jpg" bgImg02="images/slider/17.jpg" title="Make true your Dream with Mrittik" slide="T" />
+                        <SliderCard04 bgImg="images/slider/13.jpg" bgImg02="images/slider/14.jpg" title="Make true your Dream with Mrittik" slide="T" />
                     </SwiperSlide>
                 </Swiper>
 
