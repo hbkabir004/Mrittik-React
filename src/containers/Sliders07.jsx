@@ -1,5 +1,5 @@
 import React from 'react';
-import { Controller, Navigation } from 'swiper';
+import { Controller } from 'swiper';
 import SwiperCore, { A11y, Autoplay, Pagination, Scrollbar } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard06 from '../components/SliderCard06';
@@ -17,9 +17,10 @@ const Sliders07 = () => {
                         delay: 2000,
                         disableOnInteraction: true
                     }}
-
                     slidesPerView={3}
                     loop={true}
+                    initialSlide={1}
+                    centeredSlides={true}
                 >
                     <SwiperSlide>
                         <SliderCard07 img='images/slider/grid/1.jpg' />
@@ -40,7 +41,7 @@ const Sliders07 = () => {
             </div>
 
             <div className="swiper_theme_slider_6_body">
-                <Swiper
+                {/* <Swiper
                     modules={[Controller, Navigation]}
                     centeredSlides={true}
                     slidesPerView={1}
@@ -56,23 +57,11 @@ const Sliders07 = () => {
                     <SwiperSlide>
                         <SliderCard06 title='The Future Architecture Is Here' />
                     </SwiperSlide>
-                    {/* <SwiperSlide>
-                        <SliderCard06 title='The Future Architecture Is Here' />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <SliderCard06 title='The Future Architecture Is Here' />
-                    </SwiperSlide> */}
 
-                </Swiper>
-                {/* <div className="slider">
-                    <div className="container">
-                        <div className="slide_content">
-                            <div className="slide_content_wrapper mb-0 h-auto">
-                                <SliderCard06 title='The Future Architecture Is Here' />
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+                </Swiper> */}
+
+                <SliderCard06 title='The Future Architecture Is Here' />
+
             </div>
 
             <div className="swiper swiper_theme_slider_6 second_row">
@@ -111,8 +100,6 @@ const Sliders07 = () => {
 
                 </Swiper>
             </div>
-            {/* <!-- Add Pagination --> */}
-            {/* <div className="swiper-pagination"></div> */}
 
             {/* <!-- Add Buttons --> */}
             <div className="swiper-button-prev details_link l-dir pagination-previous"><a href="#"><span className="link_icon"><span className="line"></span> <span className="circle"></span><span className="dot"></span></span></a></div>
