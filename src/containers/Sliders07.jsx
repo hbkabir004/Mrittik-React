@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard06 from '../components/SliderCard06';
 import SliderCard07 from '../components/SliderCard07';
 
-SwiperCore.use([Pagination, Scrollbar, Autoplay]);
+SwiperCore.use([Pagination, Scrollbar, Autoplay, Navigation]);
 
 const Sliders07 = () => {
     return (
