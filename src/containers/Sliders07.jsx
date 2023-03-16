@@ -1,5 +1,5 @@
 import React from 'react';
-import { Controller } from 'swiper';
+import { Controller, Navigation } from 'swiper';
 import SwiperCore, { A11y, Autoplay, Pagination, Scrollbar } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard06 from '../components/SliderCard06';
@@ -12,7 +12,7 @@ const Sliders07 = () => {
         <div className="theme_slider_6">
             <div className="swiper swiper_theme_slider_6">
                 <Swiper
-                    modules={[Scrollbar, A11y, Controller]}
+                    modules={[Scrollbar, A11y, Controller, Navigation]}
                     autoplay={{
                         delay: 2000,
                         disableOnInteraction: true
@@ -21,6 +21,7 @@ const Sliders07 = () => {
                     loop={true}
                     initialSlide={1}
                     centeredSlides={true}
+                    navigation
                 >
                     <SwiperSlide>
                         <SliderCard07 img='images/slider/grid/1.jpg' />
@@ -41,32 +42,12 @@ const Sliders07 = () => {
             </div>
 
             <div className="swiper_theme_slider_6_body">
-                {/* <Swiper
-                    modules={[Controller, Navigation]}
-                    centeredSlides={true}
-                    slidesPerView={1}
-                    loop={true}
-                    navigation
-                >
-                    <SwiperSlide>
-                        <SliderCard06 title='The Future Architecture Is Here' />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <SliderCard06 title='The Future Architecture Is Here' />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <SliderCard06 title='The Future Architecture Is Here' />
-                    </SwiperSlide>
-
-                </Swiper> */}
-
                 <SliderCard06 title='The Future Architecture Is Here' />
-
             </div>
 
             <div className="swiper swiper_theme_slider_6 second_row">
                 <Swiper
-                    modules={[Scrollbar, Controller]}
+                    modules={[Scrollbar, Controller, Navigation]}
                     autoplay={{
                         delay: 2000,
                         disableOnInteraction: true
@@ -76,6 +57,7 @@ const Sliders07 = () => {
                     loop={true}
                     initialSlide={1}
                     centeredSlides={true}
+                    navigation
                 // pagination={{
                 //     clickable: true,
                 //     dynamicBullets: true,

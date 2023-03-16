@@ -13996,7 +13996,6 @@ label {
 
 .grid {
   overflow: hidden;
-  display: grid;
 }
 
 .grid-item {
