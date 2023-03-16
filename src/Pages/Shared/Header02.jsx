@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
 import AsideInfo from './AsideInfo';
-import Home02Nav from './Home02Nav';
+import Header02Nav from './Header02Nav';
 import MobileResponsiveMenu from './MobileResponsiveMenu';
 
 const Header02 = () => {
@@ -137,7 +137,7 @@ const Header02 = () => {
                 </div>
             </header>
 
-            <Home02Nav />
+            <Header02Nav />
             <MobileResponsiveMenu />
             <AsideInfo />
         </>

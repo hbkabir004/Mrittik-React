@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
 
-const Home02Nav = () => {
+const Header02Nav = () => {
     useEffect(() => {
         // Mobile Responsive Menu 
         var mobileLogoContent = $('header .logo').html();
@@ -46,4 +46,4 @@ const Home02Nav = () => {
     );
 };
 
-export default Home02Nav;
+export default Header02Nav;
