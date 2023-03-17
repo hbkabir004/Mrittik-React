@@ -125,7 +125,7 @@ const Header02 = () => {
                                 <i className="bi bi-list"></i>
                             </button> */}
 
-                            <button className="navbar-toggler me-3 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
+                            <button className="mr_menu_toggle position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
                             >
                                 <span className="bi bi-list" />
                             </button>
