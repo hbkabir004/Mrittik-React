@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
 import AsideInfo from './AsideInfo';
-import Header02Nav from './Header02Nav';
+import Header02Nav from './Header02Nav/Header02Nav';
 
 const Header02 = () => {
     useEffect(() => {
