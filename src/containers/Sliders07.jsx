@@ -1,27 +1,23 @@
 import React from 'react';
-import { Controller, Navigation } from 'swiper';
-import SwiperCore, { A11y, Autoplay, Pagination, Scrollbar } from "swiper/core";
+import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard06 from '../components/SliderCard06';
 import SliderCard07 from '../components/SliderCard07';
-
-SwiperCore.use([Pagination, Scrollbar, Autoplay, Navigation]);
 
 const Sliders07 = () => {
     return (
         <div className="theme_slider_6">
             <div className="swiper swiper_theme_slider_6">
                 <Swiper
-                    modules={[Scrollbar, A11y, Controller, Navigation]}
-                    autoplay={{
-                        delay: 2000,
-                        disableOnInteraction: true
-                    }}
+                    modules={[Navigation]}
                     slidesPerView={3}
                     loop={true}
                     initialSlide={1}
                     centeredSlides={true}
-                    navigation
+                    navigation={{
+                        prevEl: '.swiper-button-prev',
+                        nextEl: '.swiper-button-next',
+                    }}
                 >
                     <SwiperSlide>
                         <SliderCard07 img='images/slider/grid/1.jpg' />
@@ -42,27 +38,20 @@ const Sliders07 = () => {
             </div>
 
             <div className="swiper_theme_slider_6_body">
-                <SliderCard06 title='The Future Architecture Is Here' />
+                <SliderCard06 title='THE FUTURE ARCHITECTURE IS HERE' />
             </div>
 
             <div className="swiper swiper_theme_slider_6 second_row">
                 <Swiper
-                    modules={[Scrollbar, Controller, Navigation]}
-                    autoplay={{
-                        delay: 2000,
-                        disableOnInteraction: true
-                    }}
-
+                    modules={[Navigation]}
                     slidesPerView={3}
                     loop={true}
                     initialSlide={1}
                     centeredSlides={true}
-                    navigation
-                // pagination={{
-                //     clickable: true,
-                //     dynamicBullets: true,
-                // }}
-                // spaceBetween={20}
+                    navigation={{
+                        prevEl: '.swiper-button-prev',
+                        nextEl: '.swiper-button-next',
+                    }}
                 >
                     <SwiperSlide>
                         <SliderCard07 img='images/slider/grid/4.jpg' />

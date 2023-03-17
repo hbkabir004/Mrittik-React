@@ -11615,6 +11615,7 @@ label {
 .header .logo {
   position: relative;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .header .logo a {

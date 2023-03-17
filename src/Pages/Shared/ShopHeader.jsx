@@ -42,8 +42,8 @@ const ShopHeader = () => {
                 <div className="container">
                     <div className="header_inner d-flex align-items-center justify-content-between">
                         <div className="logo">
-                            <a src="index" className="light_logo"><img src="images/logo-light.svg" alt="logo" /></a>
-                            <a src="index" className="dark_logo"><img src="images/logo-dark.svg" alt="logo" /></a>
+                            <a href='/' className="light_logo"><img src="images/logo-light.svg" alt="logo" /></a>
+                            <a href='/' className="dark_logo"><img src="images/logo-dark.svg" alt="logo" /></a>
                         </div>
 
 
