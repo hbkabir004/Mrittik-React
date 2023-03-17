@@ -23,7 +23,7 @@ function App() {
     once: true,
 })
   return (
-    <div className='bg-dark'>
+    <div>
       <Loader/>
       <ThemeSwitcher/>
       <RouterProvider router={routes} /> 

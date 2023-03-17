@@ -2,7 +2,6 @@ import $ from 'jquery';
 import React, { useEffect } from 'react';
 import AsideInfo from './AsideInfo';
 import Header02Nav from './Header02Nav';
-import MobileResponsiveMenu from './MobileResponsiveMenu';
 
 const Header02 = () => {
     useEffect(() => {
@@ -122,23 +121,28 @@ const Header02 = () => {
                                 </form>
                             </div>
 
-                            <button type="button" className="mr_menu_toggle">
+                            {/* <button type="button" className="mr_menu_toggle">
                                 <i className="bi bi-list"></i>
+                            </button> */}
+
+                            <button className="navbar-toggler me-3 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
+                            >
+                                <span className="bi bi-list" />
                             </button>
 
 
 
                             {/* Mobile Responsive Menu Toggle Button */}
-                            <button type="button" className="mr_menu_toggle d-lg-none">
+                            {/* <button type="button" className="mr_menu_toggle d-lg-none">
                                 <i className="bi bi-list"></i>
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>
             </header>
 
-            <Header02Nav />
-            <MobileResponsiveMenu />
+            <Header02Nav id='offcanvasHome' />
+            {/* <MobileResponsiveMenu /> */}
             <AsideInfo />
         </>
     );
