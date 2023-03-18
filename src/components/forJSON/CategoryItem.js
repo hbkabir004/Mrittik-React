@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CategoryItem = ({ categoryItem }) => {
     const { id, name, href, item1, item2, item3, categoryID } = categoryItem;
@@ -7,13 +7,9 @@ const CategoryItem = ({ categoryItem }) => {
     return (
         <li className="category_item">
             <div className="category_item_inner">
-                <NavLink to={`/shop-category/${categoryID}`}
-                  className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }
-                >
+                <Link to={`/shop-category/${categoryID}`}>
                 <div className="cat_name"><a href="#">{name}</a></div>
-                </NavLink>
+                </Link>
                 <span className="cat_toggler">
                     <a data-bs-toggle="collapse" href={href}>
                         <i className="bi bi-chevron-right"></i>

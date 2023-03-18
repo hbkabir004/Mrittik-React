@@ -165,20 +165,9 @@ export const routes = createBrowserRouter([
         element: <ShopLayout/>,
         children: [
             {
-                path: '/shop-category/:id',
-                element: <ShopCategory/>,
-                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/category/${params.id}`),
-            },
-            {
                 path: '/shop-1',
                 element: <Shop01/>,
             },
-            {
-                path: '/shop-product/:id',
-                element: <ShopProduct/>,
-                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/${params.id}`)
-            },
-           
             {
                 path: '/shop-2',
                 element: <Shop02/>,
@@ -198,6 +187,16 @@ export const routes = createBrowserRouter([
             {
                 path: '/shop-checkout',
                 element: <ShopCheckout/>,
+            },
+            {
+                path: '/shop-product/:id',
+                element: <ShopProduct/>,
+                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/${params.id}`)
+            },
+            {
+                path: '/shop-category/:id',
+                element: <ShopCategory/>,
+                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/category/${params.id}`),
             },
 
         ]

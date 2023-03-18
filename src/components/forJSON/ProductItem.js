@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ProductItem = ({productItem, handleAddToCart}) => {
     const { id, img, name, badge, newClass, oldClass, price, oldPrice, categoryName } = productItem;
@@ -18,16 +18,12 @@ const ProductItem = ({productItem, handleAddToCart}) => {
                 </div>
                 <div className="product_item_inner">
                     <div className="label_text">
-                        <NavLink to={`/shop-product/${id}`}
-                          className={({ isActive, isPending }) =>
-                          isPending ? "pending" : isActive ? "active" : ""
-                        }
-                        >
+                        <Link to={`/shop-product/${id}`}>
                             <h4 className="product_item_name"><a href="/shop-product">{name}</a>
                                 <span className="product_item_price"> <del className={oldClass}>{oldPrice}</del> {price}</span>
                                 <span className="product_item_price"></span>
                             </h4>
-                        </NavLink>
+                        </Link>
                         <div className="product_category"><a href="#">{categoryName}</a></div>
                     </div>
                 </div>

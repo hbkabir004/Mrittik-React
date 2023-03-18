@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CuponCode = () => {
     return (
@@ -14,11 +14,9 @@ const CuponCode = () => {
             </div>
             <div className="cartupdate">
                 <div className="btn_group">
-                    <NavLink to='/shop-checkout'
-                        className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "active" : ""
-                        }
-                    ><input className="btn white" type="submit" value="Update Cart" name="submit" /></NavLink>
+                    <Link to='/shop-checkout'>
+                        <input className="btn white" type="submit" value="Update Cart" name="submit" />
+                    </Link>
                 </div>
             </div>
         </div>

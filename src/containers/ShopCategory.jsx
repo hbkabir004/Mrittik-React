@@ -7,6 +7,7 @@ import ListProductItem from '../components/ListProductItem';
 import LoadmoreBtn from '../components/LoadmoreBtn';
 import PaginationDiv02 from '../components/PaginationDiv02';
 import { CartContext } from '../Layouts/ShopLayout';
+import PageBanner02 from './PageBanner02';
 
 const ShopCategory = () => {
     const categoryProducts = useLoaderData();
@@ -35,43 +36,46 @@ const ShopCategory = () => {
     }
 
     return (
-        <section className="shop_page bg-dark-200">
-            <div className="container">
-                <div className="tab-content">
-                    <div className="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
-                        <div className="product_view_type">
-                            <div className="product_view_grid product_col_3 type_1">
+        <>
+            <PageBanner02 title="Shop" page="Shop" activePage='Product Category' href="/shop-1" />
+
+            <section className="shop_page bg-dark-200">
+                <div className="container">
+                    <div className="tab-content">
+                        <div className="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+                            <div className="product_view_type">
+                                <div className="product_view_grid product_col_3 type_1">
+                                    {
+                                        categoryProducts.map(product => <CategotyProductItem
+                                            key={product.id}
+                                            productItem={product}
+                                            handleAddToCart={handleAddToCart}
+
+                                        />)
+                                    }
+                                </div>
+
+                                <PaginationDiv02 />
+                            </div>
+                        </div>
+                        <div className="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+                            <div className="product_view_list">
+
                                 {
-                                    categoryProducts.map(product => <CategotyProductItem
+                                    categoryProducts.map(product => <ListProductItem
                                         key={product.id}
                                         productItem={product}
-                                        handleAddToCart={handleAddToCart}
-
-                                    />)
+                                    ></ListProductItem>)
                                 }
+
+                                <LoadmoreBtn className='btn olive w-100' text='Discover All Products' />
+
                             </div>
-
-                            <PaginationDiv02 />
-                        </div>
-                    </div>
-                    <div className="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
-                        <div className="product_view_list">
-
-                            {
-                                categoryProducts.map(product => <ListProductItem
-                                    key={product.id}
-                                    productItem={product}
-                                ></ListProductItem>)
-                            }
-
-                            <LoadmoreBtn className='btn olive w-100' text='Discover All Products' />
-
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
+            </section>
+        </>
     );
 };
 

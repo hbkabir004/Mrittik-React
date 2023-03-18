@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
 
 import { toast } from 'react-toastify'
 import { CartContext } from '../Layouts/Main'
@@ -53,18 +54,14 @@ const Cart = () => {
           </p>
         </div>
         <div className='flex justify-end space-x-4'>
-          <NavLink to='/shop'
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
-            }
-          >
+          <Link to='/shop'>
             <button
               type='button'
               className='px-6 py-2 border rounded-full border-cyan-400'
             >
               Back <span className='sr-only sm:not-sr-only'>to shop</span>
             </button>
-          </NavLink>
+          </Link>
           <button
             onClick={orderHandler}
             type='button'
