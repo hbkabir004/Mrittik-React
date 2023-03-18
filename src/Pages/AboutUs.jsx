@@ -1,5 +1,6 @@
 import Aos from 'aos';
 import React from 'react';
+import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceCard from '../components/ServiceCard';
 import TeamCard from '../components/TeamCard';
@@ -70,16 +71,16 @@ const AboutUs = () => {
                         {/* <!-- Swiper Team --> */}
                         <div className="swiper swiper_team">
                             <Swiper
-                                // modules={[Scrollbar, A11y]}
-                                autoplay={{
-                                    delay: 2000,
-                                    disableOnInteraction: false
-                                }}
+                                modules={[Navigation]}
                                 spaceBetween={65}
                                 slidesPerView={3}
                                 loop={true}
                                 initialSlide={1}
                                 centeredSlides={true}
+                                navigation={{
+                                    prevEl: '.swiper-button-prev',
+                                    nextEl: '.swiper-button-next',
+                                }}
 
                             >
                                 <SwiperSlide>
@@ -102,6 +103,12 @@ const AboutUs = () => {
                                     <TeamCard img="images/team/5.jpg" name="Benjamin Brook" designation="ARCHITECT" />
                                 </SwiperSlide>
                             </Swiper>
+
+                            {/* <!-- Add Buttons --> */}
+                            <div className="swiper-navigation">
+                                <div className="swiper-button-prev"><i className="bi bi-arrow-left"></i></div>
+                                <div className="swiper-button-next"><i className="bi bi-arrow-right"></i></div>
+                            </div>
 
                         </div>
                     </div>

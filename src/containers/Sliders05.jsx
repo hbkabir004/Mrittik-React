@@ -1,10 +1,7 @@
 import React from 'react';
-import SwiperCore, { A11y, Autoplay, Pagination, Scrollbar } from "swiper/core";
+import { Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import SliderCard04 from '../components/SliderCard04';
-
-SwiperCore.use([Pagination, Scrollbar, Autoplay]);
 
 const Sliders05 = () => {
 
@@ -12,12 +9,11 @@ const Sliders05 = () => {
         <div className="theme_slider_4 p-0">
             <div className="swiper swiper_theme_slider_4">
                 <Swiper
-                    modules={[Pagination, Scrollbar, A11y]}
+                    modules={[Pagination, Autoplay]}
                     autoplay={{
                         delay: 4000,
                         disableOnInteraction: false
                     }}
-
                     slidesPerView={1}
                     loop={true}
                     pagination={{

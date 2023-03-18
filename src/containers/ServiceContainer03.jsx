@@ -1,6 +1,5 @@
 import React from 'react';
-import { EffectFade } from 'swiper';
-import { A11y, Pagination, Scrollbar } from "swiper/core";
+import { EffectFade, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import GalleryImg from '../components/GalleryImg';
 import Paragraph from '../components/Paragraph';
@@ -60,23 +59,14 @@ const ServiceContainer03 = () => {
                     <div className="gallery_slider">
                         <div className="swiper swiper_gallery">
                             <Swiper
-                                modules={[Pagination, Scrollbar, A11y, EffectFade]}
+                                modules={[EffectFade, Navigation]}
                                 effect="slide"
-                                autoplay={{
-                                    delay: 4000,
-                                    disableOnInteraction: false,
-                                    speed: 3000
-                                }}
                                 slidesPerView={1}
                                 loop={true}
-                                initialSlide={1}
-                                centeredSlides={true}
-                                pagination={{
-                                    clickable: true,
-                                    dynamicBullets: true,
+                                navigation={{
+                                    prevEl: '.swiper-button-prev',
+                                    nextEl: '.swiper-button-next',
                                 }}
-
-
                             >
                                 <SwiperSlide>
                                     <GalleryImg img='images/portfolio/details/sl-1.jpg' />
@@ -89,6 +79,11 @@ const ServiceContainer03 = () => {
                                 </SwiperSlide>
                             </Swiper>
 
+                            {/* <!-- Add Buttons --> */}
+                            <div className="swiper-navigation">
+                                <div className="swiper-button-prev"><i className="bi bi-arrow-left"></i></div>
+                                <div className="swiper-button-next"><i className="bi bi-arrow-right"></i></div>
+                            </div>
                         </div>
                     </div>
 
@@ -125,6 +120,8 @@ const ServiceContainer03 = () => {
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </section>
         </main>

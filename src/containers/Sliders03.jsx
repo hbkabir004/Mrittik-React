@@ -1,26 +1,20 @@
 import React from 'react';
+import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard03 from '../components/SliderCard03';
-
-// SwiperCore.use([Pagination, Scrollbar, Autoplay]);
 
 const Sliders03 = () => {
     return (
         <div className="theme_slider_3 p-0">
             <div className="swiper swiper_theme_slider_3">
                 <Swiper
-                    // modules={[Autoplay]}
-                    autoplay={{
-                        delay: 4000,
-                        disableOnInteraction: false
-                    }}
-
+                    modules={[Navigation]}
                     slidesPerView={1}
                     loop={true}
-                // pagination={{
-                //     clickable: true,
-                //     dynamicBullets: true,
-                // }}
+                    navigation={{
+                        prevEl: '.swiper-button-prev',
+                        nextEl: '.swiper-button-next',
+                    }}
                 >
                     <SwiperSlide>
                         {/* <SliderCard03 bgImg="images/slider/15.jpg" title="The Future Architecture Is Here" /> */}
@@ -35,6 +29,10 @@ const Sliders03 = () => {
                         <SliderCard03 bgImg="images/slider/5.jpg" title="Make true your Dream with Mrittik" />
                     </SwiperSlide>
                 </Swiper>
+
+                {/* <!-- Add Buttons --> */}
+                <div className="swiper-button-prev details_link l-dir pagination-previous"><a href="#"><span className="link_icon"><span className="line"></span> <span className="circle"></span><span className="dot"></span></span></a></div>
+                <div className="swiper-button-next details_link r-dir pagination-next"><a href="#"><span className="link_icon"><span className="line"></span> <span className="circle"></span><span className="dot"></span></span></a></div>
             </div>
 
             <div className="rotate-logo d-none d-md-block">

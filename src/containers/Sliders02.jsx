@@ -1,13 +1,9 @@
 import React from 'react';
-// import { Parallax } from 'swiper';
-import SwiperCore, { Mousewheel, Pagination } from "swiper/core";
+import { Mousewheel, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard02 from '../components/SliderCard02';
 
-SwiperCore.use([Mousewheel, Pagination]);
-
 const Sliders02 = () => {
-
     return (
         <div className="theme_slider_2 p-0">
             <Swiper
@@ -19,11 +15,8 @@ const Sliders02 = () => {
                     delay: 4000,
                     disableOnInteraction: false
                 }}
-
                 slidesPerView={1}
                 loop={false}
-                initialSlide={1}
-                centeredSlides={true}
                 pagination={{
                     clickable: true,
                     dynamicBullets: true,
@@ -31,7 +24,6 @@ const Sliders02 = () => {
                 parallax={true}
                 autHeight={true}
                 mousewheel={true}
-                // effect: 'slide',
                 controller={{
                     inverse: true,
                 }}
