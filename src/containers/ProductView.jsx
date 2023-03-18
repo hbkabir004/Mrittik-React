@@ -79,7 +79,7 @@ const ProductView = ({ productView }) => {
                                 </div>
                             </div>
                             <div className="product_price">
-                                <span className="product_item_price"> <del className={oldClass}>{oldPrice}</del>${total}</span>
+                                <span className="product_item_price"> <del className={oldClass}>$ {oldPrice}</del>  $ {total}</span>
                                 <span className="product_item_price"></span>
                             </div>
                             <div className="product_description">
