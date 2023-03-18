@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
-import { CartContext } from '../Layout/ShopLayout';
+import { CartContext } from '../Layouts/ShopLayout';
 import { deleteShoppingCart } from './forJSON/fakeDB';
 import OrderListItem from './OrderListItem';
 import WidgetTitle from './WidgetTitle';

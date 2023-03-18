@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import MiniCart from '../../containers/MiniCart';
-import { CartContext } from '../../Layout/Main';
+import { CartContext } from '../../Layouts/Main';
 import AsideInfo from './AsideInfo';
 import MobileResponsiveMenu from './MobileResponsiveMenu';
 

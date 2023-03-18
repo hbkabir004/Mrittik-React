@@ -5,7 +5,7 @@ import CartHeader from '../components/CartHeader';
 import CuponCode from '../components/CuponCode';
 import { deleteShoppingCart, removeFromDb } from '../components/forJSON/fakeDB';
 import GrandTotal from '../components/forJSON/GrandTotal';
-import { CartContext } from '../Layout/ShopLayout';
+import { CartContext } from '../Layouts/ShopLayout';
 
 const CartContainer = () => {
     const [cart, setCart] = useContext(CartContext)

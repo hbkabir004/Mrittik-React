@@ -6,7 +6,7 @@ import { addToDb } from '../components/forJSON/fakeDB';
 import ListProductItem from '../components/ListProductItem';
 import LoadmoreBtn from '../components/LoadmoreBtn';
 import PaginationDiv02 from '../components/PaginationDiv02';
-import { CartContext } from '../Layout/ShopLayout';
+import { CartContext } from '../Layouts/ShopLayout';
 
 const ShopCategory = () => {
     const categoryProducts = useLoaderData();

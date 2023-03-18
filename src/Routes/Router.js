@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import { productsAndCartData } from "../components/forJSON/getCart&ProductsData";
 import ShopCategory from "../containers/ShopCategory";
-import HomeLayout from "../Layout/HomeLayout";
-import HomeLayout02 from "../Layout/HomeLayout02";
-import HomeLayout03 from "../Layout/HomeLayout03";
-import ShopLayout from "../Layout/ShopLayout";
+import HomeLayout from "../Layouts/HomeLayout";
+import HomeLayout02 from "../Layouts/HomeLayout02";
+import HomeLayout03 from "../Layouts/HomeLayout03";
+import ShopLayout from "../Layouts/ShopLayout";
 import AboutUs from "../Pages/AboutUs";
 import Blog from "../Pages/Blog";
 import BlogDetails from "../Pages/BlogDetails";

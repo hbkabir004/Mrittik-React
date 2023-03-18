@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import React, { useContext, useEffect } from 'react';
-import { CartContext } from '../../Layout/ShopLayout';
+import { CartContext } from '../../Layouts/ShopLayout';
 import AsideInfo from './AsideInfo';
 import MiniCart from './MiniCart/MiniCart';
 import MobileResponsiveMenu from './MobileResponsiveMenu';

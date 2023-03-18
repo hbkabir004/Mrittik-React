@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { toast } from 'react-toastify';
 import { addToDb } from '../components/forJSON/fakeDB';
 import ProductZoomInfo from '../components/ProductZoomInfo';
-import { CartContext } from '../Layout/ShopLayout';
+import { CartContext } from '../Layouts/ShopLayout';
 import ProductZoomBtnGrp from './ProductZoomBtnGrp';
 
 const ProductView = ({ productView }) => {

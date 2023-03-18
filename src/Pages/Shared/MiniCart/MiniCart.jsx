@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { NavLink } from "react-router-dom";
 import { toast } from 'react-toastify';
 import { removeFromDb } from '../../../components/forJSON/fakeDB';
-import { CartContext } from '../../../Layout/ShopLayout';
+import { CartContext } from '../../../Layouts/ShopLayout';
 import "./MiniCart.css";
 import MiniCartContent from './MiniCartContent';
 
