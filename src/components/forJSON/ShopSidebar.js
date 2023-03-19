@@ -128,7 +128,7 @@ const ShopSidebar = () => {
                                 <img className="primary_img" src="images/shop/products/1-1.png" alt="img" />
                             </div>
                             <div className="popular_product_content">
-                                <h5 className="product_title"><a href="/shop-product">Decor Plant</a></h5>
+                                <h5 className="product_title"><a href="#">Decor Plant</a></h5>
                                 <h6 className="product_price">$22.00</h6>
                             </div>
                         </li>
@@ -137,7 +137,7 @@ const ShopSidebar = () => {
                                 <img className="primary_img" src="images/shop/products/7-1.png" alt="img" />
                             </div>
                             <div className="popular_product_content">
-                                <h5 className="product_title"><a href="/shop-product">Center Table</a></h5>
+                                <h5 className="product_title"><a href="#">Center Table</a></h5>
                                 <h6 className="product_price">$22.00</h6>
                             </div>
                         </li>
@@ -146,7 +146,7 @@ const ShopSidebar = () => {
                                 <img className="primary_img" src="images/shop/products/9-1.png" alt="img" />
                             </div>
                             <div className="popular_product_content">
-                                <h5 className="product_title"><a href="/shop-product">Black Vase</a></h5>
+                                <h5 className="product_title"><a href="#">Black Vase</a></h5>
                                 <h6 className="product_price">$22.00</h6>
                             </div>
                         </li>
