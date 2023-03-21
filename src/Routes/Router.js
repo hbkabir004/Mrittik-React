@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import { productsAndCartData } from "../components/forJSON/getCart&ProductsData";
-import ShopCategory from "../containers/ShopCategory";
 import HomeLayout from "../Layouts/HomeLayout";
 import HomeLayout02 from "../Layouts/HomeLayout02";
 import HomeLayout03 from "../Layouts/HomeLayout03";
@@ -177,7 +176,7 @@ export const routes = createBrowserRouter([
                 element: <Shop03/>,
             },
             {
-                path: '/shop-product',
+                path: '/product-details',
                 element: <ShopProduct/>,
             },
             {
@@ -188,16 +187,16 @@ export const routes = createBrowserRouter([
                 path: '/shop-checkout',
                 element: <ShopCheckout/>,
             },
-            {
-                path: '/shop-product/:id',
-                element: <ShopProduct/>,
-                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/${params.id}`)
-            },
-            {
-                path: '/shop-category/:id',
-                element: <ShopCategory/>,
-                loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/category/${params.id}`),
-            },
+            // {
+            //     path: '/shop-product/:id',
+            //     element: <SelectedProduct/>,
+            //     loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/${params.id}`)
+            // },
+            // {
+            //     path: '/shop-category/:id',
+            //     element: <ShopCategory/>,
+            //     loader: ({ params }) => fetch(`https://mrittik-server.vercel.app/products/category/${params.id}`),
+            // },
 
         ]
     }

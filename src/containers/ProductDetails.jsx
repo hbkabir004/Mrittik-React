@@ -1,8 +1,7 @@
 import Aos from 'aos';
 import React from 'react';
 
-const ProductDetails = ({ projectDetails }) => {
-    const { id, img, name, badge, newClass, oldClass, price, oldPrice, categoryName } = projectDetails;
+const ProductDetails = () => {
     Aos.init();
 
     return (

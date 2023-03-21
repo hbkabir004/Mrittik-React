@@ -90,7 +90,7 @@ const ShopHeader = () => {
                                                 <li className="menu-item"><a href="/shop-1">Shop One</a></li>
                                                 <li className="menu-item"><a href="/shop-2">Shop Two</a></li>
                                                 <li className="menu-item"><a href="/shop-3">Shop Three</a></li>
-                                                <li className="menu-item"><a href="/shop-product">Product Details</a></li>
+                                                <li className="menu-item"><a href="/product-details">Product Details</a></li>
                                                 <li className="menu-item"><a href="/shop-cart">Shop Cart</a></li>
                                                 <li className="menu-item"><a href="/shop-checkout">Checkout</a></li>
                                                 <li className="menu-item"><a href="/login">Login</a></li>

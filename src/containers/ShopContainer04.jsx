@@ -10,9 +10,12 @@ const ShopContainer04 = ({ selectedProduct }) => {
 
     return (
         <main className="wrapper">
-            <ProductView productView={selectedProduct} />
+            <ProductView />
+            <ProductDetails />
+            <RelatedProducts />
+            {/* <ProductView productView={selectedProduct} />
             <ProductDetails projectDetails={selectedProduct} />
-            <RelatedProducts relatedProducts={selectedProduct} />
+            <RelatedProducts relatedProducts={selectedProduct} /> */}
         </main >
     );
 };

@@ -49,7 +49,7 @@ const ShopSidebar = () => {
                 </CategoryContext.Provider>
             </div>
 
-            <div id="pricerange" className="widget widget_additional_filter">
+            {/* <div id="pricerange" className="widget widget_additional_filter">
                 <h2 className="widget-title">Price Filter <span className="title-line"></span></h2>
                 <div className="sidebar_price_filter">
                     <div id="slider-range" className="range-bar"></div>
@@ -57,7 +57,7 @@ const ShopSidebar = () => {
                         <span>Price:</span> <input type="text" id="amount" readOnly />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div id="brand" className="widget widget_brand">
                 <h2 className="widget-title">Filter by Brand <span className="title-line"></span></h2>

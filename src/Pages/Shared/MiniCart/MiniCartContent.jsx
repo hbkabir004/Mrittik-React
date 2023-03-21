@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MiniCartContent = ({ product, handleRemoveItem }) => {
-    const { id, img, title, name, price, quantity, categoryName } = product;
+    const { id, img, name, price, quantity } = product;
     const total = (Number(price) * Number(quantity));
     return (
         <>
