@@ -6,7 +6,7 @@
 
 ### Project Documentation
 
-To run the ```Mrittik-Documentation``` open the ```index.html``` file on your browser and follow it.
+To run the ``Mrittik-Documentation`` open the ``index.html`` file from the ```Documentation``` folder on your browser and follow it.
 
 ## Tech Stack
 
