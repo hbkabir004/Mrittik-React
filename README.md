@@ -1,34 +1,13 @@
-# Mrittik-React-App [TOERUS]
+# Mrittik-React [TOERUS]
 
 ## 🔗 Links
 
-### Hosted in Firebase -> [Live Site](https://mrittik-react.web.app/)
+### Hosted in Firebase -> [Live Site](https://mrittik-reactjs.web.app/)
 
 ### Project Documentation
 
-To run the <b>Mrittik-Documentation</b>, open the folder in <b>VS Code</b> and run the following commands on <b>terminal (Git Bash)</b>
-
-
-```bash
-  npm install --global yarn
-```
-```bash
-  yarn install
-```
-```bash
-  yarn start
-```
-
-### MRITTIK-React-App
-
-```bash
-To install the Mrittik-React-App, follow the Mrittik-Documentation
-```
-
-## API Reference
-
-#### 🔗 MRITTIK-Server -> [Live Site](https://github.com/hbkabir004/Mrittik-Server)
+To run the ```Mrittik-Documentation``` open the ```index.html``` file on your browser and follow it.
 
 ## Tech Stack
 
-**React.js, Node.js, Express.js, Swiper, Isotope-Layout, Bootstrap5, JavaScript, jQuery plugins, AOS, Firbase**
+**React.js, Node.js, Express.js, Swiper, Isotope-Layout, Bootstrap5, JavaScript, jQuery plugins, Firbase**
