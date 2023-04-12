@@ -58,7 +58,7 @@ Description:
 			$(hiddenElems).addClass('hidden');
 			$grid.isotope('layout');
 
-			if (hiddenElems.length == 0) {
+			if (hiddenElems.length === 0) {
 				jQuery("#load-more").hide();
 			} else {
 				jQuery("#load-more").show();

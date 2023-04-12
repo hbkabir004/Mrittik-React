@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import SectionGridLines from '../../components/SectionGridLines';
 
 const Footer = () => {
-    // Aos.init()
+    //  
 
     useEffect(() => {
         // Totop Button

@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 /*!
  * Select2 4.1.0-rc.0
  * https://select2.github.io
@@ -10,43 +8,43 @@ import $ from 'jquery';
 ;(function (factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['$'], factory);
+    define(['jquery'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // Node/CommonJS
-    module.exports = function (root, $) {
-      if ($ === undefined) {
-        // require('$') returns a factory that requires window to
-        // build a $ instance, we normalize how we use modules
+    module.exports = function (root, jQuery) {
+      if (jQuery === undefined) {
+        // require('jQuery') returns a factory that requires window to
+        // build a jQuery instance, we normalize how we use modules
         // that require this pattern but the window provided is a noop
-        // if it's defined (how $ works)
+        // if it's defined (how jquery works)
         if (typeof window !== 'undefined') {
-          $ = require('$');
+          jQuery = require('jquery');
         }
         else {
-          $ = require('$')(root);
+          jQuery = require('jquery')(root);
         }
       }
-      factory($);
-      return $;
+      factory(jQuery);
+      return jQuery;
     };
   } else {
     // Browser globals
-    factory($);
+    factory(jQuery);
   }
-} (function ($) {
+} (function (jQuery) {
   // This is needed so we can catch the AMD loader configuration and use it
   // The inner file should be wrapped (by `banner.start.js`) in a function that
   // returns the AMD loader references.
   var S2 =(function () {
   // Restore the Select2 AMD loader so it can be used
   // Needed mostly in the language files, where the loader is not inserted
-  if ($ && $.fn && $.fn.select2 && $.fn.select2.amd) {
-    var S2 = $.fn.select2.amd;
+  if (jQuery && jQuery.fn && jQuery.fn.select2 && jQuery.fn.select2.amd) {
+    var S2 = jQuery.fn.select2.amd;
   }
 var S2;(function () { if (!S2 || !S2.requirejs) {
 if (!S2) { S2 = {}; } else { require = S2; }
 /**
- * @license almond 0.3.3 Copyright $ Foundation and other contributors.
+ * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
  * Released under MIT license, http://github.com/requirejs/almond/LICENSE
  */
 //Going sloppy to avoid 'use strict' string cost, but strict practices should
@@ -476,7 +474,7 @@ var requirejs, require, define;
     };
 
     define.amd = {
-        $: true
+        jQuery: true
     };
 }());
 
@@ -485,14 +483,14 @@ S2.requirejs = requirejs;S2.require = require;S2.define = define;
 }());
 S2.define("almond", function(){});
 
-/* global $:false, $:false */
-S2.define('$',[],function () {
-  var _$ = $ || $;
+/* global jQuery:false, $:false */
+S2.define('jquery',[],function () {
+  var _$ = jQuery || $;
 
   if (_$ == null && console && console.error) {
     console.error(
-      'Select2: An instance of $ or a $-compatible library was not ' +
-      'found. Make sure that you are including $ before Select2 on your ' +
+      'Select2: An instance of jQuery or a jQuery-compatible library was not ' +
+      'found. Make sure that you are including jQuery before Select2 on your ' +
       'web page.'
     );
   }
@@ -501,7 +499,7 @@ S2.define('$',[],function () {
 });
 
 S2.define('select2/utils',[
-  '$'
+  'jquery'
 ], function ($) {
   var Utils = {};
 
@@ -852,7 +850,7 @@ S2.define('select2/utils',[
 });
 
 S2.define('select2/results',[
-  '$',
+  'jquery',
   './utils'
 ], function ($, Utils) {
   function Results ($element, options, dataAdapter) {
@@ -1422,7 +1420,7 @@ S2.define('select2/keys',[
 });
 
 S2.define('select2/selection/base',[
-  '$',
+  'jquery',
   '../utils',
   '../keys'
 ], function ($, Utils, KEYS) {
@@ -1601,7 +1599,7 @@ S2.define('select2/selection/base',[
 });
 
 S2.define('select2/selection/single',[
-  '$',
+  'jquery',
   './base',
   '../utils',
   '../keys'
@@ -1710,7 +1708,7 @@ S2.define('select2/selection/single',[
 });
 
 S2.define('select2/selection/multiple',[
-  '$',
+  'jquery',
   './base',
   '../utils'
 ], function ($, BaseSelection, Utils) {
@@ -1925,7 +1923,7 @@ S2.define('select2/selection/placeholder',[
 });
 
 S2.define('select2/selection/allowClear',[
-  '$',
+  'jquery',
   '../keys',
   '../utils'
 ], function ($, KEYS, Utils) {
@@ -2049,7 +2047,7 @@ S2.define('select2/selection/allowClear',[
 });
 
 S2.define('select2/selection/search',[
-  '$',
+  'jquery',
   '../utils',
   '../keys'
 ], function ($, Utils, KEYS) {
@@ -2316,7 +2314,7 @@ S2.define('select2/selection/selectionCss',[
 });
 
 S2.define('select2/selection/eventRelay',[
-  '$'
+  'jquery'
 ], function ($) {
   function EventRelay () { }
 
@@ -2345,7 +2343,7 @@ S2.define('select2/selection/eventRelay',[
       // The parameters should always be an object
       params = params || {};
 
-      // Generate the $ event for the Select2 event
+      // Generate the jQuery event for the Select2 event
       var evt = $.Event('select2:' + name, {
         params: params
       });
@@ -2365,7 +2363,7 @@ S2.define('select2/selection/eventRelay',[
 });
 
 S2.define('select2/translation',[
-  '$',
+  'jquery',
   'require'
 ], function ($, require) {
   function Translation (dict) {
@@ -3296,7 +3294,7 @@ S2.define('select2/data/base',[
 S2.define('select2/data/select',[
   './base',
   '../utils',
-  '$'
+  'jquery'
 ], function (BaseAdapter, Utils, $) {
   function SelectAdapter ($element, options) {
     this.$element = $element;
@@ -3588,7 +3586,7 @@ S2.define('select2/data/select',[
 S2.define('select2/data/array',[
   './select',
   '../utils',
-  '$'
+  'jquery'
 ], function (SelectAdapter, Utils, $) {
   function ArrayAdapter ($element, options) {
     this._dataToConvert = options.get('data') || [];
@@ -3672,7 +3670,7 @@ S2.define('select2/data/array',[
 S2.define('select2/data/ajax',[
   './array',
   '../utils',
-  '$'
+  'jquery'
 ], function (ArrayAdapter, Utils, $) {
   function AjaxAdapter ($element, options) {
     this.ajaxOptions = this._applyDefaults(options.get('ajax'));
@@ -3781,7 +3779,7 @@ S2.define('select2/data/ajax',[
 });
 
 S2.define('select2/data/tags',[
-  '$'
+  'jquery'
 ], function ($) {
   function Tags (decorated, $element, options) {
     var tags = options.get('tags');
@@ -3912,7 +3910,7 @@ S2.define('select2/data/tags',[
 });
 
 S2.define('select2/data/tokenizer',[
-  '$'
+  'jquery'
 ], function ($) {
   function Tokenizer (decorated, $element, options) {
     var tokenizer = options.get('tokenizer');
@@ -4147,7 +4145,7 @@ S2.define('select2/data/maximumSelectionLength',[
 });
 
 S2.define('select2/dropdown',[
-  '$',
+  'jquery',
   './utils'
 ], function ($, Utils) {
   function Dropdown ($element, options) {
@@ -4190,7 +4188,7 @@ S2.define('select2/dropdown',[
 });
 
 S2.define('select2/dropdown/search',[
-  '$'
+  'jquery'
 ], function ($) {
   function Search () { }
 
@@ -4352,7 +4350,7 @@ S2.define('select2/dropdown/hidePlaceholder',[
 });
 
 S2.define('select2/dropdown/infiniteScroll',[
-  '$'
+  'jquery'
 ], function ($) {
   function InfiniteScroll (decorated, $element, options, dataAdapter) {
     this.lastParams = {};
@@ -4445,7 +4443,7 @@ S2.define('select2/dropdown/infiniteScroll',[
 });
 
 S2.define('select2/dropdown/attachBody',[
-  '$',
+  'jquery',
   '../utils'
 ], function ($, Utils) {
   function AttachBody (decorated, $element, options) {
@@ -4943,7 +4941,7 @@ S2.define('select2/i18n/en',[],function () {
 });
 
 S2.define('select2/defaults',[
-  '$',
+  'jquery',
 
   './results',
 
@@ -5381,7 +5379,7 @@ S2.define('select2/defaults',[
 });
 
 S2.define('select2/options',[
-  '$',
+  'jquery',
   './defaults',
   './utils'
 ], function ($, Defaults, Utils) {
@@ -5469,7 +5467,7 @@ S2.define('select2/options',[
         var dataName = attributeName.substring(prefix.length);
 
         // Get the data contents from the consistent source
-        // This is more than likely the $ data helper
+        // This is more than likely the jQuery data helper
         var dataValue = Utils.GetData($e[0], dataName);
 
         // camelCase the attribute name to match the spec
@@ -5481,8 +5479,8 @@ S2.define('select2/options',[
     }
 
     // Prefer the element's `dataset` attribute if it exists
-    // $ 1.x does not correctly handle data attributes with multiple dashes
-    if ($.fn.$ && $.fn.$.substr(0, 2) == '1.' && $e[0].dataset) {
+    // jQuery 1.x does not correctly handle data attributes with multiple dashes
+    if ($.fn.jquery && $.fn.jquery.substr(0, 2) == '1.' && $e[0].dataset) {
       dataset = $.extend(true, {}, $e[0].dataset, dataset);
     }
 
@@ -5518,7 +5516,7 @@ S2.define('select2/options',[
 });
 
 S2.define('select2/core',[
-  '$',
+  'jquery',
   './options',
   './utils',
   './keys'
@@ -6124,16 +6122,16 @@ S2.define('select2/core',[
   return Select2;
 });
 
-S2.define('$-mousewheel',[
-  '$'
+S2.define('jquery-mousewheel',[
+  'jquery'
 ], function ($) {
-  // Used to shim $.mousewheel for non-full builds.
+  // Used to shim jQuery.mousewheel for non-full builds.
   return $;
 });
 
-S2.define('$.select2',[
-  '$',
-  '$-mousewheel',
+S2.define('jquery.select2',[
+  'jquery',
+  'jquery-mousewheel',
 
   './select2/core',
   './select2/defaults',
@@ -6197,14 +6195,14 @@ S2.define('$.select2',[
   };
 }());
 
-  // Autoload the $ bindings
+  // Autoload the jQuery bindings
   // We know that all of the modules exist above this, so we're safe
-  var select2 = S2.require('$.select2');
+  var select2 = S2.require('jquery.select2');
 
-  // Hold the AMD module references on the $ function that was just loaded
+  // Hold the AMD module references on the jQuery function that was just loaded
   // This allows Select2 to use the internal loader outside of this file, such
   // as in the language files.
-  $.fn.select2.amd = S2;
+  jQuery.fn.select2.amd = S2;
 
   // Return the Select2 instance for anyone who is importing it.
   return select2;

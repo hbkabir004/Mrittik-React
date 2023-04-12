@@ -1,22 +1,21 @@
-import Aos from 'aos';
 import React from 'react';
 import IconBoxFlex from '../components/IconBoxFlex';
 import Paragraph from '../components/Paragraph';
 import SubHeading from '../components/SubHeading';
 
 const AboutContainer = () => {
-    Aos.init()
+
     return (
         <section className="about bg-dark-100">
             <div className="large_font">
-                <h2 className="floating_element text-dark-200 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1000">About</h2>
+                <h2 className="floating_element text-dark-200 d-flex justify-content-center">About</h2>
             </div>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-5 col-md-5">
                         <div className="about_image">
                             <img src="images/about/a1.jpg" alt="img" />
-                            <img src="images/about/e1.svg" alt="About" data-aos="fade-down" data-aos-duration="1000" />
+                            <img src="images/about/e1.svg" alt="About" />
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-7">
@@ -43,7 +42,7 @@ const AboutContainer = () => {
                                 </div>
                             </div>
 
-                            <div className="btn_group" data-aos="fade-down" data-aos-duration="1000">
+                            <div className="btn_group" >
                                 <a href="/about" className="btn gray">Read More</a>
                             </div>
                         </div>

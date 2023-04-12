@@ -13,7 +13,7 @@ const OrderListItem = ({ product }) => {
     return (
         // <TotalContext.Provider value={info}>
         <li>
-            <span class="text">{name} x {quantity}</span> <span class="value">${total}</span>
+            <span className="text">{name} x {quantity}</span> <span className="value">${total}</span>
         </li>
         // </TotalContext.Provider>
     );

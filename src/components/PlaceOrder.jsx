@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import { CartContext } from '../Layouts/ShopLayout';
-import { deleteShoppingCart } from './forJSON/fakeDB';
 import OrderListItem from './OrderListItem';
 import WidgetTitle from './WidgetTitle';
+import { deleteShoppingCart } from './forJSON/fakeDB';
 
 const PlaceOrder = () => {
     const [cart, setCart] = useContext(CartContext);
@@ -27,10 +27,10 @@ const PlaceOrder = () => {
     }
 
     return (
-        <div class="place_order">
+        <div className="place_order">
             <WidgetTitle title='Your Order' className='widget-title' />
             <ul>
-                <li class="totalvalue"><span class="text">Product</span> <span class="value">Price</span></li>
+                <li className="totalvalue"><span className="text">Product</span> <span className="value">Price</span></li>
 
                 {
                     cart.map(product => <OrderListItem
@@ -39,44 +39,44 @@ const PlaceOrder = () => {
                     />)
                 }
 
-                <li class="totalvalue"><span class="text">Subtotal</span> <span class="value">${subTotal}</span></li>
-                <li class="totalvalue">
-                    <span class="text">Shipping</span>
-                    <div class="form-group">
-                        <label class="radio_circle">Flat Rate
+                <li className="totalvalue"><span className="text">Subtotal</span> <span className="value">${subTotal}</span></li>
+                <li className="totalvalue">
+                    <span className="text">Shipping</span>
+                    <div className="form-group">
+                        <label className="radio_circle">Flat Rate
                             <input type="radio" checked="checked" name="shipping" value="cash" />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                         </label>
-                        <label class="radio_circle">Free Shipping
+                        <label className="radio_circle">Free Shipping
                             <input type="radio" name="shipping" value="card" />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                         </label>
-                        <label class="radio_circle">Local Pickup
+                        <label className="radio_circle">Local Pickup
                             <input type="radio" name="shipping" value="online" />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                         </label>
                     </div>
                 </li>
-                <li class="totalvalue"><span class="text">Total</span> <span class="value">${grandTotal}</span></li>
+                <li className="totalvalue"><span className="text">Total</span> <span className="value">${grandTotal}</span></li>
             </ul>
-            <div class="form-group paymentmethod">
-                <label class="radio_circle">Direct Bank Transfer
+            <div className="form-group paymentmethod">
+                <label className="radio_circle">Direct Bank Transfer
                     <input type="radio" checked="checked" name="paymethod" value="cash" />
-                    <span class="checkmark"></span>
-                    <span class="text">Make your payment directly into our bank account. Please use your
+                    <span className="checkmark"></span>
+                    <span className="text">Make your payment directly into our bank account. Please use your
                         Order ID as the payment reference. Your order will not be shipped
                         until the funds have cleared in our account.</span>
                 </label>
-                <label class="radio_circle">Check Payment
+                <label className="radio_circle">Check Payment
                     <input type="radio" name="paymethod" value="card" />
-                    <span class="checkmark"></span>
-                    <span class="text">Your personal data will be used to process your order, support your
+                    <span className="checkmark"></span>
+                    <span className="text">Your personal data will be used to process your order, support your
                         experience throughout this website, and for other purposes described
                         in our privacy policy.</span>
                 </label>
             </div>
 
-            <div class="btn_group">
+            <div className="btn_group">
                 <button
                     onClick={orderHandler}
                     type='button'

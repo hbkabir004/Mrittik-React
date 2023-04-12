@@ -5,7 +5,7 @@ const Map = () => {
 
     const containerStyle = {
         width: '100%',
-        height: '50%'
+        height: '100%'
     };
 
     const center = {
@@ -23,7 +23,7 @@ const Map = () => {
                 zoom={8}
             >
                 <section className="gmap box_padding">
-                    <div className="gmapbox" data-aos="zoom-in" data-aos-duration="1000">
+                    <div className="gmapbox">
                         <div id="googleMap" className="map"></div>
                     </div>
                 </section>

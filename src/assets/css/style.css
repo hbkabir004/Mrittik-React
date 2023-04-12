@@ -36,14 +36,9 @@
 -----------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url("../fonts/bootstrap-icons/font/bootstrap-icons.css");
-/* @import url("../css/cursor-effect.css");*/
-@import url("../plugins/aos/aos.css"); 
-/* @import url("../../plugins/menu/ma5-menu.css");
-@import url("../../plugins/select2/css/select2.css");
-@import url("../../plugins/jquery_ui/style.css");
-@import url("../../plugins/swiper/swiper-bundle.min.css");
-@import url("../../plugins/aos/aos.css");*/
-/* @import url("../../plugins/fancybox/jquery.fancybox.css");  */
+
+/* @import url("../plugins/aos/aos.css");  */
+
 @font-face {
   font-family: 'saol_displayregular';
   src: url("../fonts/SaolDisplay/saoldisplay-regular-webfont.woff2") format("woff2"), url("../fonts/SaolDisplay/saoldisplay-regular-webfont.woff") format("woff");
@@ -206,7 +201,7 @@
   --mrittik-border-radius-xl: 1rem;
   --mrittik-border-radius-2xl: 2rem;
   --mrittik-border-radius-pill: 50rem;
-  --mrittik-heading-color: ;
+  --mrittik-heading-color: ; 
   --mrittik-link-color: #0d6efd;
   --mrittik-link-hover-color: #0a58ca;
   --mrittik-code-color: #d63384;
@@ -18882,7 +18877,7 @@ body.mr_menu_active .mr_menu_overlay {
 .gmapbox .map {
   width: 100%;
   height: calc(5.5rem + 43.71429vw);
-  background-color: #e6e6e6;
+  /* background-color: #e6e6e6; */
 }
 
 @media (min-width: 1400px) {

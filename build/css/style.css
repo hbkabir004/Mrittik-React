@@ -36,13 +36,6 @@
 -----------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url("../fonts/bootstrap-icons/font/bootstrap-icons.css");
-/* @import url("../../plugins/menu/ma5-menu.css");
-@import url("../../plugins/select2/css/select2.css");
-@import url("../../plugins/jquery_ui/style.css");
-@import url("../../plugins/swiper/swiper-bundle.min.css");
-@import url("../../plugins/cursor-effect/cursor-effect.css");
-@import url("../../plugins/aos/aos.css");
-@import url("../../plugins/fancybox/jquery.fancybox.css"); */
 @font-face {
   font-family: 'saol_displayregular';
   src: url("../fonts/SaolDisplay/saoldisplay-regular-webfont.woff2") format("woff2"), url("../fonts/SaolDisplay/saoldisplay-regular-webfont.woff") format("woff");
@@ -125,7 +118,7 @@
   --mrittik-border-radius-xl: 1rem;
   --mrittik-border-radius-2xl: 2rem;
   --mrittik-border-radius-pill: 50rem;
-  --mrittik-heading-color: ;
+  --mrittik-heading-color: 
   --mrittik-link-color: #0d6efd;
   --mrittik-link-hover-color: #0a58ca;
   --mrittik-code-color: #d63384;
@@ -2898,7 +2891,7 @@ textarea.form-control-lg {
 .btn {
   --mrittik-btn-padding-x: 0.75rem;
   --mrittik-btn-padding-y: 0.375rem;
-  --mrittik-btn-font-family: ;
+  --mrittik-btn-font-family: 
   --mrittik-btn-font-size: 1rem;
   --mrittik-btn-font-weight: 400;
   --mrittik-btn-line-height: 1.5;
@@ -3762,7 +3755,7 @@ fieldset:disabled .btn {
   --mrittik-dropdown-color: #e6e6e6;
   --mrittik-dropdown-bg: #343a40;
   --mrittik-dropdown-border-color: var(--mrittik-border-color-translucent);
-  --mrittik-dropdown-box-shadow: ;
+  --mrittik-dropdown-box-shadow: 
   --mrittik-dropdown-link-color: #e6e6e6;
   --mrittik-dropdown-link-hover-color: #ffffff;
   --mrittik-dropdown-divider-bg: var(--mrittik-border-color-translucent);
@@ -3890,7 +3883,7 @@ fieldset:disabled .btn {
 .nav {
   --mrittik-nav-link-padding-x: 1rem;
   --mrittik-nav-link-padding-y: 0.5rem;
-  --mrittik-nav-link-font-weight: ;
+  --mrittik-nav-link-font-weight: 
   --mrittik-nav-link-color: var(--mrittik-link-color);
   --mrittik-nav-link-hover-color: var(--mrittik-link-hover-color);
   --mrittik-nav-link-disabled-color: #999999;
@@ -4467,14 +4460,14 @@ fieldset:disabled .btn {
   --mrittik-card-border-width: 1px;
   --mrittik-card-border-color: var(--mrittik-border-color-translucent);
   --mrittik-card-border-radius: 0.375rem;
-  --mrittik-card-box-shadow: ;
+  --mrittik-card-box-shadow: 
   --mrittik-card-inner-border-radius: calc(0.375rem - 1px);
   --mrittik-card-cap-padding-y: 0.5rem;
   --mrittik-card-cap-padding-x: 1rem;
   --mrittik-card-cap-bg: rgba(0, 0, 0, 0.03);
-  --mrittik-card-cap-color: ;
-  --mrittik-card-height: ;
-  --mrittik-card-color: ;
+  --mrittik-card-cap-color: 
+  --mrittik-card-height: 
+  --mrittik-card-color: 
   --mrittik-card-bg: #ffffff;
   --mrittik-card-img-overlay-padding: 1rem;
   --mrittik-card-group-margin: 0.75rem;
@@ -4807,8 +4800,8 @@ fieldset:disabled .btn {
   --mrittik-breadcrumb-padding-x: 0;
   --mrittik-breadcrumb-padding-y: 0;
   --mrittik-breadcrumb-margin-bottom: 1rem;
-  --mrittik-breadcrumb-bg: ;
-  --mrittik-breadcrumb-border-radius: ;
+  --mrittik-breadcrumb-bg: 
+  --mrittik-breadcrumb-border-radius: 
   --mrittik-breadcrumb-divider-color: #999999;
   --mrittik-breadcrumb-item-padding-x: 0.5rem;
   --mrittik-breadcrumb-item-active-color: #999999;
@@ -5674,7 +5667,7 @@ fieldset:disabled .btn {
   --mrittik-toast-spacing: 1.5rem;
   --mrittik-toast-max-width: 350px;
   --mrittik-toast-font-size: 0.875rem;
-  --mrittik-toast-color: ;
+  --mrittik-toast-color: 
   --mrittik-toast-bg: rgba(255, 255, 255, 0.85);
   --mrittik-toast-border-width: 1px;
   --mrittik-toast-border-color: var(--mrittik-border-color-translucent);
@@ -5742,7 +5735,7 @@ fieldset:disabled .btn {
   --mrittik-modal-width: 500px;
   --mrittik-modal-padding: 1rem;
   --mrittik-modal-margin: 0.5rem;
-  --mrittik-modal-color: ;
+  --mrittik-modal-color: 
   --mrittik-modal-bg: #ffffff;
   --mrittik-modal-border-color: var(--mrittik-border-color-translucent);
   --mrittik-modal-border-width: 1px;
@@ -5756,7 +5749,7 @@ fieldset:disabled .btn {
   --mrittik-modal-header-border-width: 1px;
   --mrittik-modal-title-line-height: 1.5;
   --mrittik-modal-footer-gap: 0.5rem;
-  --mrittik-modal-footer-bg: ;
+  --mrittik-modal-footer-bg: 
   --mrittik-modal-footer-border-color: var(--mrittik-border-color);
   --mrittik-modal-footer-border-width: 1px;
   position: fixed;
@@ -6055,7 +6048,7 @@ fieldset:disabled .btn {
   --mrittik-tooltip-max-width: 200px;
   --mrittik-tooltip-padding-x: 0.5rem;
   --mrittik-tooltip-padding-y: 0.25rem;
-  --mrittik-tooltip-margin: ;
+  --mrittik-tooltip-margin: 
   --mrittik-tooltip-font-size: 0.875rem;
   --mrittik-tooltip-color: #ffffff;
   --mrittik-tooltip-bg: #000000;
@@ -6620,7 +6613,7 @@ fieldset:disabled .btn {
   --mrittik-offcanvas-height: 30vh;
   --mrittik-offcanvas-padding-x: 1rem;
   --mrittik-offcanvas-padding-y: 1rem;
-  --mrittik-offcanvas-color: ;
+  --mrittik-offcanvas-color: 
   --mrittik-offcanvas-bg: #ffffff;
   --mrittik-offcanvas-border-width: 1px;
   --mrittik-offcanvas-border-color: var(--mrittik-border-color-translucent);

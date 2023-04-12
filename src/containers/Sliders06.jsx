@@ -5,18 +5,18 @@ import SliderCard06 from '../components/SliderCard06';
 const Sliders06 = () => {
 
     return (
-        <div class="theme_slider_5 p-0">
-            <div class="slider">
-                <div class="container">
-                    <div class="slide_content">
-                        <div class="slide_content_wrapper">
-                            <div class="shape">
-                                <img src="images/slider/star1.png" alt="" class="star1" />
-                                <img src="images/slider/star1-dark.png" alt="" class="star1-dark" />
-                                <img src="images/slider/star2.png" alt="" class="star2" />
-                                <img src="images/slider/star2-dark.png" alt="" class="star2-dark" />
-                                <img src="images/slider/star3.png" alt="" class="star3" />
-                                <img src="images/slider/star3-dark.png" alt="" class="star3-dark" />
+        <div className="theme_slider_5 p-0">
+            <div className="slider">
+                <div className="container">
+                    <div className="slide_content">
+                        <div className="slide_content_wrapper">
+                            <div className="shape">
+                                <img src="images/slider/star1.png" alt="" className="star1" />
+                                <img src="images/slider/star1-dark.png" alt="" className="star1-dark" />
+                                <img src="images/slider/star2.png" alt="" className="star2" />
+                                <img src="images/slider/star2-dark.png" alt="" className="star2-dark" />
+                                <img src="images/slider/star3.png" alt="" className="star3" />
+                                <img src="images/slider/star3-dark.png" alt="" className="star3-dark" />
                             </div>
                             <SliderCard06 title='As Architects We Love to Add Beauty & Aesthetics To Your Space' />
                         </div>

@@ -9,27 +9,27 @@ const ServiceContainer02 = () => {
             <section className="services inner in-service pb-0">
                 <div className="container">
                     <div className="row">
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-duration='500'>
+                        <div className="col-lg-4" >
                             <ServiceCard02 img01='images/icon_box/bg-1.jpg' img02="images/icon_box/1.png" title="Urban Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
                         </div>
 
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-duration='600'>
+                        <div className="col-lg-4" >
                             <ServiceCard02 img01="images/icon_box/bg-2.jpg" img02="images/icon_box/2.png" title="Interior Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
                         </div>
 
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-duration='700'>
+                        <div className="col-lg-4" >
                             <ServiceCard02 img01="images/icon_box/bg-3.jpg" img02="images/icon_box/3.png" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
                         </div>
 
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-duration='800'>
+                        <div className="col-lg-4" >
                             <ServiceCard02 img01="images/icon_box/bg-4.jpg" img02="images/icon_box/4.png" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
                         </div>
 
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-duration='900'>
+                        <div className="col-lg-4" >
                             <ServiceCard02 img01="images/icon_box/bg-5.jpg" img02="images/icon_box/5.png" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
                         </div>
 
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-duration='1000'>
+                        <div className="col-lg-4" >
                             <ServiceCard02 img01="images/icon_box/bg-6.jpg" img02="images/icon_box/6.png" title="Landscape Design" text="Mrittik Architects is a full-service design firm providing architecture, master planning, urban design, interior architecture." />
                         </div>
                     </div>
