@@ -1,0 +1,103 @@
+/*-- max-width: 1199px--*/
+@media screen and (max-width: 1199px) {
+    .slider-content {
+        text-align: center;
+        padding-right: var(--space-0);
+        padding-bottom: var(--space-30)
+    }
+    .slider-content h2 {
+        font-size: var(--fs-40);
+        line-height: var(--fs-48);
+    }
+    img {
+        max-width: 100%;
+    }
+    .marquee-animation .marquee-animation-inner img {
+        max-width: fit-content;
+    }
+}
+
+/*-- max-width: 991px--*/
+@media screen and (max-width: 991px) {
+    .slider {
+        padding: 150px 0px 120px 0px;
+    }
+    .slider-content {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
+    .slider .img-column {
+        column-gap: 10px;
+    }
+    .slider .img-column .sl-image {
+        margin-bottom: var(--space-30);
+    }
+    .slider .img-column .sl-image:nth-child(1),
+    .slider .img-column .sl-image:nth-child(3) {
+        left: auto;
+    }
+    .slider .img-column .sl-image:nth-child(2) {
+        left: auto;
+    }
+    .slider .img-column.img-column-second .sl-image:nth-child(1),
+    .slider .img-column.img-column-second .sl-image:nth-child(3) {
+        left: auto;
+        right: auto
+    }
+    .slider .img-column.img-column-second .sl-image:nth-child(2) {
+        left: auto;
+        right: auto;
+    }
+
+    .slider-content {
+        text-align: center;
+        padding-right: var(--space-0);
+        padding-bottom: var(--space-30)
+    }
+    .slider-content h2 {
+        font-size: var(--fs-36);
+        line-height: var(--fs-42);
+    }
+    br {
+        display: none;
+    }
+    .multiple_pages .multiple_pages_inner h1 {
+        font-size: var(--fs-40);
+        line-height: var(--fs-48);
+    }
+    .feature-list {
+        padding: 40px 40px 40px 30px;
+    }
+    .shop-section .shop-inner {
+        padding: 40px;
+    }
+    .shop-section .section-header {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider .img-column .sl-image:not(:last-child) {
+        margin-bottom: var(--space-30);
+    }
+    .slider .img-column .sl-image:nth-child(1),
+    .slider .img-column .sl-image:nth-child(3) {
+        animation: none;
+    }
+    .slider .img-column .sl-image:nth-child(2) {
+        animation: none;
+    }
+    .slider .img-column.img-column-second .sl-image:nth-child(1),
+    .slider .img-column.img-column-second .sl-image:nth-child(3) {
+        animation: none;
+    }
+    .slider .img-column.img-column-second .sl-image:nth-child(2) {
+        animation: none;
+    }
+
+    .btn {
+        padding: 10px 15px;
+    }
+}

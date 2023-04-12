@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mrittik - Modern Architecture Application</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        
+        <link href="css/style.css" rel="stylesheet">        
+        
+    </head>
+    <body>
+        
+        <header class="navbar navbar-inverse" role="banner">
+          <div class="container">
+            <div class="navbar-header float-left d-inline-block">
+                <a href="#">
+                    <img style="width:100px;" src="img/logo.svg"/>  
+                </a>
+            </div>
+            
+            <nav class="float-right d-inline-block" role="navigation">
+                <ul class="nav navbar-right">
+                    <li>
+                        <a href="#switcher" class="bg-transparent px-3 py-0">Color Switcher</a>
+                    </li>
+                </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div class="container text-center">
+        <div id="masthead">  
+              <div class="row">
+                <div class="col-md-12">
+                  <h1>Mrittik</h1>
+                    <p class="lead">HTML5/CSS3-Bootstrap 5 Template Documentation</p>
+                </div>
+                 
+              </div> 
+          </div><!-- /cont -->
+        </div>
+
+        <!-- Begin Body -->
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3" id="leftCol">
+                        <nav class="navbar sticky-top navbar-light bg-white side-nav">
+                            <div class="navbar-collapse">
+                                <ul class="nav flex-column py-3" id="sidebar">
+                                    <li><a href="#Info">Template Information</a></li>
+                                    <li><a href="#Install">Installation</a></li>
+                                    <li><a href="#html-structure">Folder Structure</a></li>
+                                    <li><a href="#newPage">Create Starter Page</a></li>
+                                    <li><a href="#switcher" style="background-color: #b34a00; color: #fff;">Theme Configuration</a></li>
+                                    <li><a href="#routing">Routing</a></li>
+                                    <li><a href="#api">API Integration</a></li>
+                                    <li><a href="#fonts">Fonts & Icons</a></li>
+                                    <li><a href="#credits">Source & Credits</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>  
+                    <div class="col-md-9">
+                        
+                        <div class="py-3 pt-5" id="Info">
+                            <h2 class="mb-4">Template Information</h2>
+                            <h2>
+                                Welcome
+                              </h2>
+                              <br />
+                              <p>
+                                <strong>Mrittik-React</strong> is a feature-filled React app and component library that ships with hundreds of ready-to-use components for construction, architecture, or builders Companies. The limitless possibilities come in your hand with its rich component library. Mrittik-React is a simple and clean design. All files are organized. We believe it will be easy to use and edit them. The theme features a beautiful Shop Page with <strong>Shop Page with Ecommerce functionality</strong>, many ready-to-use hand-crafted components, widgets, pages, and so on. The cool thing is that you can use these components on any page with the utmost possible ease. The theme fits any device just because of its improved responsiveness. This powerful and amazingly flexible theme suits the best for many web applications.
+                              </p>
+                              <h2>Featured App</h2>
+                              <ul>
+                                <li>Shop</li>
+                                <li>ShopCart</li>
+                                <li>Ecommerce</li>
+                                <li>ProjectPortfolio</li>
+                                <li>Services</li>
+                                <li>Contact</li>
+                                <li>Team</li>
+                                <li>Blog</li>
+                              </ul>
+                              <h2>Key Feature</h2>
+                              <p>Mrittik-React contains increadible features listed below.</p>
+                              <ul>
+                                <li>Build with <strong>React 18.2.0</strong></li>
+                                <li>Modern Design</li>
+                                <li>Fully Responsive Design</li>
+                                <li>Styled Components</li>
+                                <li>Create React App Supported</li>
+                                <li><strong>Bootstrap 5</strong> compatible</li>
+                                <li><strong>Ecommerce functionality</strong> with APIs</li>
+                                <li>Multiple Layouts</li>
+                                <li>React Library Based components<strong> (Jquery compatible)</strong></li>
+                                <li>Easy to Customized with <strong>React-Bootstrap</strong> components</li>
+                                <li>Shop, eCommerce, ProjectPortfolio, Team, Blog, Contact & many more apps.</li>
+                                <li>Home, Gallery, Shop, AboutUs, Services, Team, Blogs, 404, Coming Soon and many more pages.</li>
+                                <li>Clean Code</li>
+                                <li>Async Loading</li>
+                                <li>Code Spliting</li>
+                              </ul>
+                              <h2>Layout Features</h2>
+                              <ul>
+                                <li>Light & Dark Mode Supported</li>
+                                <li>MiniCart & Top menu supported</li>
+                              </ul>
+                              <h2>Dependancies</h2>
+                              <ul>
+                                <li>React</li>
+                                <li>React-Bootstrap</li>
+                                <li>React Router DOM</li>
+                                <li>AOS</li>
+                                <li>React-jQuery</li>
+                                <li>React-Toastify</li>
+                                <li>Swiper</li>
+                                <li>Isotope-Layout</li>
+                              </ul>
+                        
+                        </div>
+
+                        <!-- Installation -->
+                        <div class="py-3" id="Install">
+                            <h2 class="mb-4">Installation</h2>
+                            
+                                <p className='mb-5'>Welcome to React! React helps you build modern applications for the web, mobile, or desktop.</p>
+                                <p>For getting started an React application you needs two things as Prerequisites.</p>
+                                <h2>Prerequisites</h2>
+                                <br />
+                                <p>Before you begin, make sure your development environment includes Node and an npm package manager.</p>
+                                <h3>Node.js</h3>
+                                <br />
+                                <p className='mb-0'>Download latest version of node.js from nodejs.org.</p>
+                                <p className='mb-0'>Install Node.js using downloaded file</p>
+                                <p>To check your node version, run node -v in a terminal/console window.</p>
+                                <h3>Yarn package manager</h3>
+                                <br />
+                                <p>React CLI, and React apps depend on features and functionality provided by libraries that are available as yarn packages. To download and install yarn packages, you must have an yarn package manager. This Quick Start uses the yarn client command line interface, which is need install by using npm, npm default with nodejs. To install yarn, run <strong>npm install -g yarn</strong> To check that you have the yarn client installed, run yarn -v in a terminal/console window.</p>
+                                <p>For better understanding we suggest you to once go through official documentation of React from <strong className="text-primary">Reactjs.org</strong></p>
+                                <h2>Downloaded Files</h2>
+                                <br />
+                                <p>After extract the main zip file, go to Mrittik folder and you will get three separate project folder there. Use one which fits your needs.</p>
+                                <h2>Installation</h2>
+                                <br />
+                                <ul>
+                                    <li>For starter we need to setup node js, go to <strong>https://nodejs.org/en/download/</strong> & download appropriate version for your os.</li>
+                                    <li>After download setup <strong>nodejs</strong></li>
+                                    <li>Run <strong>npm install -g yarn</strong>, wait a bit</li>
+                                    <li>Run yarn install, wait a bit</li>
+                                    <li>Now run yarn start, it should open up <strong>http://localhost:3000</strong> on your browser</li>
+                                </ul>
+                                <p>
+                                    <strong>
+                                        "Make sure you are not running any other react project in local if so then use new generated port from terminal with label called app running at:
+                                    </strong>
+                                </p>
+                                <br>
+                                <br>
+                                <h4>Some Common solution if you do not run project successfully</h4>
+                                        <p>Use Latest Version of node.js</p>
+                                        <p>Remove node_module and package-lock.json and yarn-lock file and again do <strong>yarn install</strong> </p>
+                                        <p>You can again download theme from themeforst and then again run </p>
+                                        <p>Then also if you don't solve issue you can generate a ticket.</p>
+                                    </p>
+                                <p className='mt-35 mb-0'>Mrittik is developed using <strong>create-react-app</strong> configuration.</p>
+                                <p className="mb-0">you can find more about them visit:</p>
+                                <p className="mb-0">CRA: <a href="https://create-react-app.dev/">https://create-react-app.dev/</a></p>
+                                <br />
+                                <br />
+                                <h2>Build Application</h2>
+                                <br />
+                                
+                                <p className="mb-0">Build you application for host on server using below command:</p>
+                                <code>yarn build</code>
+                                
+                                <p style="margin-top: 20px;" className="mb-0">Wait a bit, it will Compile, optimize, minify and uglify all source files</p>
+                                <p className="mb-0">It will create one dist file in your theme folder. Make zip of dist folder. so here you are ready to upload your theme on server.</p>
+                                
+                        </div>
+
+                        <!-- Folder Structure -->
+                        <div class="py-3" id="html-structure">
+                            <h2 class="mb-4">Folder Structure</h2>
+                            <div className="ninjadash-sitemap">
+                                <ul className="list-unstyled mb-0">
+                                    <li className="p-0 ninjadash-sitemap__parent-title"><a to="javascript: void(0);" className="fw-medium fs-14">Mrittik-React-Docs</a>
+                                    </li>
+                                    <li>
+                                        <div className="ninjadash-sitemap__first-list">
+                                            <div className="ninjadash-sitemap__list-wrap">
+                                                <a to="javascript: void(0);" className="fw-medium text-primary"><i className=" ri-folder-2-line me-1 align-bottom"></i>src</a>
+                                            </div>
+                                            <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                <li>
+                                                    <a to="javascript: void(0);" className="fw-medium text-primary"><i className=" ri-folder-2-line me-1 align-bottom"></i>componenets</a>
+                                                    <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                        <li>
+                                                        <a to="javascript: void(0);" className="fw-medium text-primary"><i className=" ri-folder-2-line me-1 align-bottom"></i>forJSON</a>
+                                                        <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CategoryItem</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CategoryProductItem</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>fakeDB</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>getCart&ProductsData</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>GrandTotal</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ListProductItem</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ProductItem</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>RelatedProduct</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ShopSidebar</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>TabContent</a>
+                                                            </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>BlockGallery</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>BlogCard</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Cart</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CartContent</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CartHeader</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CartItem</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CategoryItem</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CheckoutForm</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ClientsLogo</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CommentBlock</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CommentList</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CommentRespond</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>CupopnCode</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Form</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>FormText</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>FunFact</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>GalleryImg</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>HighlightBanner</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>IconBoxFlex</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ListProductItem</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>LoadmoreBtn</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>MiniCartContent</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>OrderListItem</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>PageHeader02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>PageHeder</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>PaginationDiv</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>PaginationDiv02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Paragraph</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>PlaceOrder</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>PointOrder</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>PointOrder02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>PostFooter</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ProductItem</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ProductZoomInfo</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ProjectCard</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ProjectCard03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ProjectCard03_2</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ProjectCard04</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ProjectDetailsInner</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ProjectDetailsSlider</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ProjectList</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>RelatedProjects</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>RunningProjectItem</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SectionGridLines</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SectionHeader</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ServiceCard</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ServiceCard02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SideBar</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SideBar02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SliderCard</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SliderCard03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SliderCard04</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SliderCard06</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SliderCard07</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SocialMedia</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SubHeading</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SubHeading04</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>SubTotal</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>TeamCard</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>TeamCard02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>TeamProjectCard</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>TestimonialSlide</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>TestimonialSlide02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Video</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>WidgetTitle</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>containers</a>
+                                                    <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>AboutContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Bio</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>BlogDetailsContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Blogs</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>BlogsContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>CartContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Checkout</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ClientsContainer03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ContactContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>EducationalQualification</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>FormContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>FunFacts</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>MissionContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>PageBanner</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>PageBanner02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>PageBanner03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>PostHeader</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProductDetails</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProductView</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProductZoomBtnGrp</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProductZoomContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProjectDetailsContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProjectDetailsContainer02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProjectGallery</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProjectGallery02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProjectGallery03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Projects03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Projects04</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>RelatedProducts</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>RunningProjects</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ServiceContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ServiceContainer02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ServiceContainer03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Services</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ShopCategory</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ShopContainer01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ShopContainer02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ShopContainer03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ShopContainer04</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ShopFilter</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ShopSidebar</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Sliders</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Sliders02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Sliders03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Sliders04</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Sliders05</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Sliders06</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Sliders07</a>
+                                                        </li>
+                                    
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>TabContent</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>TeamContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>TeamDetailsContainer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Testimonials</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>WidgetSearch</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Layouts</a>
+                                                    <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>HomeLayout</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>HomeLayout02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>HomeLayout03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ShopLayout</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+        
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Pages</a>
+                                                    <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                    <li>
+                                                        <a to="javascript: void(0);" className="fw-medium text-primary"><i className=" ri-folder-2-line me-1 align-bottom"></i>Shared</a>
+                                                        <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                        
+                                                        <li>
+                                                        <a to="javascript: void(0);" className="fw-medium text-primary"><i className=" ri-folder-2-line me-1 align-bottom"></i>Header02Nav</a>
+                                                        <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Header02Nav.jsx</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Header02Nav.css</a>
+                                                            </li>
+                                                            
+                                                        </ul>
+                                                        </li>
+        
+                                                        <li>
+                                                        <a to="javascript: void(0);" className="fw-medium text-primary"><i className=" ri-folder-2-line me-1 align-bottom"></i>MiniCart</a>
+                                                        <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Header02.jsx</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>MiniCart.jsx</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>MiniCartContent.jsx</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>MiniCart.css</a>
+                                                            </li>
+                                                            
+                                                        </ul>
+                                                        </li>
+                                                        
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>AsideInfo</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Footer</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Header</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Loader</a>
+                                                            </li>
+                                                            <li>
+                                                            <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>ThemeSwitcher</a>
+                                                            </li>
+                                                            
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>AboutUs</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Blog</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>BlogDetails</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ComingSoon</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Contact</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ErrorPage</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Home01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Home02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Home03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Home04</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Home05</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Home06</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Home07</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Project01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Project02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Project03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProjectDetails</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ProjectDetails02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Service01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Service02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ServiceDetails</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Shop01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Shop02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>Shop03</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ShopCart</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ShopCheckout</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-folder-2-line me-1 align-bottom"></i>ShopProduct</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Signin</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Team</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>TeamDetails</a>
+                                                        </li>
+                                                        <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>ThankYou</a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </li>
+        
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>Routes</a>
+                                                    <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                    <li>
+                                                            <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>Router.js</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+        
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>App.css</a>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>App.js</a>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>App.test.js</a>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>index.css</a>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>index.js</a>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>static</a>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-folder-2-line me-1 align-bottom"></i>utility</a>
+                                                        <ul className="ninjadash-sitemap__second-list list-unstyled">
+                                                            <li>
+                                                                <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>localStorageControl.js</a>
+                                                            </li>
+                                                            <li>
+                                                                <a to="javascript: void(0);"><i className="ri-file-2-line me-1 align-bottom"></i>utility.js</a>
+                                                            </li>
+                                                        </ul>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-file-2-line me-1 align-bottom"></i>App.js</a>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-file-2-line me-1 align-bottom"></i>index.js</a>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-file-2-line me-1 align-bottom"></i>logo.svg</a>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-file-2-line me-1 align-bottom"></i>reportWebVitals.js</a>
+                                                </li>
+                                                <li>
+                                                    <a to="javascript: void(0);"><i className=" ri-file-2-line me-1 align-bottom"></i>setupTests.js</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="ninjadash-sitemap__first-list">
+                                            <div className="ninjadash-sitemap__list-wrap">
+                                                <a to="javascript: void(0);" className="fw-medium text-primary"><i className="ri-file-2-line me-1 align-bottom"></i>.firebaserc</a>
+                                            </div>
+                                        </div>
+                                        <div className="ninjadash-sitemap__first-list">
+                                            <div className="ninjadash-sitemap__list-wrap">
+                                                <a to="javascript: void(0);" className="fw-medium text-primary"><i className="ri-folder-2-line me-1 align-bottom"></i>.gitignore</a>
+                                            </div>
+                                        </div>
+                                        <div className="ninjadash-sitemap__first-list">
+                                            <div className="ninjadash-sitemap__list-wrap">
+                                                <a to="javascript: void(0);" className="fw-medium text-primary"><i className="ri-folder-2-line me-1 align-bottom"></i>firebase.json</a>
+                                            </div>
+                                        </div>
+                                        <div className="ninjadash-sitemap__first-list">
+                                            <div className="ninjadash-sitemap__list-wrap">
+                                                <a to="javascript: void(0);" className="fw-medium text-primary"><i className="ri-folder-2-line me-1 align-bottom"></i>package.json</a>
+                                            </div>
+                                        </div>
+                                        <div className="ninjadash-sitemap__first-list">
+                                            <div className="ninjadash-sitemap__list-wrap">
+                                                <a to="javascript: void(0);" className="fw-medium text-primary"><i className="ri-folder-2-line me-1 align-bottom"></i>README.md</a>
+                                            </div>
+                                        </div>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="py-3" id="newPage">
+                        <h2>New Page</h2>
+                            <h4>How to create new page</h4>
+                            <p>Here is the example on how to create your custom page and add it to the leftsidebar menu, breadcrumbs.</p>
+                            <div class="highlight box mb-3">
+<h6>1. Create page component <span style="background-color: #b34a00; color: #fff;">src/containers/pages/MyPage.js</span></h6>
+<pre><code>
+import React from 'react';
+import { Main } from '../styled';
+
+const MyPage = () => {
+    return (
+        &lt;Main&gt;
+        {/* Write Your JSX HERE */}
+        &lt;Main/&gt;
+    );
+};
+
+export default MyPage;
+</code></pre>
+                            </div>
+                        </div>
+
+<!-- <p><b>N.B.:</b> Slider control option API in custom.js. And you can add/remove/edit api by following swiper slider, mention at bellow.</p>
+<p>You can add more slide by following this coding pattern. Then change Image. </p>
+</div> -->
+
+<div class="highlight box mb-3">
+    <h6>2. Update the routes <span style="background-color: #b34a00; color: #fff;">src/routes/admin/pages.js</span></h6>
+    <pre><code>
+import React, { lazy } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
++ const MyPage = lazy(() => import('../../container/pages/MyPage'));
+
+const PagesRoute = () => {
+
+    return (
+    &lt;Routes/&gt;
+        &lt;Route path="new-page" element={&lt;MyPage /&gt;} /&gt;
+
+    </code></pre>
+                                </div>
+
+
+<div class="highlight box mb-3">
+    <h6>3. Then update the menu item <span style="background-color: #b34a00; color: #fff;">src/layout/MenuItems.js</span></h6>
+    <pre><code>
+const items = [
+getItem(
+    &lt;NavLink onClick={toggleCollapsed} to={'/admin/new-page'}&gt;
+        New Page
+        &lt;/NavLink&gt;, 
+    'page-key', 
+    null
+)
+];  </code></pre>
+                                </div>
+                            
+
+                        <!-- COntact Section -->
+                        <div class="py-3" id="contact">
+                            <h2>Contact</h2>
+                            <p>Add contact form HTML in this page. </p>
+                            <p>Google Map: <b>Google Map API</b> key in <strong>Contact.jsx</strong> file at bottom in script tag. Change API here.</p>
+                        </div>
+
+                        <!-- Theme Configuration -->
+                        <div class="p-5" id="switcher" style="background-color: #a6a182;">
+                            <h3>Theme Configuration</h3>
+                            <p>For customizing theme go to <code>src/Pages/Shared/ThemeSwitcher.jsx</code> and customize the variables according to your necessity. Mrittik is based on react-bootstrap. For additional changes, here is the list of available variable for customization <a href="https://react-bootstrap.github.io/getting-started/introduction/">https://react-bootstrap.github.io/getting-started/introduction/</a>. <strong>Using theme variables in the app.</strong></p>
+
+                    <h4>Change font</h4>
+                    <p>Simplest way to change font is to go to google fonts, select fonts, click embed copy the link. Now go to <code>public/index.html</code> and paste the link in head tag. Please remove the links of any unused fonts from the head.</p>
+                    <div class="highlight box mb-3">
+<pre><code>
+&lt;!DOCTYPE html>
+&lt;html dir="ltr" lang="en">
+    &lt;head>
+    &lt;meta charset="utf-8" />
+    &lt;link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" />
+    &lt;meta name="theme-color" content="#000000" />
+    &lt;meta
+    name="description"
+    content="Web site created using create-react-app"
+    />
+    &lt;meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    &lt;link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    &lt;link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" />
+    + &lt;link
+      href="YOUR_FONT"
+      rel="stylesheet"
+    />
+    
+</code></pre>
+                        </div>
+<br>
+                        <h3>Changing Light & Dark Mode</h3>
+                        <p>To change layout mode to dark, go to <code>build/index.html</code> and just set the <strong>bg-dark</strong> class to the <strong>body</strong> tag for <strong>darkMode</strong>. Else set <strong>bg-white</strong> to keep the white background</p>
+                        <div class="highlight box mb-3">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+.
+.
+.
+&lt;/head&gt;
+<span style="background-color: #b34a00; color: #fff;">&lt;body class="bg-dark"&gt;</span>
+&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+&lt;div id="root"&gt;&lt;/div&gt;
+.
+.
+.
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+            </div> 
+            <br>
+            <h3>Navbar & Mobile Navbar Layout</h3>
+            <p>To change the Navbar side to top, go to <code>src/Pages/Shared/Header.jsx</code> and just set the Header component. You can update your menu item from here For Navbar and <code>src/Pages/Shared/MobileResponsiveMenu.jsx</code> for Mobile Navbar</p>
+            <div class="highlight box mb-3">
+<pre><code>
+import $ from 'jquery';
+import React, { useContext, useEffect } from 'react';
+import MiniCart from '../../containers/MiniCart';
+import { CartContext } from '../../Layout/Main';
+import AsideInfo from './AsideInfo';
+import MobileResponsiveMenu from './MobileResponsiveMenu';
+
+const Header = () => {
+    const [cart, setCart] = useContext(CartContext);
+
+    useEffect(() => {
+        .
+        .
+        .
+    }, []);
+    
+    return (
+        &lt;&gt;
+            &lt;header className="header"&gt;
+                &lt;div className="container"&gt;
+
+                  //  Paste Your Code Here 
+                
+                  &lt;/div&gt;
+            &lt;/header&gt;
+
+            &lt;MobileResponsiveMenu /&gt;
+            &lt;MiniCart id='offcanvasNavbar' /&gt;
+            &lt;AsideInfo /&gt;
+        &lt;/&gt;
+    );
+};
+
+export default Header;
+</code></pre>
+                </div>
+<br>
+                <h3>Change Logo</h3>
+                <p>To change both dark and light logo, go to <code>src/Pages/Shared/Header.jsx</code> and change source of the logo image</p>
+                <div class="highlight box mb-3">
+<pre><code>
+    return (
+        &lt;&gt;
+            &lt;header className="header"&gt;
+                &lt;div className="container"&gt;
+                  &lt;div className="header_inner d-flex align-items-center justify-content-between"&gt;
+                    &lt;div className="logo"&gt;
+                      &lt;a href='/' className="light_logo"&gt;&lt;img src="YOUR LIGHT LOGO" alt="logo" /&gt;&lt;/a&gt;
+                      &lt;a href='/' className="dark_logo"&gt;&lt;img src="YOUR DARK LOGO" alt="logo" /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                  .
+                  .
+                  .
+                  &lt;/div&gt;
+                
+                  &lt;/div&gt;
+            &lt;/header&gt;
+        &lt;/&gt;
+</code></pre>
+                    </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    
+                    <!-- Routing -->
+                    <div class="py-3" id="routing">
+                        <h2>Routing</h2>
+                        <p>Mrittik use react-router as base routing system. To add a new route in the template, you can follow the steps below.</p>
+                        <h4>Create new route</h4>
+                        <p>We place all our route in <code>src/Routes/Router.js</code> file.In this folder is the entry point of all pages, you can basically set your pages in this file.
+                        <br>
+                        <br>
+                        Refer below mentioned code to create a route:
+                     </p>
+                            <div class="highlight box mb-3">
+<pre><code>import { createBrowserRouter } from "react-router-dom";
+import { productsAndCartData } from "../components/forJSON/getCart&ProductsData";
+import ShopCategory from "../containers/ShopCategory";
+import Main from "../Layout/Main";
+import NewPage from "../Pages/NewPage";
+
+export const routes = createBrowserRouter([
+  {
+    path: "/",
+    loader: productsAndCartData,
+    element: &lt;Main/&gt;,
+    children: [
+        {
+            path: '/YOUR-PATH',
+            element: &lt;NewPage/&gt;,
+        }
+
+]);
+</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="py-3" id="api">
+                            <h2>API Integration</h2>
+                                <p> Mrittik provide you a ready setup for API integration using REST API called Mrittik-Server. You can access it from <code><a target="_blank" href="https://github.com/hbkabir004/Mrittik-Server">https://github.com/hbkabir004/Mrittik-Server</a></code></p>  
+                            </div>
+
+
+                        <!-- Font Using-->
+                        <div class="py-3" id="fonts">
+                            <h2>Google Fonts</h2>
+                            <p>Open <strong>style.css in any text editor from css</strong> folder. And see imported Google font link. 
+                            </p>
+                            <div class="highlight box mb-3">
+<pre><code>@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+</code></pre>
+                                    
+                            </div>
+                            <p>We are using <strong>Google Font</strong> and other open source font. You can change here font link that you want. Then need to change font-family at that div / tag/ section class in style.css file.</p>
+                            <strong><a class="text-light px-2" href="https://fonts.google.com/">Google Font Link</a></strong>
+                        </div>
+
+
+                        <!-- Icon Font Using-->
+                        <div class="py-3" id="icons">
+                            <h2>Icons</h2>
+                            <p>
+                                
+                                We have used <strong>Bootstrap Icons</strong> icon sets, that you can change color and size using CSS.
+                                <br>
+                                If you need more information about these icon sets, please visit this sites:
+                                <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>
+                            </p>
+                            <p>These font css file in this directory: <strong>node_modules\bootstrap-icons\bootstrap-icons.css</strong></p>
+                            <p class="text-light">Use icon class name from above css files.</p>
+                            <p>
+                                HTML Markup:
+                            </p>
+                            
+                            <div class="highlight box mb-3">
+                                <pre><code><span>&lt;i class="bi bi-moon-fill"&gt;&lt;i&gt;</span>
+<span>&lt;i class="bi bi-search"&gt;&lt;i&gt;</span></code></pre>
+                            </div>
+                            <p>You can use another icon you like. Then keep fonts family. And keep icon font css in css folder like bootstrap-icons</p>
+                            <p>Then use font in HTML as per using method of that font.</p>
+                        </div>
+                        
+
+                        
+
+                        
+                        <!--Source & Credits-->
+                        <div class="py-3" id="credits">
+                            <h2>Source & Credits</h2>
+                            <p>
+                                Fonts:<br>
+                                <strong>Google Web Fonts</strong> - <a href="https://fonts.google.com/">Link</a><br>
+
+                                <br>
+
+                                Scripts:<br>
+                                <strong>jQuery </strong>- <a href="http://www.jquery.com/">Link</a><br>
+                                <strong>Bootstrap Framework</strong> - <a href="http://getbootstrap.com/">Link</a><br>
+                                <strong>Swiper Slider</strong> - <a href="https://swiperjs.com">Link</a><br>
+                                <strong>Isotope</strong> - <a href="https://isotope.metafizzy.co">Link</a><br>
+                            </p>
+                            <br>
+                            <h5>Thank you again for purchase our Application!</h5>
+                        </div>
+                        </div> 
+            </div>
+            <div class="footer highlight box mb-3 text-center">
+                <h6>Mrittik - All rights reserved by <i><a href="https://themeforest.net/user/wpthemebooster/portfolio">wpthemebooster</a></i></h6>
+                <p>Created on: 06/02/2023</p>
+                <p class="nav fw-bold w-100 d-flex justify-content-center">
+                    <a href="#masthead">Back To Top</a>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- JS Include -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!---->        
+        <script>        
+            $(document).ready(function() {
+               $('.nav a').click(function (e) {
+                    var linkHref = $(this).attr("href");
+                    var idElement = linkHref.substr(linkHref.indexOf("#"));
+                    $('html, body').animate({
+                        scrollTop: $(idElement).offset().top
+                    }, 1000);
+                    return false;
+                });
+            });        
+        </script>
+        
+    </body>
+</html>
