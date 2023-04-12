@@ -1,9 +1,85 @@
 import Isotope from 'isotope-layout';
 import React, { useEffect, useState } from 'react';
-import ProjectCard03 from '../components/ProjectCard03';
-import ProjectCard3_2 from '../components/ProjectCard03_2';
+import ProjectCard03_02 from '../components/ProjectCard03_02';
 
 const ProjectGallery02 = () => {
+    const ProjectData02 = [
+        {
+            id: '1',
+            img: 'images/portfolio/1.jpg',
+            details: 'Sunlight in the Room',
+            tag: 'interiors'
+        },
+        // {
+        //     id: '2',
+        //     img: 'images/portfolio/2.jpg',
+        //     details: 'Find your own self invintage lake house',
+        //     tag: 'residences'
+        // },
+        // {
+        //     id: '3',
+        //     // img: 'images/portfolio/3.jpg',
+        //     img: 'images/portfolio/3.jpg',
+        //     details: 'Well decor house in Sydney',
+        //     tag: 'landscape exterior'
+        // },
+        // {
+        //     id: '4',
+        //     img: 'images/portfolio/4.jpg',
+        //     details: 'Huge large area Bedroom',
+        //     tag: 'landscape'
+        // },
+        // {
+        //     id: '5',
+        //     // img: 'images/portfolio/5.jpg',
+        //     img: 'images/portfolio/1.jpg',
+        //     details: 'Clean water in the swiming pool',
+        //     tag: 'interiors'
+        // },
+        // {
+        //     id: '6',
+        //     img: 'images/portfolio/6.jpg',
+        //     details: 'Newyork golf club house',
+        //     tag: 'interiors'
+        // },
+        // {
+        //     id: '7',
+        //     img: 'images/portfolio/7.jpg',
+        //     details: 'California young menz club',
+        //     tag: 'exterior'
+        // },
+        {
+            id: '8',
+            img: 'images/portfolio/8.jpg',
+            details: 'Newyork golf club house',
+            tag: 'interiors'
+        },
+        {
+            id: '9',
+            img: 'images/portfolio/1.jpg',
+            details: 'California young menz club',
+            tag: 'residences'
+        },
+        // {
+        //     id: '10',
+        //     img: 'images/portfolio/2.jpg',
+        //     details: 'California young menz club',
+        //     tag: 'landscape exterior'
+        // },
+        // {
+        //     id: '11',
+        //     img: 'images/portfolio/4.jpg',
+        //     details: 'California young menz club',
+        //     tag: 'landscape exterior'
+        // },
+        // {
+        //     id: '12',
+        //     img: 'images/portfolio/3.jpg',
+        //     details: 'California young menz club',
+        //     tag: 'landscape exterior'
+        // },
+
+    ];
     const [filterKey, setFilterKey] = useState('*')
 
     useEffect(() => {
@@ -50,50 +126,12 @@ const ProjectGallery02 = () => {
 
                 <div className="grid grid-2 gutter-90 clearfix">
                     <div className="grid-sizer"></div>
-                    <div className="grid-item residences">
-                        <ProjectCard03 img='images/portfolio/1.jpg' details='California young menz club' />
-                    </div>
-                    <div className="grid-item interiors">
-                        <ProjectCard3_2 img='images/portfolio/2.jpg' details='Sunlight in the Room' />
-                    </div>
-                    <div className="grid-item residences">
-                        <ProjectCard3_2 img='images/portfolio/3.jpg' details='Find your own self invintage lake house' />
-                    </div>
-                    <div className="grid-item landscape exterior">
-                        <ProjectCard3_2 img='images/portfolio/4.jpg' details='Huge large area Bedroom' />
-
-                    </div>
-                    <div className="grid-item landscape">
-                        <ProjectCard3_2 img='images/portfolio/5.jpg' details='Clean water in the swiming pool' />
-
-                    </div>
-                    <div className="grid-item interiors">
-                        <ProjectCard3_2 img='images/portfolio/6.jpg' details='Huge large area Bedroom' />
-
-                    </div>
-                    <div className="grid-item interiors">
-                        <ProjectCard3_2 img='images/portfolio/7.jpg' details='California young menz club' />
-
-                    </div>
-                    <div className="grid-item residences">
-                        <ProjectCard3_2 img='images/portfolio/8.jpg' details='Find your own self invintage lake house' />
-                    </div>
-                    <div className="grid-item exterior">
-                        <ProjectCard3_2 img='images/portfolio/1.jpg' details='Clean water in the swiming pool' />
-
-                    </div>
-                    <div className="grid-item interiors">
-                        <ProjectCard3_2 img='images/portfolio/2.jpg' details='California young menz club' />
-
-                    </div>
-                    <div className="grid-item residences">
-                        <ProjectCard3_2 img='images/portfolio/2.jpg' details='Sunlight in the Room' />
-
-                    </div>
-                    <div className="grid-item landscape exterior">
-                        <ProjectCard3_2 img='images/portfolio/3.jpg' details='California young menz club' />
-
-                    </div>
+                    {
+                        ProjectData02.map(data => <ProjectCard03_02
+                            key={data.id}
+                            data={data}
+                        />)
+                    }
                 </div>
                 {/* <div className="btn_group w-100 text-center">
                     <button id="load-more" className="btn gray">Load More</button>

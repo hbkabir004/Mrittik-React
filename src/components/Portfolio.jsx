@@ -4,6 +4,71 @@ import ProjectCard from '../components/ProjectCard';
 import SectionGridLines from '../components/SectionGridLines';
 
 const Portfolio = () => {
+    const ProjectData01 = [
+        {
+            id: '1',
+            img: 'images/portfolio/packery/2.jpg',
+            details: 'Sunlight in the Room',
+            tag: 'interiors'
+        },
+        {
+            id: '2',
+            img: 'images/portfolio/packery/3.jpg',
+            details: 'Find your own self invintage lake house',
+            tag: 'residences'
+        },
+        // {
+        //     id: '3',
+        //     // img: 'images/portfolio/packery/4.jpg',
+        //     img: 'images/portfolio/packery/5.jpg',
+        //     details: 'Well decor house in Sydney',
+        //     tag: 'landscape exterior'
+        // },
+        {
+            id: '4',
+            img: 'images/portfolio/packery/5.jpg',
+            details: 'Huge large area Bedroom',
+            tag: 'landscape'
+        },
+        // {
+        //     id: '5',
+        //     // img: 'images/portfolio/packery/6.jpg',
+        //     img: 'images/portfolio/packery/3.jpg',
+        //     details: 'Clean water in the swiming pool',
+        //     tag: 'interiors'
+        // },
+        // {
+        //     id: '6',
+        //     img: 'images/portfolio/packery/7.jpg',
+        //     details: 'Newyork golf club house',
+        //     tag: 'interiors'
+        // },
+        // {
+        //     id: '7',
+        //     img: 'images/portfolio/packery/8.jpg',
+        //     details: 'California young menz club',
+        //     tag: 'exterior'
+        // },
+        {
+            id: '8',
+            img: 'images/portfolio/packery/2.jpg',
+            details: 'Newyork golf club house',
+            tag: 'interiors'
+        },
+        {
+            id: '9',
+            img: 'images/portfolio/packery/3.jpg',
+            details: 'California young menz club',
+            tag: 'residences'
+        },
+        // {
+        //     id: '10',
+        //     img: 'images/portfolio/packery/4.jpg',
+        //     details: 'California young menz club',
+        //     tag: 'landscape exterior'
+        // },
+
+    ];
     const [filterKey, setFilterKey] = useState('*')
 
     useEffect(() => {
@@ -51,46 +116,13 @@ const Portfolio = () => {
                 </div>
                 <div className="grid gutter-20 clearfix">
                     <div className="grid-sizer"></div>
+                    {
+                        ProjectData01.map(data => <ProjectCard
+                            key={data.id}
+                            data={data}
+                        />)
+                    }
 
-                    <div className="grid-item interiors width-50">
-                        <ProjectCard img="images/portfolio/packery/2.jpg" details="Sunlight in the Room" />
-
-                    </div>
-                    <div className="grid-item residences width-50">
-                        <ProjectCard img="images/portfolio/packery/3.jpg" details="Find your own self invintage lake house" />
-
-                    </div>
-                    <div className="grid-item landscape exterior width-50">
-                        <ProjectCard img="images/portfolio/packery/4.jpg" details="Well decor house in Sydney" />
-
-                    </div>
-                    <div className="grid-item landscape width-50">
-                        <ProjectCard img="images/portfolio/packery/5.jpg" details="Huge large area Bedroom" />
-
-                    </div>
-                    <div className="grid-item interiors width-50">
-                        <ProjectCard img="images/portfolio/packery/6.jpg" details="Clean water in the swiming pool" />
-
-                    </div>
-                    <div className="grid-item interiors width-50">
-                        <ProjectCard img="images/portfolio/packery/7.jpg" details="California young menz club" />
-
-                    </div>
-                    <div className="grid-item exterior width-50">
-                        <ProjectCard img="images/portfolio/packery/8.jpg" details="Newyork golf club house" />
-                    </div>
-                    <div className="grid-item interiors width-50">
-                        <ProjectCard img="images/portfolio/packery/2.jpg" details="California young menz club" />
-
-                    </div>
-                    <div className="grid-item residences width-50">
-                        <ProjectCard img="images/portfolio/packery/3.jpg" details="California young menz club" />
-
-                    </div>
-                    <div className="grid-item landscape exterior width-50">
-                        <ProjectCard img="images/portfolio/packery/4.jpg" details="California young menz club" />
-
-                    </div>
                 </div>
                 {/* <LoadmoreBtn text='Discover All Projects' className='btn olive w-100' /> */}
             </div>

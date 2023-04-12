@@ -7,7 +7,16 @@ const ContactContainer = () => {
     Aos.init();
     return (
         <main className="wrapper">
-            <Map />
+            <div className="section">
+                <div className="container">
+                    <div className="gmapbox">
+                        <div id="googleMap" className="map">
+                            <Map />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <ContactForm />
         </main>
     );

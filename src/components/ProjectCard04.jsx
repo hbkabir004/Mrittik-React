@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef, useState } from "react";
 import LazyLoad from 'react-lazyload';
 
 const ProjectCard04 = (props) => {
+    const targetRef = useRef();
+    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+    const windowSize = useRef([window.innerWidth, window.innerHeight]);
+    const monitorWidth = windowSize.current[0];
+
+    // console.log(monitorWidth);
+
+
+    useLayoutEffect(() => {
+        if (targetRef.current) {
+            setDimensions({
+                width: targetRef.current.offsetWidth,
+                height: targetRef.current.offsetHeight
+            });
+        }
+    }, []);
+
+    let elHeight = Number(dimensions.height);
+    console.log(typeof elHeight);
+
     return (
         <div className="thumb">
-            <LazyLoad height={1000} offset={100} once>
+            <LazyLoad height={monitorWidth <= 600 ? 250 : monitorWidth <= 1550 ? 600 : monitorWidth <= 2000 ? 750 : 680} once>
                 <img className="item_image" src={props.img} alt="" />
             </LazyLoad>
 

@@ -1,12 +1,11 @@
 import React from 'react';
-import LazyLoad from 'react-lazyload';
 
 const ProjectCard03 = (props) => {
     return (
         <div className="thumb">
-            <LazyLoad height={800} offset={100} once>
-                <img className="item_image" src={props.img} alt="" />
-            </LazyLoad>
+            {/* <LazyLoad height={800} offset={100} once> */}
+            <img className="item_image" src={props.img} alt="" />
+            {/* </LazyLoad> */}
             <div className="works-info">
                 <div className="label-text">
                     <h5><a href="/project-details">{props.details}</a></h5>

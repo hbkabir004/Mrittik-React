@@ -4,13 +4,19 @@
 /node_modules
 /.pnp
 .pnp.js
-.lock
-/.firebase
+yarn.lock
 
 # testing
 /coverage
 
 # production
+/build
+
+#deployment
+/.firebase
+.firebaserc
+firebase.json
+firebase.config.js
 
 # misc
 .DS_Store
