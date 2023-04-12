@@ -53,7 +53,7 @@ const Portfolio = () => {
             id: '8',
             img: 'images/portfolio/packery/2.jpg',
             details: 'Newyork golf club house',
-            tag: 'interiors'
+            tag: 'exterior'
         },
         {
             id: '9',
