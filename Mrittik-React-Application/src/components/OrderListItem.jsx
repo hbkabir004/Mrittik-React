@@ -3,19 +3,12 @@ import React, { createContext } from 'react';
 export const TotalContext = createContext();
 
 const OrderListItem = ({ product }) => {
-    const { name, price, quantity } = product;
-    const total = (Number(price) * Number(quantity));
-    // const tax = Number(total) * 0.1;
-    // const grandTotal = Number(total) + Number(tax);
-
-    // const info = { tax, grandTotal }
+    const { name, price } = product;
 
     return (
-        // <TotalContext.Provider value={info}>
         <li>
-            <span className="text">{name} x {quantity}</span> <span className="value">${total}</span>
+            <span className="text">{name} x 1</span> <span className="value">${price}</span>
         </li>
-        // </TotalContext.Provider>
     );
 };
 

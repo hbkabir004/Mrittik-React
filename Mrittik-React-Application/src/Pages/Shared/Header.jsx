@@ -47,7 +47,7 @@ const Header = () => {
                             <ul className="main_menu">
                                 <li className="menu-item menu-item-has-children"><a href="/">Home</a>
                                     <ul className="sub-menu">
-                                        <li className="menu-item active"><a href="/">Home One</a></li>
+                                        <li className="menu-item"><a href="/">Home One</a></li>
                                         <li className="menu-item"><a href="/home-2">Home Two</a></li>
                                         <li className="menu-item"><a href="/home-3">Home Three</a></li>
                                         <li className="menu-item"><a href="/home-4">Home Four</a></li>

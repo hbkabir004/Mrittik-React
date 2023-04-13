@@ -1,48 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import ProductZoomInfo from '../components/ProductZoomInfo';
 import ProductZoomBtnGrp from './ProductZoomBtnGrp';
 
 const ProductView = () => {
-    // const { img, name, oldClass, price, oldPrice, categoryName } = productView;
-
-    // const [cart, setCart] = useContext(CartContext);
-
-    let [count, setCount] = useState(1);
-    // let total = price;
-    // const total = (Number(price) * Number(count));
-
-    // console.log(price);
-
-    const increment = () => {
-        setCount((prevCount) => prevCount + 1);
-    };
-
-    const decrement = () => {
-        setCount((prevCount) => prevCount - 1);
-    };
-
-    // const handleAddToCart = productView => {
-    //     let newCart = []
-    //     const exists = cart.find(
-    //         existingProduct => existingProduct.id === productView.id
-    //     )
-    //     if (!exists) {
-    //         productView.quantity = 1
-    //         newCart = [...cart, productView]
-    //     } else {
-    //         const rest = cart.filter(
-    //             existingProduct => existingProduct.id !== productView.id
-    //         )
-    //         exists.quantity = exists.quantity + 1
-    //         newCart = [...rest, exists]
-    //     }
-
-    //     setCart(newCart)
-    //     addToDb(productView.id)
-    //     toast.info('Info: Product Added!', { autoClose: 500 });
-    // }
-
     return (
         <section clasNames="product_view bg-dark-200">
             <div className="container">
@@ -87,11 +48,11 @@ const ProductView = () => {
                                     <div className="pproduct_quantity_label">Quantity</div>
                                     <div className="product_quantity_inner">
                                         <span className="qty_btn product_quantity_subtract">
-                                            <i onClick={decrement} className="bi bi-dash-lg"></i>
+                                            <i className="bi bi-dash-lg"></i>
                                         </span>
-                                        <input type="text" className="quantity" id="product_quantity_input" placeholder="0" value={count} />
+                                        <input type="text" className="quantity" id="product_quantity_input" placeholder="0" value={1} />
                                         <span className="qty_btn product_quantity_add">
-                                            <i onClick={increment} className="bi bi-plus-lg"></i>
+                                            <i className="bi bi-plus-lg"></i>
                                         </span>
                                     </div>
                                 </div>
@@ -105,8 +66,8 @@ const ProductView = () => {
 
                             <div className="cart_button d-flex justify-content-start gap-3">
 
-                                <Link to="/shop-checkout" > <button className="button">Add to Cart</button></Link>
-                                <Link to="/shop-checkout" ><button className="button">Buy Now</button></Link>
+                                <Link to="#" > <button className="button">Add to Cart</button></Link>
+                                <Link to="#" ><button className="button">Buy Now</button></Link>
                             </div>
 
                             <div className="product_view_bottom_credential">

@@ -15,18 +15,14 @@ const Map = () => {
 
     return (
         <LoadScript
-            googleMapsApiKey="AIzaSyCUiaBC-cJ0wcEtqCUtoXF3I91o9wS42gQ"
+            googleMapsApiKey={process.env.REACT_APP_GOOGLE_API_KEY}
         >
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
                 zoom={8}
             >
-                <section className="gmap box_padding">
-                    <div className="gmapbox">
-                        <div id="googleMap" className="map"></div>
-                    </div>
-                </section>
+                <></>
             </GoogleMap>
         </LoadScript>
 

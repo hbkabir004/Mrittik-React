@@ -1,26 +1,31 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
-import { toast } from 'react-toastify';
-import { removeFromDb } from '../../../components/forJSON/fakeDB';
-import { CartContext } from '../../../Layouts/ShopLayout';
 import "./MiniCart.css";
 import MiniCartContent from './MiniCartContent';
 
 const MiniCart = (props) => {
-    const [cart, setCart] = useContext(CartContext);
+    const MiniCartData = [
+        {
+            "id": "1",
+            "name": "Decor Plant",
+            "price": "15.00",
+            "badge": "new",
+            "newClass": "badge-new",
+            "img": "https://i.ibb.co/3ztPtN7/1-1.png",
+            "categoryID": "4",
+            "categoryName": "Garden"
+        },
+        {
+            "id": "2",
+            "name": "Hanging Light",
+            "price": "15.00",
+            "oldClass": "d-none",
+            "img": "https://i.ibb.co/8BgPvQd/2-1.png",
+            "categoryID": "7",
+            "categoryName": "Home Decor"
 
-    const handleRemoveItem = id => {
-        const remaining = cart.filter(product => product.id !== id)
-        setCart(remaining)
-        removeFromDb(id)
-        toast.warning('Product Removed!', { autoClose: 500 })
-    }
-
-    let total = 0
-
-    for (const product of cart) {
-        total = total + product.price * product.quantity
-    }
+        },
+    ]
 
 
     return (
@@ -31,11 +36,10 @@ const MiniCart = (props) => {
             </div>
             <div className="offcanvas-body">
                 <div className="row gutter-3">
-                    {cart.map(product => (
+                    {MiniCartData.map(product => (
                         <MiniCartContent
                             key={product.id}
                             product={product}
-                            handleRemoveItem={handleRemoveItem}
                         />
                     ))}
 

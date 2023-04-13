@@ -1,30 +1,31 @@
-import React, { useContext } from 'react';
-import { toast } from 'react-toastify';
-import { CartContext } from '../Layouts/ShopLayout';
+import React from 'react';
 import OrderListItem from './OrderListItem';
 import WidgetTitle from './WidgetTitle';
-import { deleteShoppingCart } from './forJSON/fakeDB';
 
 const PlaceOrder = () => {
-    const [cart, setCart] = useContext(CartContext);
+    const MiniCartData = [
+        {
+            "id": "1",
+            "name": "Decor Plant",
+            "price": "15.00",
+            "badge": "new",
+            "newClass": "badge-new",
+            "img": "https://i.ibb.co/3ztPtN7/1-1.png",
+            "categoryID": "4",
+            "categoryName": "Garden"
+        },
+        {
+            "id": "2",
+            "name": "Hanging Light",
+            "price": "15.00",
+            "oldClass": "d-none",
+            "img": "https://i.ibb.co/8BgPvQd/2-1.png",
+            "categoryID": "7",
+            "categoryName": "Home Decor"
 
-    let subTotal = 0;
-    cart.map(item => {
-        subTotal += (Number(item.price) * Number(item.quantity));
-    })
-    const tax = (Number(subTotal) * 0.1).toFixed(2);
-    const grandTotal = (Number(subTotal) + Number(tax)).toFixed(2);
+        },
 
-    const orderHandler = () => {
-        if (cart.length) {
-            setCart([]);
-            deleteShoppingCart();
-            window.location.href = '/thank-you';
-            return toast.success('Order Placed!', { autoClose: 500 })
-        }
-
-        return toast.error('Cart is empty', { autoClose: 500 })
-    }
+    ]
 
     return (
         <div className="place_order">
@@ -33,22 +34,23 @@ const PlaceOrder = () => {
                 <li className="totalvalue"><span className="text">Product</span> <span className="value">Price</span></li>
 
                 {
-                    cart.map(product => <OrderListItem
+                    MiniCartData.map(product => <OrderListItem
                         key={product.id}
                         product={product}
                     />)
                 }
 
-                <li className="totalvalue"><span className="text">Subtotal</span> <span className="value">${subTotal}</span></li>
+                <li className="totalvalue"><span className="text">Subtotal</span> <span className="value">$ 30.00</span></li>
+                <li className="totalvalue"><span className="text">Tax (10%)</span> <span className="value">$ 3.00</span></li>
                 <li className="totalvalue">
                     <span className="text">Shipping</span>
                     <div className="form-group">
                         <label className="radio_circle">Flat Rate
-                            <input type="radio" checked="checked" name="shipping" value="cash" />
+                            <input type="radio" name="shipping" value="cash" />
                             <span className="checkmark"></span>
                         </label>
                         <label className="radio_circle">Free Shipping
-                            <input type="radio" name="shipping" value="card" />
+                            <input type="radio" checked="checked" name="shipping" value="card" />
                             <span className="checkmark"></span>
                         </label>
                         <label className="radio_circle">Local Pickup
@@ -57,7 +59,7 @@ const PlaceOrder = () => {
                         </label>
                     </div>
                 </li>
-                <li className="totalvalue"><span className="text">Total</span> <span className="value">${grandTotal}</span></li>
+                <li className="totalvalue"><span className="text">Total</span> <span className="value">$ 33.00</span></li>
             </ul>
             <div className="form-group paymentmethod">
                 <label className="radio_circle">Direct Bank Transfer
@@ -78,7 +80,6 @@ const PlaceOrder = () => {
 
             <div className="btn_group">
                 <button
-                    onClick={orderHandler}
                     type='button'
                     className='btn white'
                 >

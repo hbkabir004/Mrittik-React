@@ -1,15 +1,11 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
 import ShopSidebar from '../components/forJSON/ShopSidebar';
-import TabContent from '../components/forJSON/TabContent';
 import ShopFilter from './ShopFilter';
-// import ShopSidebar from './ShopSidebar';
-// import TabContent from './TabContent';
+import TabContent from './TabContent';
 
 const ShopContainer01 = () => {
     useEffect(() => {
-        // Select 2
-        // $('.basic_select').select2({});
 
         // Load More Content
         $(".product_view_list .product_item").slice(0, 6).show();

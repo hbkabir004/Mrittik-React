@@ -1,8 +1,7 @@
 import React from 'react';
 
-const MiniCartContent = ({ product, handleRemoveItem }) => {
-    const { id, img, name, price, quantity } = product;
-    const total = (Number(price) * Number(quantity));
+const MiniCartContent = ({ product }) => {
+    const { img, name, price, quantity } = product;
     return (
         <>
             <div className="col-12">
@@ -18,9 +17,9 @@ const MiniCartContent = ({ product, handleRemoveItem }) => {
                             </div>
                         </div>
                         <div className="col-lg-3 text-center text-lg-right">
-                            <span className="cart-item-price">${total}</span>
+                            <span className="cart-item-price">${price}</span>
                         </div>
-                        <a onClick={() => handleRemoveItem(id)} href="#!" className="cart-item-close"><i className="bi bi-x"></i></a>
+                        <a href="#!" className="cart-item-close"><i className="bi bi-x"></i></a>
                     </div>
                 </div>
             </div>

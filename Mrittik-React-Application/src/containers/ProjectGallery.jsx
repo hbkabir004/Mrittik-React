@@ -20,56 +20,36 @@ const ProjectGallery = () => {
             details: 'Find your own self invintage lake house',
             tag: 'residences'
         },
-        // {
-        //     id: '3',
-        //     // img: 'images/portfolio/packery/4.jpg',
-        //     img: 'images/portfolio/packery/5.jpg',
-        //     details: 'Well decor house in Sydney',
-        //     tag: 'landscape exterior'
-        // },
+        {
+            id: '3',
+            img: 'images/portfolio/packery/4.jpg',
+            details: 'Well decor house in Sydney',
+            tag: 'landscape exterior'
+        },
         {
             id: '4',
             img: 'images/portfolio/packery/5.jpg',
             details: 'Huge large area Bedroom',
             tag: 'landscape'
         },
-        // {
-        //     id: '5',
-        //     // img: 'images/portfolio/packery/6.jpg',
-        //     img: 'images/portfolio/packery/3.jpg',
-        //     details: 'Clean water in the swiming pool',
-        //     tag: 'interiors'
-        // },
-        // {
-        //     id: '6',
-        //     img: 'images/portfolio/packery/7.jpg',
-        //     details: 'Newyork golf club house',
-        //     tag: 'interiors'
-        // },
-        // {
-        //     id: '7',
-        //     img: 'images/portfolio/packery/8.jpg',
-        //     details: 'California young menz club',
-        //     tag: 'exterior'
-        // },
         {
-            id: '8',
-            img: 'images/portfolio/packery/2.jpg',
+            id: '5',
+            img: 'images/portfolio/packery/6.jpg',
+            details: 'Clean water in the swiming pool',
+            tag: 'interiors'
+        },
+        {
+            id: '6',
+            img: 'images/portfolio/packery/7.jpg',
             details: 'Newyork golf club house',
             tag: 'interiors'
         },
         {
-            id: '9',
-            img: 'images/portfolio/packery/3.jpg',
+            id: '7',
+            img: 'images/portfolio/packery/8.jpg',
             details: 'California young menz club',
-            tag: 'residences'
+            tag: 'exterior'
         },
-        // {
-        //     id: '10',
-        //     img: 'images/portfolio/packery/4.jpg',
-        //     details: 'California young menz club',
-        //     tag: 'landscape exterior'
-        // },
 
     ];
 

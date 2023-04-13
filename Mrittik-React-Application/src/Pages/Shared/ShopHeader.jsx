@@ -51,7 +51,7 @@ const ShopHeader = () => {
                             <ul className="main_menu">
                                 <li className="menu-item menu-item-has-children"><a href="/">Home</a>
                                     <ul className="sub-menu">
-                                        <li className="menu-item active"><a href="/">Home One</a></li>
+                                        <li className="menu-item"><a href="/">Home One</a></li>
                                         <li className="menu-item"><a href="/home-2">Home Two</a></li>
                                         <li className="menu-item"><a href="/home-3">Home Three</a></li>
                                         <li className="menu-item"><a href="/home-4">Home Four</a></li>
@@ -120,7 +120,7 @@ const ShopHeader = () => {
                             <button className="navbar-toggler me-3 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                             >
                                 <span className="bi bi-cart-dash-fill" />
-                                <p className='position-absolute top-0 start-100 translate-middle rounded-circle cart-length-bg'>{cart.length}</p>
+                                <p className='position-absolute top-0 start-100 translate-middle rounded-circle cart-length-bg'>2</p>
                             </button>
 
                             {/* Header Search */}
@@ -146,7 +146,7 @@ const ShopHeader = () => {
 
             <MiniCart id='offcanvasNavbar' />
             <MobileResponsiveMenu />
-            <AsideInfo></AsideInfo>
+            <AsideInfo />
         </>
     );
 };

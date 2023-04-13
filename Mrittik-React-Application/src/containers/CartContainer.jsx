@@ -1,37 +1,33 @@
-import React, { useContext } from 'react';
-import { toast } from 'react-toastify';
+import React from 'react';
 import CartContent from '../components/CartContent';
 import CartHeader from '../components/CartHeader';
 import CuponCode from '../components/CuponCode';
-import { deleteShoppingCart, removeFromDb } from '../components/forJSON/fakeDB';
 import GrandTotal from '../components/forJSON/GrandTotal';
-import { CartContext } from '../Layouts/ShopLayout';
 
 const CartContainer = () => {
-    const [cart, setCart] = useContext(CartContext)
+    const MiniCartData = [
+        {
+            "id": "1",
+            "name": "Decor Plant",
+            "price": "15.00",
+            "badge": "new",
+            "newClass": "badge-new",
+            "img": "https://i.ibb.co/3ztPtN7/1-1.png",
+            "categoryID": "4",
+            "categoryName": "Garden"
+        },
+        {
+            "id": "2",
+            "name": "Hanging Light",
+            "price": "15.00",
+            "oldClass": "d-none",
+            "img": "https://i.ibb.co/8BgPvQd/2-1.png",
+            "categoryID": "7",
+            "categoryName": "Home Decor"
 
-    const handleRemoveItem = id => {
-        const remaining = cart.filter(product => product.id !== id)
-        setCart(remaining)
-        removeFromDb(id)
-        toast.warning('Product Removed!', { autoClose: 500 })
-    }
+        },
 
-    let total = 0
-
-    for (const product of cart) {
-        total = total + product.price * product.quantity
-    }
-
-    const orderHandler = () => {
-        if (cart.length) {
-            setCart([])
-            deleteShoppingCart()
-            return toast.success('Order Placed!', { autoClose: 500 })
-        }
-
-        return toast.error('Cart is empty', { autoClose: 500 })
-    }
+    ]
 
     return (
         <section className="shopping_cart bg-dark-200">
@@ -40,11 +36,10 @@ const CartContainer = () => {
                     <table className="cart_table">
                         <CartHeader />
 
-                        {cart.map(product => (
+                        {MiniCartData.map(product => (
                             <CartContent
                                 key={product.id}
                                 product={product}
-                                handleRemoveItem={handleRemoveItem}
                             />
                         ))}
 
@@ -54,7 +49,7 @@ const CartContainer = () => {
                 </form>
                 <div className="row">
                     <div className="col-lg-7">
-                        <GrandTotal total={total} />
+                        <GrandTotal total={30} />
                     </div>
                 </div>
             </div>
