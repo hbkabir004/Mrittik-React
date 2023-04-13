@@ -20,7 +20,7 @@ const ProjectCard04 = (props) => {
     }, []);
 
     let elHeight = Number(dimensions.height);
-    console.log(typeof elHeight);
+    // console.log(typeof elHeight);
 
     return (
         <div className="thumb">

@@ -37,11 +37,11 @@ const MobileResponsiveMenu = () => {
     }, []);
 
     return (
-        <div class="mr_menu d-lg-none">
-            <div class="mr_menu_overlay"></div>
-            <button type="button" class="mr_menu_close"><i class="bi bi-x-lg"></i></button>
-            <div class="logo"></div>
-            <div class="mr_navmenu"></div>
+        <div className="mr_menu d-lg-none">
+            <div className="mr_menu_overlay"></div>
+            <button type="button" className="mr_menu_close"><i className="bi bi-x-lg"></i></button>
+            <div className="logo"></div>
+            <div className="mr_navmenu"></div>
         </div>
     );
 };

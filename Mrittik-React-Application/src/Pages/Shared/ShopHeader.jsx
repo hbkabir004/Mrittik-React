@@ -135,8 +135,8 @@ const ShopHeader = () => {
                             </div>
 
                             {/* Mobile Responsive Menu Toggle Button */}
-                            <button type="button" class="mr_menu_toggle d-lg-none">
-                                <i class="bi bi-list"></i>
+                            <button type="button" className="mr_menu_toggle d-lg-none">
+                                <i className="bi bi-list"></i>
                             </button>
 
                         </div>

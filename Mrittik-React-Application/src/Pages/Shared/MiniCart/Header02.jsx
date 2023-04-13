@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import MiniCart from '../../containers/MiniCart';
 import { CartContext } from '../../Layouts/Main';
+import MiniCart from '../../containers/MiniCart';
 import AsideInfo from './AsideInfo';
 import MobileResponsiveMenu from './MobileResponsiveMenu';
 
@@ -209,8 +209,8 @@ const Header = () => {
                             </div>
 
                             {/* Mobile Responsive Menu Toggle Button */}
-                            <button type="button" class="mr_menu_toggle d-lg-none">
-                                <i class="bi bi-list"></i>
+                            <button type="button" className="mr_menu_toggle d-lg-none">
+                                <i className="bi bi-list"></i>
                             </button>
 
                         </div>

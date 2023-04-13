@@ -20,7 +20,7 @@ const ProjectCard = ({ data }) => {
     }, []);
 
     let elHeight = Number(dimensions.height);
-    console.log(typeof elHeight);
+    // console.log(typeof elHeight);
 
     const { img, details, tag } = data;
 
