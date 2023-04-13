@@ -134,7 +134,7 @@ const Header = () => {
             </header>
 
             <MobileResponsiveMenu />
-            <AsideInfo></AsideInfo>
+            <AsideInfo />
         </div>
     );
 };
