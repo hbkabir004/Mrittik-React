@@ -19396,6 +19396,8 @@ iframe, object, embed, iframe, object, iframe, video {
   position: relative;
   display: inline-block;
   color: rgba(255, 255, 255, 0.2);
+  padding: 0 5px;
+
 }
 
 .preloader-inner .loading-text .characters:before {
@@ -19530,6 +19532,19 @@ iframe, object, embed, iframe, object, iframe, video {
 }
 
 @media screen and (max-width: 576px) {
+  .preloader-inner .loading-text {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+    user-select: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .preloader-inner .loading-text .characters {
+    padding: 0 2px;
+  }
+
   .theme_slider_2 .swiper-slide .slider .slide_content {
       max-width: 100%;
       width: 100%;

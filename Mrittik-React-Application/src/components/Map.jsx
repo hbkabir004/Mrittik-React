@@ -22,7 +22,7 @@ const Map = () => {
                 center={center}
                 zoom={8}
             >
-                <></>
+
             </GoogleMap>
         </LoadScript>
 

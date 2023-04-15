@@ -7,40 +7,40 @@ const Projects03 = () => {
         <section className="projects top-margin bg-transparent effect-tilt p-0">
             <div className="container">
                 <div className="row gutter-90 clearfix">
-                    <div className="grid-item col-6 residences">
+                    <div className="grid-item col-12 col-lg-6 residences">
                         <ProjectCard03 img="images/portfolio/1.jpg" details="California young menz club" />
                     </div>
-                    <div className="grid-item col-6 interiors">
+                    <div className="grid-item col-12 col-lg-6 interiors">
                         <ProjectCard03 img="images/portfolio/2.jpg" details="Sunlight in the Room" />
                     </div>
-                    <div className="grid-item col-6 residences">
+                    <div className="grid-item col-12 col-lg-6 residences">
                         <ProjectCard03 img="images/portfolio/3.jpg" details="Find your own self invintage lake house" />
                     </div>
-                    <div className="grid-item col-6 landscape exterior">
+                    <div className="grid-item col-12 col-lg-6 landscape exterior">
                         <ProjectCard03 img="images/portfolio/4.jpg" details="Well decor house in Sydney" />
                     </div>
-                    <div className="grid-item col-6 landscape">
+                    <div className="grid-item col-12 col-lg-6 landscape">
                         <ProjectCard03 img="images/portfolio/5.jpg" details="Huge large area Bedroom" />
                     </div>
-                    <div className="grid-item col-6 interiors">
+                    <div className="grid-item col-12 col-lg-6 interiors">
                         <ProjectCard03 img="images/portfolio/6.jpg" details="Clean water in the swiming pool" />
                     </div>
-                    <div className="grid-item col-6 interiors">
+                    <div className="grid-item col-12 col-lg-6 interiors">
                         <ProjectCard3_2 img="images/portfolio/7.jpg" details="California young menz club"></ProjectCard3_2>
                     </div>
-                    <div className="grid-item col-6 residences">
+                    <div className="grid-item col-12 col-lg-6 residences">
                         <ProjectCard3_2 img="images/portfolio/8.jpg" details="Newyork golf club house"></ProjectCard3_2>
                     </div>
-                    <div className="grid-item col-6 exterior">
+                    <div className="grid-item col-12 col-lg-6 exterior">
                         <ProjectCard3_2 img="images/portfolio/1.jpg" details="California young menz club"></ProjectCard3_2>
                     </div>
-                    <div className="grid-item col-6 interiors">
+                    <div className="grid-item col-12 col-lg-6 interiors">
                         <ProjectCard3_2 img="images/portfolio/2.jpg" details="California young menz club"></ProjectCard3_2>
                     </div>
-                    <div className="grid-item col-6 residences">
+                    <div className="grid-item col-12 col-lg-6 residences">
                         <ProjectCard3_2 img="images/portfolio/3.jpg" details="California young menz club"></ProjectCard3_2>
                     </div>
-                    <div className="grid-item col-6 landscape exterior">
+                    <div className="grid-item col-12 col-lg-6 landscape exterior">
                         <ProjectCard3_2 img="images/portfolio/4.jpg" details="California young menz club"></ProjectCard3_2>
                     </div>
                 </div>
