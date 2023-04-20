@@ -11249,14 +11249,14 @@ label {
 }
 
 .bg_1 {
-  background: url("../img/bg/bg-1.jpg");
+  background: url("../../../build/images/bg/bg-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .bg_2 {
-  background: url("../img/bg/bg-1.jpg");
+  background: url("../../../build/images/bg/bg-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11305,7 +11305,7 @@ label {
   height: 100%;
   top: 9px;
   left: 9px;
-  background-image: url(../img/btn-texture-black.png);
+  background-image: url(../../../build/images/btn-texture-black.png);
   border: 1px solid #000000;
   box-sizing: border-box;
   z-index: -1;
@@ -11329,7 +11329,7 @@ label {
 }
 
 .btn.white:before {
-  background-image: url(../img/btn-texture-white.png);
+  background-image: url(../../../build/images/btn-texture-white.png);
   border-color: #ffffff;
 }
 
@@ -11344,7 +11344,7 @@ label {
 }
 
 .btn.gray:before {
-  background-image: url(../img/btn-texture-gray.png);
+  background-image: url(../../../build/images/btn-texture-gray.png);
   border-color: #54595f;
 }
 
@@ -11359,7 +11359,7 @@ label {
 }
 
 .btn.olive:before {
-  background-image: url(../img/btn-texture-olive.png);
+  background-image: url(../../../build/images/btn-texture-olive.png);
   border-color: #a6a182;
 }
 
@@ -14981,7 +14981,7 @@ body.mr_menu_active .mr_menu_overlay {
 .testimonial_inner::before {
   position: absolute;
   content: "";
-  background: url(../img/bg/bg_t_1.png);
+  background: url(../../../build/images/bg/bg_t_1.png);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -14992,7 +14992,7 @@ body.mr_menu_active .mr_menu_overlay {
 .testimonial_inner::after {
   position: absolute;
   content: "";
-  background: url(../img/bg/bg_t_2.png);
+  background: url(../../../build/images/bg/bg_t_2.png);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -15053,7 +15053,7 @@ body.mr_menu_active .mr_menu_overlay {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/bg/bg-2.jpg");
+  background-image: url("../../../build/images/bg/bg-2.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -15336,7 +15336,7 @@ body.mr_menu_active .mr_menu_overlay {
 
 .blog_post .blog_content > a:after {
   position: absolute;
-  content: url("../img/icon_box/i1.svg");
+  content: url("../../../build/images/icon_box/i1.svg");
   transform: translateX(20px);
   transition: all 0.5s ease;
 }
@@ -18596,7 +18596,7 @@ body.mr_menu_active .mr_menu_overlay {
 
 .page_header .page_header_inner {
   position: relative;
-  background-image: url(../img/header_bg.jpg);
+  background-image: url(../../../build/images/header_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19759,7 +19759,7 @@ body.bg-dark.bg-white .btn.white, body.bg-white .btn.white {
 }
 
 body.bg-dark.bg-white .btn.white:before, body.bg-white .btn.white:before {
-  background-image: url(../img/btn-texture-gray.png);
+  background-image: url(../../../build/images/btn-texture-gray.png);
   border-color: #2e2e2e;
 }
 
@@ -19914,7 +19914,7 @@ body.bg-dark.bg-white .ma5menu__container, body.bg-white .ma5menu__container {
 }
 
 body.bg-dark.bg-white .ma5menu__logo, body.bg-white .ma5menu__logo {
-  background-image: url(../img/logo-dark-lg.svg);
+  background-image: url(../../../build/images/logo-dark-lg.svg);
 }
 
 body.bg-dark.bg-white .ma5menu__btn--enter, body.bg-white .ma5menu__btn--enter {
@@ -20578,7 +20578,7 @@ body.bg-dark.bg-white .page_header.in-service .page_header_inner .page_header_co
 }
 
 body.bg-dark.bg-white .header-layer-bg, body.bg-white .header-layer-bg {
-  background-image: url("../img/bg/bg-2-light.jpg");
+  background-image: url("../../../build/images/bg/bg-2-light.jpg");
 }
 
 body.bg-dark.bg-white .testimonial.in-service, body.bg-white .testimonial.in-service {
