@@ -5,11 +5,11 @@ import SectionGridLines from '../components/SectionGridLines';
 
 const HomeLayout04 = () => {
     return (
-        <>
+        <div className='left_menu'>
             <Header03 />
             <Outlet />
             <SectionGridLines />
-        </>
+        </div>
     );
 };
 
