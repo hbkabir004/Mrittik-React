@@ -1,9 +1,9 @@
 import React from 'react';
-import SocialMedia from '../components/SocialMedia';
-import TeamProjectCard from '../components/TeamProjectCard';
-import WidgetTitle from '../components/WidgetTitle';
-import Bio from './Bio';
-import EducationalQualification from './EducationalQualification';
+import SocialMedia from '../../components/SocialMedia';
+import TeamProjectCard from '../../components/TeamElements/TeamProjectCard';
+import WidgetTitle from '../../components/WidgetTitle';
+import Bio from '../Bio';
+import EducationalQualification from '../EducationalQualification';
 
 const TeamDetailsContainer = () => {
     return (

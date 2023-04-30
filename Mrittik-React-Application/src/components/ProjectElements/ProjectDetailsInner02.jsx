@@ -1,5 +1,5 @@
 import React from 'react';
-import BlockGalleryItemCard from './BlockGalleryItemCard';
+import BlockGalleryItemCard from '../BlockGalleryItemCard';
 import RelatedProjects from './RelatedProjects';
 
 

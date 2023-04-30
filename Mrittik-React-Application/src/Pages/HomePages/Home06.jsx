@@ -1,6 +1,6 @@
 import React from 'react';
 import ClientsContainer03 from '../../containers/ClientsContainer03';
-import Projects03 from '../../containers/Projects03';
+import Projects03 from '../../containers/ProjectContainers/Projects03';
 import Sliders06 from '../../containers/SliderContainers/Sliders06';
 
 const Home06 = () => {

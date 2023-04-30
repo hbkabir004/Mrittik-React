@@ -2,9 +2,9 @@ import React from 'react';
 import { EffectFade } from 'swiper';
 import { Pagination, Scrollbar } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ProjectDetailsInner from '../components/ProjectDetailsInner';
-import ProjectDetailsSlider from '../components/ProjectDetailsSlider';
-import SideBar02 from '../components/SideBar02';
+import ProjectDetailsInner from '../../components/ProjectElements/ProjectDetailsInner';
+import ProjectDetailsSlider from '../../components/ProjectElements/ProjectDetailsSlider';
+import SideBar02 from '../../components/SideBar02';
 
 const ProjectDetailsContainer = () => {
     return (

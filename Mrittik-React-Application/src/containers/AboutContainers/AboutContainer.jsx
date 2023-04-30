@@ -1,7 +1,7 @@
 import React from 'react';
-import IconBoxFlex from '../components/IconBoxFlex';
-import Paragraph from '../components/Paragraph';
-import SubHeading from '../components/SubHeading';
+import IconBoxFlex from '../../components/IconBoxFlex';
+import Paragraph from '../../components/Paragraph';
+import SubHeading from '../../components/SubHeading';
 
 const AboutContainer = () => {
 

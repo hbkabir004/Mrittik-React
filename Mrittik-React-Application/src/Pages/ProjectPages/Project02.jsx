@@ -1,6 +1,6 @@
 import React from 'react';
 import PageBanner03 from '../../containers/PageBanner03';
-import ProjectGallery02 from '../../containers/ProjectGallery02';
+import ProjectGallery02 from '../../containers/ProjectContainers/ProjectGallery02';
 
 const Project02 = () => {
     return (

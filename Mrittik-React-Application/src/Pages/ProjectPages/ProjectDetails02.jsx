@@ -1,6 +1,6 @@
 import React from 'react';
 import PageBanner from '../../containers/PageBanner';
-import ProjectDetailsContainer02 from '../../containers/ProjectDetailsContainer02';
+import ProjectDetailsContainer02 from '../../containers/ProjectContainers/ProjectDetailsContainer02';
 
 const ProjectDetails02 = () => {
     return (

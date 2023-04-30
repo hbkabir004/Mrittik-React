@@ -1,6 +1,6 @@
 import React from 'react';
 import PageBanner from '../../containers/PageBanner';
-import TeamContainer from '../../containers/TeamContainer';
+import TeamContainer from '../../containers/TeamContainers/TeamContainer';
 
 const Team = () => {
     return (

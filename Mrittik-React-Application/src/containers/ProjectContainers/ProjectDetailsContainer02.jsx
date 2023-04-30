@@ -1,6 +1,6 @@
 import React from 'react';
-import ProjectDetailsInner02 from '../components/ProjectDetailsInner02';
-import SideBar02 from '../components/SideBar02';
+import ProjectDetailsInner02 from '../../components/ProjectElements/ProjectDetailsInner02';
+import SideBar02 from '../../components/SideBar02';
 
 const ProjectDetailsContainer02 = () => {
     return (

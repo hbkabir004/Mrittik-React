@@ -17,6 +17,7 @@ import Home05 from "../Pages/HomePages/Home05";
 import Home06 from "../Pages/HomePages/Home06";
 import Home07 from "../Pages/HomePages/Home07";
 import Home08 from "../Pages/HomePages/Home08";
+import Home09 from "../Pages/HomePages/Home09";
 import Login from "../Pages/Login";
 import Project01 from "../Pages/ProjectPages/Project01";
 import Project02 from "../Pages/ProjectPages/Project02";
@@ -65,6 +66,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/home-8',
                 element: <Home08/>,
+            },
+            {
+                path: '/home-9',
+                element: <Home09/>,
             },
             {
                 path: '/project-1',

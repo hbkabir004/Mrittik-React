@@ -1,6 +1,6 @@
 import React from 'react';
 import PageBanner from '../../containers/PageBanner';
-import TeamDetailsContainer from '../../containers/TeamDetailsContainer';
+import TeamDetailsContainer from '../../containers/TeamContainers/TeamDetailsContainer';
 
 const TeamDetails = () => {
     return (

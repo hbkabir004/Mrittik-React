@@ -2,10 +2,10 @@ import React from 'react';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceCard from '../components/ServiceCard';
-import TeamCard from '../components/TeamCard';
+import TeamCard from '../components/TeamElements/TeamCard';
 import Video from "../components/Video";
 import FormContainer from "../containers/FormContainer";
-import FunFacts from '../containers/FunFacts';
+import FunFacts from '../containers/FunFacts/FunFacts';
 import MissionContainer from "../containers/MissionContainer";
 import Testimonials from '../containers/Testimonials';
 

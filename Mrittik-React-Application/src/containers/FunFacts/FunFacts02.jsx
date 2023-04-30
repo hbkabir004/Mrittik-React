@@ -1,8 +1,31 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
-import FunFact from '../components/FunFact';
+import FunFact02 from '../../components/FunFactElements/FunFact02';
 
 const FunFacts = (props) => {
+    const FunFactData = [
+        {
+            id: '1',
+            contentName: 'Design Drawing',
+            contentNumber: '120',
+        },
+        {
+            id: '2',
+            contentName: 'Project Completed',
+            contentNumber: '210',
+            plus: '+',
+        },
+        {
+            id: '3',
+            contentName: 'Design Drawing',
+            contentNumber: '15',
+        },
+        {
+            id: '4',
+            contentName: 'Project Running',
+            contentNumber: '62',
+        },
+    ];
     useEffect(() => {
         var a = 0;
         $(window).on("scroll", function () {
@@ -30,10 +53,13 @@ const FunFacts = (props) => {
                 <div className="row">
                     <div className="col">
                         <div className="funfacts_inner">
-                            <FunFact contentName="Design Drawing" contentNumber="120" img="images/fact-1.png"></FunFact>
-                            <FunFact contentName="Project Completed" contentNumber="210" span="+" img="images/fact-2.png"></FunFact>
-                            <FunFact contentName="Design Award" contentNumber="15" img="images/fact-3.png"></FunFact>
-                            <FunFact contentName="Project Running" contentNumber="62" img="images/fact-4.png"></FunFact>
+                            {
+                                FunFactData.map(data =>
+                                    <FunFact02
+                                        key={data.id}
+                                        data={data}
+                                    />)
+                            }
 
                         </div>
                     </div>

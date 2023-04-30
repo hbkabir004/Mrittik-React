@@ -6,52 +6,12 @@ import Paragraph from '../components/Paragraph';
 import PointOrder from '../components/PointOrder';
 import PointOrder02 from '../components/PointOrder02';
 import PostFooter from '../components/PostFooter';
-import RelatedProjects from '../components/RelatedProjects';
+import RelatedProjects from '../components/ProjectElements/RelatedProjects';
 import WidgetTitle from '../components/WidgetTitle';
 import PostHeader from './PostHeader';
 
 const ServiceContainer03 = () => {
-    // useEffect(() => {
-    //     Gallery
-    //     var swiper9 = new Swiper('.swiper_gallery', {
-    //         slidesPerView: '1',
-    //         centeredSlides: true,
-    //         // slideToClickedSlide: true,
-    //         speed: 1400,
-    //         spaceBetween: 0,
-    //         parallax: true,
-    //         autHeight: true,
-    //         effect: "creative",
-    //         creativeEffect: {
-    //             prev: {
-    //                 shadow: true,
-    //                 translate: ["-20%", 0, -1],
-    //             },
-    //             next: {
-    //                 translate: ["100%", 0, 0],
-    //             },
-    //         },
-    //         controller: {
-    //             inverse: true,
-    //         },
-    //         slideToClickedSlide: true,
-    //         lazyLoading: true,
-    //         loop: false,
-    //         keyboard: {
-    //             enabled: true,
-    //         },
-    //         navigation: {
-    //             nextEl: '.swiper-button-next',
-    //             prevEl: '.swiper-button-prev',
-    //         },
-    //         pagination: {
-    //             el: '.swiper-pagination',
-    //             clickable: true,
-    //             dynamicBullets: true,
-    //         },
-    //     });
 
-    // }, []);
     return (
         <main className="wrapper">
             <section className="project-details bg-dark-200">

@@ -1,7 +1,7 @@
 import React from 'react';
 import Blogs from '../../containers/Blogs';
 import FormContainer from '../../containers/FormContainer';
-import Projects04 from '../../containers/Projects04';
+import Projects04 from '../../containers/ProjectContainers/Projects04';
 import Sliders05 from '../../containers/SliderContainers/Sliders05';
 import Testimonials from '../../containers/Testimonials';
 

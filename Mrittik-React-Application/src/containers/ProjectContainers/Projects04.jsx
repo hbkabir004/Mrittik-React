@@ -1,6 +1,6 @@
 import React from 'react';
-import ProjectList from '../components/ProjectList';
-import SubHeading04 from '../components/SubHeading04';
+import ProjectList from '../../components/ProjectElements/ProjectList';
+import SubHeading04 from '../../components/SubHeading04';
 
 const Projects04 = () => {
     return (

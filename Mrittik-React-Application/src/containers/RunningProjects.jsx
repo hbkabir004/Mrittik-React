@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
-import RunningProjectItem from '../components/RunningProjectItem';
+import RunningProjectItem from '../components/ProjectElements/RunningProjectItem';
 import SectionGridLines from '../components/SectionGridLines';
 
 const RunningProjects = () => {
@@ -17,7 +17,7 @@ const RunningProjects = () => {
     }, []);
     return (
         <section className="running_projects">
-            <SectionGridLines></SectionGridLines>
+            <SectionGridLines />
             <div className="large_font">
                 <h2 className="floating_element text-dark-200 d-flex justify-content-center">Running</h2>
             </div>

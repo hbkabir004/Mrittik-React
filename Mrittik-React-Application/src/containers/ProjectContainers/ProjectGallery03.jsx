@@ -1,6 +1,6 @@
 import Isotope from 'isotope-layout';
 import React, { useEffect, useState } from 'react';
-import ProjectCard04 from '../components/ProjectCard04';
+import ProjectCard04 from '../../components/ProjectElements/ProjectCard04';
 
 const ProjectGallery03 = () => {
     const [filterKey, setFilterKey] = useState('*')

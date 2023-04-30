@@ -1,6 +1,6 @@
 import Isotope from 'isotope-layout';
 import React, { useEffect, useState } from 'react';
-import ProjectCard03_02 from '../components/ProjectCard03_02';
+import ProjectCard03_02 from '../../components/ProjectElements/ProjectCard03_02';
 
 const ProjectGallery02 = () => {
     const ProjectData02 = [
