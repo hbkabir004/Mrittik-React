@@ -1,8 +1,8 @@
 import React, { createContext, useState } from 'react';
 import { Outlet, useLoaderData } from 'react-router-dom';
+import Footer from '../Pages/Shared/Footers/Footer';
+import ShopHeader from '../Pages/Shared/Headers/ShopHeader';
 import SectionGridLines from '../components/SectionGridLines';
-import Footer from '../Pages/Shared/Footer';
-import ShopHeader from '../Pages/Shared/ShopHeader';
 
 export const ProductContext = createContext([]);
 export const CartContext = createContext([]);

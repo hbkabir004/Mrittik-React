@@ -1,16 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from '../Pages/Shared/Headers/Header';
+import Header03 from '../Pages/Shared/Headers/Header03';
 import SectionGridLines from '../components/SectionGridLines';
 
-const HomeLayout03 = () => {
+const HomeLayout04 = () => {
     return (
         <>
-            <Header />
+            <Header03 />
             <Outlet />
             <SectionGridLines />
         </>
     );
 };
 
-export default HomeLayout03;
+export default HomeLayout04;

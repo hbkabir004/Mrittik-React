@@ -1,11 +1,15 @@
 import $ from 'jquery';
-import React, { useContext, useEffect } from 'react';
-import { CartContext } from '../../Layouts/ShopLayout';
-import AsideInfo from './AsideInfo';
-import MiniCart from './MiniCart/MiniCart';
-import MobileResponsiveMenu from './MobileResponsiveMenu';
+import React, { useContext, useEffect, useState } from 'react';
+import { CartContext } from '../../../Layouts/ShopLayout';
+import AsideInfo from '../AsideInfo';
+import MiniCart from '../MiniCart/MiniCart';
+import MobileResponsiveMenu from '../MobileResponsiveMenu';
 
 const ShopHeader = () => {
+    const [isActive, setActive] = useState("false");
+    const handleToggle = () => {
+        setActive(!isActive);
+    };
     const [cart, setCart] = useContext(CartContext);
 
     useEffect(() => {
@@ -17,11 +21,6 @@ const ShopHeader = () => {
         $('.aside_close').click(function (e) {
             e.preventDefault();
             $('.aside_info_wrapper').removeClass('show');
-        });
-
-        // Toggle Header Search
-        $('.header_search .form-control-submit').click(function (e) {
-            $('.open_search').toggleClass('active');
         });
 
         // Sticky Header
@@ -124,10 +123,10 @@ const ShopHeader = () => {
                             </button>
 
                             {/* Header Search */}
-                            <div className="header_search">
+                            <div className="header_search" onClick={handleToggle}>
                                 <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>
                             </div>
-                            <div className="open_search">
+                            <div id="open_search" className={isActive ? null : "active"}>
                                 <form className="search_form" action="search.php">
                                     <input type="text" name="search" className="keyword form-control" placeholder="Search..." />
                                     <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>

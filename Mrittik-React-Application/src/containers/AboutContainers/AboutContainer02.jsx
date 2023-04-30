@@ -5,16 +5,16 @@ const AboutContainer = () => {
     return (
         <section class="about style_two">
             <div class="large_font">
-                <h2 class="floating_element text-dark-200 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1000">About</h2>
+                <h2 class="floating_element text-dark-200 d-flex justify-content-center">About</h2>
             </div>
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-5 col-sm-6">
                         <div class="about_image">
-                            <img src="images/about/e1.svg" alt="About" class="line_frame_2" data-aos="fade-up" data-aos-duration="1300" />
-                            <img src="images/about/a2.jpg" alt="img" class="abt_img_1" data-aos="fade-right" data-aos-duration="1000" />
-                            <img src="images/about/a3.jpg" alt="img" class="abt_img_2" data-aos="fade-left" data-aos-duration="1000" />
-                            <img src="images/about/e1.svg" alt="About" class="line_frame_1" data-aos="fade-down" data-aos-duration="1300" />
+                            <img src="images/about/e1.svg" alt="About" class="line_frame_2" />
+                            <img src="images/about/a2.jpg" alt="img" class="abt_img_1" />
+                            <img src="images/about/a3.jpg" alt="img" class="abt_img_2" />
+                            <img src="images/about/e1.svg" alt="About" class="line_frame_1" />
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-7 col-sm-6">

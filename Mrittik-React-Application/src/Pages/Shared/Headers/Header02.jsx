@@ -1,9 +1,14 @@
 import $ from 'jquery';
-import React, { useEffect } from 'react';
-import AsideInfo from './AsideInfo';
-import Header02Nav from './Header02Nav/Header02Nav';
+import React, { useEffect, useState } from 'react';
+import AsideInfo from '../AsideInfo';
+import Header02Nav from '../Header02Nav/Header02Nav';
 
 const Header02 = () => {
+    const [isActive, setActive] = useState("false");
+    const handleToggle = () => {
+        setActive(!isActive);
+    };
+
     useEffect(() => {
         // Aside info bar
         $('.aside_open').click(function (e) {
@@ -48,31 +53,21 @@ const Header02 = () => {
                                 <span className="line"></span>
                                 <span className="line"></span>
                             </button>
-                            <div className="header_search">
+                            <div className="header_search" onClick={handleToggle}>
                                 <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>
                             </div>
-                            <div className="open_search">
+                            <div id="open_search" className={isActive ? null : "active"}>
                                 <form className="search_form" action="search.php">
                                     <input type="text" name="search" className="keyword form-control" placeholder="Search..." />
                                     <button type="submit" className="form-control-submit"><i className="bi bi-search"></i></button>
                                 </form>
                             </div>
 
-                            {/* <button type="button" className="mr_menu_toggle">
-                                <i className="bi bi-list"></i>
-                            </button> */}
-
                             <button className="mr_menu_toggle position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
                             >
                                 <span className="bi bi-list" />
                             </button>
 
-
-
-                            {/* Mobile Responsive Menu Toggle Button */}
-                            {/* <button type="button" className="mr_menu_toggle d-lg-none">
-                                <i className="bi bi-list"></i>
-                            </button> */}
                         </div>
                     </div>
                 </div>

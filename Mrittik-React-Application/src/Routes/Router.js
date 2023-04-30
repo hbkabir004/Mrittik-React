@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import HomeLayout from "../Layouts/HomeLayout";
 import HomeLayout02 from "../Layouts/HomeLayout02";
 import HomeLayout03 from "../Layouts/HomeLayout03";
+import HomeLayout04 from "../Layouts/HomeLayout04";
 import ShopLayout from "../Layouts/ShopLayout";
 import AboutUs from "../Pages/AboutUs";
 import Blog from "../Pages/BlogPages/Blog";
@@ -18,6 +19,7 @@ import Home06 from "../Pages/HomePages/Home06";
 import Home07 from "../Pages/HomePages/Home07";
 import Home08 from "../Pages/HomePages/Home08";
 import Home09 from "../Pages/HomePages/Home09";
+import Home10 from "../Pages/HomePages/Home10";
 import Login from "../Pages/Login";
 import Project01 from "../Pages/ProjectPages/Project01";
 import Project02 from "../Pages/ProjectPages/Project02";
@@ -164,6 +166,17 @@ export const routes = createBrowserRouter([
             {
                 path: '/home-7',
                 element: <Home07/>,
+            },
+
+        ]
+    },
+    {
+        path: "/",
+        element: <HomeLayout04/>,
+        children: [
+            {
+                path: '/home-10',
+                element: <Home10/>,
             },
 
         ]

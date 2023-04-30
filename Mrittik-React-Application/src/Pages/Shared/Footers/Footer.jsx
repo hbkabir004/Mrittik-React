@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
-import SectionGridLines from '../../components/SectionGridLines';
+import SectionGridLines from '../../../components/SectionGridLines';
 
 const Footer = () => {
     //  
