@@ -4,7 +4,7 @@ import ServiceCard from '../components/ServiceCard';
 const Services = () => {
 
     return (
-        <section className="services bg-dark-100 pt-4 pb-0">
+        <section className="services bg-dark-100 pb-0">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4" >
