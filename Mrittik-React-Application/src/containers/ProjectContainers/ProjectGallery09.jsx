@@ -3,7 +3,7 @@ import { EffectFade, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import PageHeder from '../../components/PageHeder';
 import Paragraph from '../../components/Paragraph';
-import ProjectCard from '../../components/ProjectElements/ProjectCard';
+import ProjectCard09 from '../../components/ProjectElements/ProjectCard09';
 import SectionGridLines from '../../components/SectionGridLines';
 import SectionHeader from '../../components/SectionHeader';
 
@@ -89,7 +89,7 @@ const ProjectGallery09 = () => {
                         }}
                     >
                         {
-                            ProjectData01.map(data => <SwiperSlide> <ProjectCard
+                            ProjectData01.map(data => <SwiperSlide> <ProjectCard09
                                 key={data.id}
                                 data={data}
                             /></SwiperSlide>)
