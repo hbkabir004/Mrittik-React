@@ -2,7 +2,7 @@ import { getStoredCart } from './fakeDB';
 
 export const productsAndCartData = async () => {
   // const productsData = await fetch('https://mrittik-server.vercel.app/products/')
-  const productsData = await fetch('products.json')
+  const productsData = await fetch('data/products.json')
   const products = await productsData.json()
   
   const savedCart = getStoredCart()
