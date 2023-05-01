@@ -2120,6 +2120,13 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  .about_image img.line_frame_2 {
+    position: absolute;
+    left: 350px;
+    right: 20px;
+    top: 40px;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 1399.98px) {
@@ -16382,7 +16389,7 @@ s
 
 .about_image img.line_frame_2 {
   position: absolute;
-  left: 400px;
+  left: 350px;
   right: 20px;
   top: 40px;
   z-index: -1;
