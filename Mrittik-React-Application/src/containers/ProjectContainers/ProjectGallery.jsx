@@ -20,12 +20,12 @@ const ProjectGallery = () => {
             details: 'Find your own self invintage lake house',
             tag: 'residences'
         },
-        {
-            id: '3',
-            img: 'images/portfolio/packery/4.jpg',
-            details: 'Well decor house in Sydney',
-            tag: 'landscape exterior'
-        },
+        // {
+        //     id: '3',
+        //     img: 'images/portfolio/packery/4.jpg',
+        //     details: 'Well decor house in Sydney',
+        //     tag: 'landscape exterior'
+        // },
         {
             id: '4',
             img: 'images/portfolio/packery/5.jpg',
