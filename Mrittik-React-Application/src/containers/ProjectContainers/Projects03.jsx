@@ -7,9 +7,9 @@ const Projects03 = () => {
         <section className="projects top-margin bg-transparent effect-tilt p-0">
             <div className="container">
                 <div className="row gutter-90 clearfix">
-                    <div className="grid-item col-12 col-lg-6 residences">
+                    {/* <div className="grid-item col-12 col-lg-6 residences">
                         <ProjectCard03 img="images/portfolio/1.jpg" details="California young menz club" />
-                    </div>
+                    </div> */}
                     <div className="grid-item col-12 col-lg-6 interiors">
                         <ProjectCard03 img="images/portfolio/2.jpg" details="Sunlight in the Room" />
                     </div>
