@@ -6,7 +6,7 @@ const Projects03 = () => {
     return (
         <section className="projects top-margin bg-transparent effect-tilt p-0">
             <div className="container">
-                <div className="row gutter-90 clearfix">
+                <div className="row gutter-90 clearfix mb-clearfix">
                     {/* <div className="grid-item col-12 col-lg-6 residences">
                         <ProjectCard03 img="images/portfolio/1.jpg" details="California young menz club" />
                     </div> */}

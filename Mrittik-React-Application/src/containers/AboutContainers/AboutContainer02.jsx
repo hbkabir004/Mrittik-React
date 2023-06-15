@@ -11,7 +11,7 @@ const AboutContainer = () => {
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-5 col-sm-6">
                         <div class="about_image">
-                            <img src="images/about/e1.svg" alt="About" class="line_frame_2" />
+                            {/* <img src="images/about/e1.svg" alt="About" class="line_frame_2" /> */}
                             <img src="images/about/a2.jpg" alt="img" class="abt_img_1" />
                             <img src="images/about/a3.jpg" alt="img" class="abt_img_2" />
                             <img src="images/about/e1.svg" alt="About" class="line_frame_1" />

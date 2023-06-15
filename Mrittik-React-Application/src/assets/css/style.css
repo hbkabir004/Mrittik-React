@@ -2105,6 +2105,14 @@ progress {
     left: 20px;
     bottom: 695px;
   }
+
+  .about_image{
+    position: relative;
+  }
+  
+  .mb-clearfix{
+    padding: 50px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -16360,8 +16368,6 @@ body.mr_menu_active .mr_menu_overlay {
     padding-bottom: 11.875rem;
   }
 }
-
-s
 
 .about_image {
   position: relative;

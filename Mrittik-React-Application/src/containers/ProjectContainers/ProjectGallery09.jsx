@@ -68,17 +68,24 @@ const ProjectGallery09 = () => {
                         modules={[Navigation, EffectFade]}
                         effect="slide"
                         breakpoints={{
-                            640: {
-                                width: 640,
-                                slidesPerView: 1,
-                            },
-                            768: {
-                                width: 768,
+                            // 640: {
+                            //     width: 640,
+                            //     slidesPerView: 1,
+                            // },
+                            // 768: {
+                            //     width: 768,
+                            //     slidesPerView: 2,
+                            // },
+                            // 992: {
+                            //     width: 920,
+                            //     slidesPerView: 2,
+                            // },
+
+                            600: {
                                 slidesPerView: 2,
                             },
                             992: {
-                                width: 920,
-                                slidesPerView: 2,
+                                slidesPerView: 3,
                             },
                         }}
                         spaceBetween={30}

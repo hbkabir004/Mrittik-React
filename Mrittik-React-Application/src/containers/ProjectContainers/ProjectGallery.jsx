@@ -68,6 +68,11 @@ const ProjectGallery = () => {
             resize: true,
             fitWidth: true,
             columnWidth: '.grid-sizer',
+            options: {
+                layoutMode: 'masonry',
+                masonry: { columnWidth: 100 },
+                transitionDuration: '0.5s'
+            }
         })
 
         // cleanup
