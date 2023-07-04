@@ -65,10 +65,7 @@ const ProjectGallery03 = () => {
                         <div className="grid-item landscape">
                             <ProjectCard04 img='images/portfolio/grid-list/5.jpg' details='Huge large area Bedroom' />
                         </div>
-                        <div className="grid-item interiors">
-                            <ProjectCard04 img='images/portfolio/grid-list/6.jpg' details='Clean water in the swiming pool' />
 
-                        </div>
                     </div>
                     {/* <div className="btn_group w-100 text-center">
                         <button id="load-more" className="btn gray">Load More</button>

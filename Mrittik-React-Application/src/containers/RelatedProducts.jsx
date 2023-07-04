@@ -29,10 +29,10 @@ const RelatedProducts = () => {
                             <ProductItem oldclassName='d-none' img='images/shop/products/8-1.png' name='Alarm Clock' price='$15.00' category='Furniture' />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <ProductItem oldclassName='d-none' className='badge-new' badge='New' img='images/shop/products/10-1.png' name='White Armchair' price='$19.00' category='Furniture' />
+                            <ProductItem oldClass='d-none' class='badge-new' badge='New' img='images/shop/products/10-1.png' name='White Armchair' price='$19.00' category='Furniture' />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <ProductItem oldclassName='d-none' className='badge-new' badge='New' img='images/shop/products/11-1.png' name='Teal Rug' price='$19.00' category='Furniture' />
+                            <ProductItem oldClass='d-none' class='badge-new' badge='New' img='images/shop/products/11-1.png' name='Teal Rug' price='$19.00' category='Furniture' />
                         </SwiperSlide>
                         <SwiperSlide>
                             <ProductItem oldclassName='d-none' img='images/shop/products/7-1.png' name='Center Table' price='$15.00' category='Furniture' />

@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
 import ShopFilter from './ShopFilter';
-import TabContent from './TabContent';
+import TabContent02 from './TabContent02';
 
 const ShopContainer03 = () => {
     useEffect(() => {
@@ -40,7 +40,7 @@ const ShopContainer03 = () => {
         <section className="shop_page bg-dark-200">
             <div className="container">
                 <ShopFilter />
-                <TabContent />
+                <TabContent02 />
             </div>
         </section>
     );

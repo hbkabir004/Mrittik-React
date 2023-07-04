@@ -52,7 +52,7 @@ const FunFacts = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <div className="funfacts_inner">
+                        <div className="funfacts_inner justify-content-around">
                             {
                                 FunFactData.map(data =>
                                     <FunFact02

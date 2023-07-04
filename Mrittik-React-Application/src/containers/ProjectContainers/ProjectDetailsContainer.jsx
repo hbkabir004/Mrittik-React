@@ -1,6 +1,5 @@
 import React from 'react';
-import { EffectFade } from 'swiper';
-import { Pagination, Scrollbar } from "swiper/core";
+import { EffectFade, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectDetailsInner from '../../components/ProjectElements/ProjectDetailsInner';
 import ProjectDetailsSlider from '../../components/ProjectElements/ProjectDetailsSlider';
@@ -13,20 +12,13 @@ const ProjectDetailsContainer = () => {
                 <div className="gallery_slider">
                     <div className="swiper swiper_gallery">
                         <Swiper
-                            modules={[Pagination, Scrollbar, EffectFade]}
+                            modules={[EffectFade, Navigation]}
                             effect="slide"
-                            autoplay={{
-                                delay: 4000,
-                                disableOnInteraction: true,
-                                speed: 3000
-                            }}
                             slidesPerView={1}
                             loop={true}
-                            initialSlide={1}
-                            centeredSlides={true}
-                            pagination={{
-                                clickable: true,
-                                dynamicBullets: true,
+                            navigation={{
+                                prevEl: '.swiper-button-prev',
+                                nextEl: '.swiper-button-next',
                             }}
                         >
                             <SwiperSlide>
@@ -40,6 +32,11 @@ const ProjectDetailsContainer = () => {
                             </SwiperSlide>
                         </Swiper>
 
+                        {/* <!-- Add Buttons --> */}
+                        <div className="swiper-navigation">
+                            <div className="swiper-button-prev"><i className="bi bi-arrow-left"></i></div>
+                            <div className="swiper-button-next"><i className="bi bi-arrow-right"></i></div>
+                        </div>
                     </div>
                 </div>
 

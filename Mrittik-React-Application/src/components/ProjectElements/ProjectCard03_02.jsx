@@ -27,7 +27,7 @@ const ProjectCard3_2 = ({ data }) => {
     return (
         <div className={`grid-item ${tag}`}>
             <div className="thumb">
-                <LazyLoad height={monitorWidth <= 600 ? 200 : monitorWidth <= 1550 ? 200 : monitorWidth <= 2000 ? 300 : 200} once>
+                <LazyLoad height={monitorWidth <= 600 ? 210 : monitorWidth <= 1550 ? 210 : monitorWidth <= 2000 ? 300 : 210} once>
                     <img className="item_image" src={img} alt="" />
                 </LazyLoad>
                 <div className="works-info">

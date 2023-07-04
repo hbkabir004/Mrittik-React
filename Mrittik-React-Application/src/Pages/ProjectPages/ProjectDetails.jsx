@@ -7,6 +7,7 @@ const ProjectDetails = () => {
         <main className="wrapper">
             <PageBanner pageTitle='Projects' title="Project Details" activePage="California Mansion Residence" />
             <ProjectDetailsContainer />
+
         </main>
     );
 };
