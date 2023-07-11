@@ -2,6 +2,15 @@ import $ from 'jquery';
 import React, { useEffect, useState } from 'react';
 
 const UpperHeader = () => {
+    // Hide header on scroll down
+    window.onscroll = function () { myFunction() }; function myFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.querySelector('header .container').classList.add('.top-up');
+        } else {
+            document.querySelector('header .container').classList.remove('.top-up');
+        }
+    }
+
     const [isActive, setActive] = useState("false");
     const handleToggle = () => {
         setActive(!isActive);
