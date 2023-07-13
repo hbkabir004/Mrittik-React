@@ -6719,6 +6719,7 @@ fieldset:disabled .btn {
 
 .offcanvas.showing, .offcanvas.hiding, .offcanvas.show {
   visibility: visible;
+  z-index: 9999;
 }
 
 .offcanvas.offcanvas-start {
@@ -20041,7 +20042,7 @@ iframe, object, embed, iframe, object, iframe, video {
 #mode_switcher {
   position: fixed;
   right: 20px;
-  top: calc(100vh / 3);
+  top: calc(100vh / 4);
   cursor: pointer;
   z-index: 9999;
 }
