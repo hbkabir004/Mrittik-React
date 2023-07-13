@@ -20041,7 +20041,7 @@ iframe, object, embed, iframe, object, iframe, video {
 #mode_switcher {
   position: fixed;
   right: 20px;
-  top: calc(100vh / 4);
+  top: calc(100vh / 3);
   cursor: pointer;
   z-index: 9999;
 }

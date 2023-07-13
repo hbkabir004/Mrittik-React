@@ -9,7 +9,7 @@ const MiniCartContent = ({ product }) => {
                     <div className="row align-items-center">
                         <div className="col-lg-9">
                             <div className="media media-product">
-                                <a href="#!"><img src={img} alt="Image" /></a>
+                                <a><img src={img} alt="Image" /></a>
                                 <div className="media-body">
                                     <h5 className="media-title">{name} x    {quantity}</h5>
                                     {/* <span className="media-subtitle">{categoryName}</span> */}
@@ -19,7 +19,7 @@ const MiniCartContent = ({ product }) => {
                         <div className="col-lg-3 text-center text-lg-right">
                             <span className="cart-item-price">${price}</span>
                         </div>
-                        <a href="#!" className="cart-item-close"><i className="bi bi-x"></i></a>
+                        <a className="cart-item-close"><i className="bi bi-x"></i></a>
                     </div>
                 </div>
             </div>
