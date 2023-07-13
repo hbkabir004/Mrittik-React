@@ -54,6 +54,9 @@ const ShopUpperHeader = () => {
                                     <li className="menu-item"><a href="/home-5">Home Five</a></li>
                                     <li className="menu-item"><a href="/home-6">Home Six</a></li>
                                     <li className="menu-item"><a href="/home-7">Home Seven</a></li>
+                                    <li className="menu-item"><a href="/home-8">Home Eight</a></li>
+                                    <li className="menu-item"><a href="/home-9">Home Nine</a></li>
+                                    <li className="menu-item"><a href="/home-10">Home Ten</a></li>
                                 </ul>
                             </li>
                             <li className="menu-item menu-item-has-children"><a href="/">Gallery</a>
