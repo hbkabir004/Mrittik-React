@@ -65,7 +65,7 @@ const MobileResponsiveMenu = () => {
             <div className="mr_menu_overlay"></div>
             <button type="button" className="mr_menu_close"><i className="bi bi-x-lg"></i></button>
             <div className="logo">
-                <a href="/"><img src="images/logo-light-lg.svg" alt="logo" /></a>
+                <a href="/"><img src="images/logo-light.svg" alt="logo" /></a>
             </div>
             <div className="mr_navmenu"></div>
         </div>
