@@ -2,7 +2,7 @@
 
 ## 🔗 Links
 
-### Hosted in Firebase -> [Live Site](https://mrittik-reactjs.web.app/)
+### [Available on Themeforest](https://themeforest.net/item/mrittik-architecture-and-interior-react-template/46801106?s_rank=10)
 
 ### Project Documentation
 
