@@ -2,7 +2,7 @@
 
 ## 🔗 Links
 
-### [Available on Themeforest](https://themeforest.net/item/mrittik-architecture-and-interior-react-template/46801106?s_rank=10)
+### [Available on Envato Marketplace](mrittik-reactjs.web.app/)
 
 ### Project Documentation
 
