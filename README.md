@@ -2,7 +2,7 @@
 
 ## 🔗 Links
 
-### [Available on Envato Marketplace](mrittik-reactjs.web.app/)
+### [Available on Envato Marketplace](https://mrittik-reactjs.web.app)
 
 ### Project Documentation
 
